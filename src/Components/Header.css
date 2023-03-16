@@ -1,0 +1,84 @@
+.hero-section {
+    padding: 300px 0 250px;
+}
+.header-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header-section {
+    background-color: transparent;
+    padding: 20px 0;
+    z-index: 99999;
+    position: absolute;
+}
+.hero-content h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+.hero-content h1 strong {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: block;
+    
+}
+.hero-content h1 span {
+    display: block;
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+}    
+.hero-content p {
+    color: #fff;
+    margin: 20px auto 0;
+    max-width: 710px;
+}
+.hero-content a {
+    margin-top: 40px;
+    display: inline-block;
+} 
+.overlay {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.overlay::before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+.stick .buy-btn {
+    border: 2px solid #e26980;
+    color: #e26980;
+    /* margin-top: 3px; */
+}
+.stick .top-btn:hover {
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,44 @@
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-70 {
+    margin-bottom: 70px;
+}
+.single-feature .icon {
+  color: #e26980;
+  margin-right: 20px;
+}
+.single-feature .icon i {
+  display: block;
+  font-size: 36px;
+}
+.single-feature .content {
+  padding-top: 5px;
+}
+.single-feature .content h4 {
+  display: block;
+  font-size: 18px;
+  line-height: 13px;
+  padding-bottom: 2px;
+  text-transform: capitalize;
+}
+.single-feature .content p {
+  color: #666;
+  margin: 0;
+}
+.section-title h1 {
+  color: #373737;
+  display: block;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.float-left {
+  float: left;
+}
+.fix {
+  overflow: hidden;
+}

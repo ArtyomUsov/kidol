@@ -2,7 +2,7 @@
   "name": "kidoltwo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ArtyomUsov.github.io/kidoltwo",
+  "homepage": "https://ArtyomUsov.github.io/kidol_react",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.5",

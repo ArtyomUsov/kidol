@@ -10,11 +10,6 @@
 h2 {
   font-size: calc(1.325rem + .9vw);
 }    
-/* @media (min-width: 1200px) {
-  h2 {
-      font-size: 2rem;
-  }
-} */
 .footer-section h1 {
   color: #fff;
   display: block;

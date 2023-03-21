@@ -16,7 +16,7 @@ export default class Footer extends Component {
                                     rel='noreferrer'
                                     className="buy-btn bottom-btn" 
                                     target="_blank" 
-                                    href="https://1.envato.market/c/417168/275988/4415?subId1=hastheme&amp;subId2=demo&amp;subId3=https%3A%2F%2Fthemeforest.net%2Fuser%2Fcodecarnival%2Fportfolio&amp;u=https%3A%2F%2Fthemeforest.net%2Fuser%2Fcodecarnival%2Fportfolio"
+                                    href="https://www.google.com/?hl=RU"
                                 >
                                     buy kidol
                                 </a>

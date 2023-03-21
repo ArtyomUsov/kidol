@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* // импорт шрифта Montserrat из хранилища шрифтов google */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800');
+
+body {
+  margin: auto;
+  display: block;
+  background: rgb(255, 255, 255);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  color: #999999;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #373737;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none; 
+} 
+a, button, input, textarea {
+  color: #999999;
+  font-family: 'Montserrat', sans-serif;
+  outline: medium none;    
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #999999;
+  margin-bottom: 15px;
+}
+.button-buy {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  
+}
+.buy-btn {
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 24px;
+  margin-top: 0;
+  padding: 6px 17px;
+  text-transform: uppercase;
+}
+.buy-btn:hover {
+  color: rgb(255, 255, 255);
+  border-color: #e26980;
+  background-color: #e26980;
+}
+.bottom-btn:hover {
+  color: rgb(0, 0, 0);
+} 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1140px;
+}
+.section {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+.pt-150 {
+  padding-top: 150px;
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px
+}
+.row > [class*=col-] {
+  padding-right: 15px;
+  padding-left: 15px;
 }

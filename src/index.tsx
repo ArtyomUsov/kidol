@@ -11,15 +11,9 @@ import BagGray from './Components/Bag';
 import Header from './Components/Header';
 import FeatureSection from './Components/FeatureSection';
 import Footer from './Components/Footer';
-/* // импорт шрифтов из файла fonts.scss  */
-// import "../src/fonts"; 
-/* // импорт обнуления стилей страницы  */
-// import "nullstyle";
-/* // импорт иконок ( шрифтовых изображений )  */
-import "../src/scss/iconstyle.css"; 
-import { HeaderTwo } from './Components/HeaderTwo';
-import App from './App';
-import HeaderThree from './Components/HeaderThree';
+import "../src/css/iconstyle.css"; 
+// import App from './App';
+
 
 
 
@@ -28,10 +22,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    {/* <Header/> */}
+    <Header/>
     {/* <App/> */}
-    {/* <HeaderTwo/> */}
-    <HeaderThree/>
     <BagGray/>
     <FeatureSection/>
     <Footer/>

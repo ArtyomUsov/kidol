@@ -1,3 +1,53 @@
 .mb-50 {
     margin-bottom: 50px;
   }
+.demo-item {
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    ackground-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height: 420px;
+    padding: 0;
+    font-weight: 500;
+}
+  .demo-item:hover .image {
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
+    transform: translateY(-10px);
+  }
+  .demo-item:hover .image::after {
+    opacity: 0.6;
+  }
+  .demo-item:hover .image i {
+    opacity: 0.9;
+    transform: translateY(-50%);
+  }
+  .demo-item .image i:hover{
+      background-color: #ffffff;
+      color: #122179;
+  }
+  .demo-item .title {
+      font-size: 18px;
+      margin-top: 0;
+      padding: 20px 0;
+      font-weight: 500;
+  }
+  .demo-item .title a {
+      color: #3f3f3f;
+      display: block;
+      padding: 5px;
+      font-weight: 500;
+      font-size: 18px;
+  }
+  .demo-item .title a:hover {
+      color: #e26980;
+  }
+  .image {
+    display: block;
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+    
+}

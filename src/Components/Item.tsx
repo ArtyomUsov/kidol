@@ -1,14 +1,12 @@
-import PageIndex1 from "..page-index1.webp";
 import Popper from 'popper.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import $ from 'jquery';
-import {Image} from "react-bootstrap";
 import "../Components/Item.css";
 import React, {useState} from 'react';
 import { DItem } from '../date/models';
 import { Items } from '../date/Items';
-import landing from "../img/slider-landing.jpg"
+
 
 
 interface ItemProps {

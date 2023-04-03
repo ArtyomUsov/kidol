@@ -19,11 +19,17 @@ const HeaderMain = () => {
 
   const isSticky = () => {
     const scrollTop = window.scrollY;
-    const stickyClass = scrollTop >= 200 ? "sticky-header" : "";
+    const stickyClass = scrollTop >= 100 ? "sticky" : "";
     setSticky(stickyClass);
   };
 
-  const classes = `header-area header-default ${sticky}`;
+  const classes = ["header-area header-default sticky-header", sticky];
+
+  const [isHover,setHover] = useState(false);
+
+  const d = isHover ? "d-none" : "" 
+
+  const navMenu = ["submenu-nav", d]
 
   return (
     <>
@@ -100,7 +106,7 @@ const HeaderMain = () => {
                     </div>
                 </div>
             </div>
-            <div className="header-area header-default sticky-header">
+            <div className={classes.join(' ')}>
                 <div className="container">
                     <div className="row row-gutter-0 align-items-center">
                         <div className="col-4 col-sm-6 col-lg-2">
@@ -112,10 +118,13 @@ const HeaderMain = () => {
                             </div>
                         </div>
                         <div className="col-lg-8 sticky-md-none">
-                            <div className="header-navigation-area d-none d-md-block">
+                            <div className="header-navigation-area d-md-block"
+                                onMouseOver={() => setHover(prev => !prev)}
+                                onMouseOut={() => setHover(prev => !prev)}>
                                 <ul className="main-menu nav position-relative">
                                     <li className="has-submenu active"><a className="ml--2" href="index.html">Home</a>
-                                    <ul className="submenu-nav">
+                                    <ul className={navMenu.join(' ')}
+                                        onMouseOut={() => setHover(prev => prev)}>
                                         <li><a href="about.html"><Link to="/homeOne">HomeOne</Link></a></li>
                                         <li><a href="about.html"><Link to="/homeOne">HomeOne</Link></a></li>
                                     </ul>

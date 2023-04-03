@@ -1,36 +1,47 @@
 import { DItem } from "./models";
-import "../img/pages/page-index1.webp";
+import Index1 from "../img/pages/page-index1.webp";
+import Index2 from "../img/pages/page-index2.webp";
+import About from "../img/pages/page-about.webp";
+import NotFound from "../img/pages/page-not-found.webp";
+import ComingSoon from "../img/pages/page-coming-soon.webp";
+import Contact from "../img/pages/page-contact.webp";
 
 export const Items: DItem[] = [
     {
         id: 1,
         title: "home one",
-        image: '../img/pages/page-index1.webp',
+        image: `${Index1}`,
+        link: "/indexTwo.tsx",
     },
     {
         id: 2,
         title: "Home Two",
-        image: "../img/pages/page-index2.webp",
+        image: `${Index2}`,
+        link: "",
     },
     {
         id: 3,
         title: "About",
-        image: "../img/pages/page-index2.webp",
+        image: `${About}`,
+        link: "",
     },
     {
         id: 4,
         title: "404",
-        image: "../img/pages/page-index2.webp",
+        image: `${NotFound}`,
+        link: "",
     },
     {
         id: 5,
         title: "Coming soon",
-        image: "../img/pages/page-index2.webp",
+        image: `${ComingSoon}`,
+        link: "",
     },
     {
         id: 6,
         title: "Contact",
-        image: "../img/pages/page-index2.webp",
+        image: `${Contact}`,
+        link: "",
     },
 ]
 

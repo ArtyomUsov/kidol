@@ -25,12 +25,6 @@ const HeaderMain = () => {
 
   const classes = ["header-area header-default sticky-header", sticky];
 
-  const [isHover,setHover] = useState(false);
-
-  const d = isHover ? "d-none" : "" 
-
-  const navMenu = ["submenu-nav", d]
-
   return (
     <>
         <div className="header-wrapper">
@@ -59,7 +53,7 @@ const HeaderMain = () => {
                             <div className="header-align">
                                 <div className="header-align-left">
                                     <div className="header-logo-area">
-                                        <a href="index.html">
+                                        <a href="/homeOne">
                                             <img className="logo-main" src={logo} alt="Logo"/>
                                             {/* <img className="logo-light" src={logo} alt="Logo"/> */}
                                         </a>
@@ -107,27 +101,32 @@ const HeaderMain = () => {
                 </div>
             </div>
             <div className={classes.join(' ')}>
-                <div className="container">
-                    <div className="row row-gutter-0 align-items-center">
-                        <div className="col-4 col-sm-6 col-lg-2">
-                            <div className="header-logo-area">
-                                <a href="index.html">
+                <div 
+                className="container">
+                    <div 
+                    className="row row-gutter-0 align-items-center"
+                    >
+                        <div 
+                        className="col-4 col-sm-6 col-lg-2"
+                        >
+                            <div 
+                            className="header-logo-area"
+                            >
+                                <a href="/homeOne">
                                     <img className="logo-main" src={logo} alt="Logo"/>
                                     <img className="logo-light" src={logo} alt="Logo"/>
                                 </a>
                             </div>
                         </div>
                         <div className="col-lg-8 sticky-md-none">
-                            <div className="header-navigation-area d-md-block"
-                                onMouseOver={() => setHover(prev => !prev)}
-                                onMouseOut={() => setHover(prev => !prev)}>
+                            <div className="header-navigation-area d-md-block">
                                 <ul className="main-menu nav position-relative">
-                                    <li className="has-submenu active"><a className="ml--2" href="index.html">Home</a>
-                                    <ul className={navMenu.join(' ')}
-                                        onMouseOut={() => setHover(prev => prev)}>
-                                        <li><a href="about.html"><Link to="/homeOne">HomeOne</Link></a></li>
-                                        <li><a href="about.html"><Link to="/homeOne">HomeOne</Link></a></li>
-                                    </ul>
+                                    <li className="has-submenu"
+                                        ><a className="ml--2" href="/homeOne">Home</a>
+                                        <ul className="submenu-nav">
+                                            <li><a><Link to="/homeOne">Home One</Link></a></li>
+                                            <li><a><Link to="/homeTwo">Home Two</Link></a></li>
+                                        </ul>
                                     </li>
                                     <li><a href="about.html">About</a></li>
                                     <li className="has-submenu"><a href="index.html">Pages</a>

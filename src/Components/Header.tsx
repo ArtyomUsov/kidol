@@ -29,7 +29,7 @@ const Header = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="header-top">
+                        <div className="header-top" style={{backgroundColor: "transparent"}}>
                             <div className="logo">
                                 <a 
                                     href="index.html" 

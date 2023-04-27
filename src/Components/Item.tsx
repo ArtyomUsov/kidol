@@ -3,10 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import $ from 'jquery';
 import "../Components/Item.css";
-import React, {useState} from 'react';
+import React from 'react';
 import { DItem } from '../date/models';
 import { Items } from '../date/Items';
-
+import { Link } from 'react-router-dom';
 
 
 interface ItemProps {
@@ -20,16 +20,16 @@ export function Item({ item }: ItemProps) {
         <>
             <div className="col-4 mb-50">
                 <div className="demo-item">
-                    <a href={ item.link } className="">
-                    <img  
-                        className="img-fluid image"
-                        src={ item.image }
-                        alt={ item.title }
-                    />
+                    <Link to={item.link}>
+                        <img  
+                            className="img-fluid image"
+                            src={ item.image }
+                            alt={ item.title }
+                        />
+                    </Link>
                     <i className=""></i>
-                    </a>
                     <h4 className="text-capitalize title">
-                    <a href={ item.link }>{ item.title }</a>
+                    <Link to={item.link}><a>{ item.title }</a></Link>
                     </h4>
                 </div>
             </div>

@@ -77,6 +77,15 @@
     position: fixed;
     top: 0;
     background-color: rgb(255, 255, 255);
+    animation: drop ease 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: drop ease 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes drop {
+  0% {top: -100%;}
+  50% {top: -50%;}
+  100% {top: 0px;}
 }
 .stick .buy-btn {
     border: 2px solid #e26980;
@@ -86,3 +95,54 @@
 .stick .top-btn:hover {
     color: rgb(255, 255, 255);
 }
+h1, h2, h3, h4, h5, h6 {
+    color: #373737;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none; 
+  } 
+  a, button, input, textarea {
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    outline: medium none;    
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #999999;
+    margin-bottom: 15px;
+  }
+  .button-buy {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    
+  }
+  .buy-btn {
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 6px 17px;
+    text-transform: uppercase;
+  }
+  .buy-btn:hover {
+    color: rgb(255, 255, 255);
+    border-color: #e26980;
+    background-color: #e26980;
+  }
+  .bottom-btn:hover {
+    color: rgb(0, 0, 0);
+  }

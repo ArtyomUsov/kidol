@@ -1,5 +1,5 @@
 import React from "react";
-import "../../pages/Home/Home.css"
+import "../../pages/Home/HomeOne.css"
 import { Image } from "react-bootstrap";
 import three from "../../img/homeOne/3.webp";
 import five from "../../img/homeOne/5.webp";
@@ -8,6 +8,7 @@ import one from "../../img/homeOne/1.webp";
 import two from "../../img/homeOne/2.webp";
 import background from "../../img/homeOne/background.webp";
 import HeaderMain from "../../Components/HeaderMain";
+import { FooterMain } from "../../Components/FooterMain";
 
 export function HomeOne() {
     return (
@@ -29,17 +30,26 @@ export function HomeOne() {
                                         >
                         {/* Start Slide Item */}
                         <div className="home-slider-item">
-                            <div className="thumb-one bg-img" 
-                                    data-bg-img={background} 
+                            <div className="thumb-one" 
+                                    // data-bg-img={background} 
                                     // style={{backgroundImage: `${background}`}}
-                                    >
+                                    ><Image className="bg-img" src={background}/>
                             </div>
                             <div className="slider-content-area">
                             <div className="container">
                                 <div className="row">
                                 <div className="col-sm-6">
                                     <div className="content">
-                                    <div className="inner-content">
+                                    <div className="inner-content"
+                                        // style={{
+                                        //     color: "#000",
+                                        //     fontFamily: "Fredoka One, cursive",
+                                        //     fontWeight: "400",
+                                        //     lineHeight: 1.2,
+                                        //     marginBottom: "10px",
+                                        //     marginTop: 0,
+                                        // }}
+                                    >
                                         <h2>Best Kids Store &amp; Online Shop</h2>
                                         <p>Give The Gift Of Your Children Everyday</p>
                                         <a href="shop.html" className="btn-theme">Shop This Now</a>
@@ -54,15 +64,15 @@ export function HomeOne() {
                             <Image className="thumb-three" src={three} alt="Image"/>
                             <Image className="thumb-four" src={five} alt="Image"/>
                             </div>
-                            <div className="shape-top bg-img"  
-                                    data-bg-img={one} 
+                            <div className="shape-top"  
+                                    // data-bg-img={one} 
                                     // style={{backgroundImage: `${one}`}}
-                                    >
+                                    ><Image className="bg-img" src={one}/>
                             </div>
-                            <div className="shape-bottom bg-img" 
-                                    data-bg-img={two} 
+                            <div className="shape-bottom" 
+                                    // data-bg-img={two} 
                                     // style={{backgroundImage: `${two}`}}
-                                    >    
+                                    ><Image className="shape-bottom bg-img" src={two}/>   
                             </div>
                         </div>
                         {/* End Slide Item */}
@@ -154,6 +164,7 @@ export function HomeOne() {
                     <span className="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                 </div>
         </section>
+        <FooterMain/>
     </>
     )
 }

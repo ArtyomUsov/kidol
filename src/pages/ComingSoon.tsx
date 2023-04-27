@@ -4,7 +4,7 @@ import React from 'react';
 import HeaderMain from '../Components/HeaderMain';
 import { FooterMain } from '../Components/FooterMain';
 
-export function About() {
+export function ComingSoon() {
     
     return (
     <>

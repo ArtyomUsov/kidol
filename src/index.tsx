@@ -7,7 +7,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import "../src/css/iconStyle.css";
 import "../src/css/iconStyleTwo.css";
-import "../src/css/iconStyleThree.css";  
+import "../src/css/iconStyleThree.css"; 
+import "../src/css/icon.css"
+import "../src/css/ionicons.min.css" 
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 

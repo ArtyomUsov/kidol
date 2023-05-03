@@ -1,6 +1,15 @@
 export interface DItem {
-    id?: number
+    id: number
     title: string
     image: string
+    link: string
+}
+
+export interface IProduct {
+    id: number
+    title: string
+    image: string
+    price: string
+    rating: string
     link: string
 }

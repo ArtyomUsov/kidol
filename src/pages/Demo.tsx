@@ -9,11 +9,11 @@ import Footer from '../Components/Footer';
 
 export function Demo() {
     return (
-        <>
+        <div className='body-demo'>
             <Header/>
             <BgSection/>
             <FeatureSection/>
             <Footer/>
-        </>
+        </div>
     )
 }

@@ -23,10 +23,10 @@ export function FooterMain() {
                             </a>
                             <p>Lorem ipsum dolor sit amet, consecl adipisicing elit, sed do eiusmod teml incididunt ut labore et dolore magna aliqua Ut enim</p>
                             <div className="widget-social-icons">
-                            <a href="#"><i className="ion-social-twitter"></i></a>
-                            <a href="#"><i className="ion-social-tumblr"></i></a>
-                            <a href="#"><i className="ion-social-facebook"></i></a>
-                            <a href="#"><i className="ion-social-instagram-outline"></i></a>
+                            <a href="#"><i className="ion-logo-twitter"></i></a>
+                            <a href="#"><i className="ion-logo-tumblr"></i></a>
+                            <a href="#"><i className="ion-logo-facebook"></i></a>
+                            <a href="#"><i className="ion-logo-instagram"></i></a>
                             </div>
                         </div>
                         </div>

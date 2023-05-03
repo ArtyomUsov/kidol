@@ -4,7 +4,7 @@ import "../Components/HeaderMain.css";
 import logo from "../img/logo.webp";
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const HeaderMain = () => {
   const [sticky, setSticky] = useState("");
@@ -28,7 +28,7 @@ const HeaderMain = () => {
   return (
     <>
         <div className="header-wrapper">
-            <div className="header-top">
+            <div className="header-top-main">
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-sm-5 col-md-4 col-lg-6">
@@ -36,11 +36,11 @@ const HeaderMain = () => {
                                 <p>Free Returns and Free Shipping</p>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6 sm-pl-0 xs-pl-15 header-top-right">
+                        <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6 sm-pl-0 xs-pl-15 header-top-main-right" >
                             <div className="header-info">
-                                <a href="tel://+00123456789"><FontAwesomeIcon icon={icon({name: 'phone'})} /> +00 123 456 789</a>
-                                <a href="mailto://demo@example.com"><FontAwesomeIcon icon={icon({name: 'envelope'})} /> demo@example.com</a>
-                                <a href="login-register.html"><FontAwesomeIcon icon={icon({name: 'user'})} /> Account</a>
+                                <a href="tel://+00123456789"><i className="fa fa-phone"></i>+00 123 456 789</a>
+                                <a href="mailto://demo@example.com"><i className="fa fa-envelope"></i>demo@example.com</a>
+                                <a href="login-register.html"><i className="fa fa-user"></i>Account</a>
                             </div>
                         </div>
                     </div>
@@ -124,8 +124,8 @@ const HeaderMain = () => {
                                     <li className="has-submenu"
                                         ><a className="ml--2" href="/homeOne">Home</a>
                                         <ul className="submenu-nav">
-                                            <li><a><Link to="/homeOne">Home One</Link></a></li>
-                                            <li><a><Link to="/homeTwo">Home Two</Link></a></li>
+                                            <li><a href="/homeOne">Home One</a></li>
+                                            <li><a href="/homeTwo">Home Two</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="about.html">About</a></li>

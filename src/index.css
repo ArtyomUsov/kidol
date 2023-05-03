@@ -2,7 +2,7 @@
 /* // импорт шрифта Montserrat из хранилища шрифтов google */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800');
 
-body {
+body-demo {
   margin: auto;
   display: block;
   background: rgb(255, 255, 255);

@@ -21,7 +21,7 @@ const Header = () => {
     setSticky(stickyClass);
   };
 
-  const classes = `header-section section pt-4 ${sticky}`;
+  const classes = `header-section section ${sticky}`;
 
   return (
     <>
@@ -63,7 +63,7 @@ const Header = () => {
                         className="hero-content text-center col-12">
                         <h1><strong>Kidol</strong></h1>
                         <h1> Kidol - Kids Toys Store eCommerce HTML Template</h1>
-                        <p>
+                        <p className="Open-sans">
                             Kidol - Kids Toys Store eCommerce HTML Template for Store websites. Nice and clean design.</p>
                         <a 
                             className="buy-btn" 

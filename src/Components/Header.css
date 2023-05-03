@@ -77,6 +77,8 @@
     position: fixed;
     top: 0;
     background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
     animation: drop ease 1s;
     animation-fill-mode: forwards;
     -webkit-animation: drop ease 1s;
@@ -90,7 +92,7 @@
 .stick .buy-btn {
     border: 2px solid #e26980;
     color: #e26980;
-    /* margin-top: 3px; */
+    margin-top: 3px;
 }
 .stick .top-btn:hover {
     color: rgb(255, 255, 255);
@@ -111,6 +113,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #999999;
     font-family: 'Montserrat', sans-serif;
     outline: medium none;    
+  }
+.Open-sans {
+    font-family: 'Open Sans', sans-serif;
   }
   p {
     font-size: 16px;

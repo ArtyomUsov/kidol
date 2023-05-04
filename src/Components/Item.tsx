@@ -18,7 +18,7 @@ export function Item({ item }: ItemProps) {
 
     return(
         <>
-            <div className="col-4 mb-50">
+            <div className="col-lg-4 col-md-6 col-12 mb-50">
                 <div className="demo-item">
                     <Link to={item.link}>
                         <img  
@@ -37,5 +37,3 @@ export function Item({ item }: ItemProps) {
     )
 }
 export default Item;
-
-

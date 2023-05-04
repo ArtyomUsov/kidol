@@ -109,7 +109,8 @@ export function FooterMain() {
                     <div className="row text-center">
                         <div className="col-sm-12">
                         <div className="widget-copyright">
-                            <p><i className="fa fa-copyright"></i> 2023 <span>KIDOL. </span> Made with <i className="fa fa-heart"></i> by <a target="_blank" href="https://www.hasthemes.com">HasThemes</a></p>
+                            <p><i className="fa fa-copyright"></i> 2023 <span>KIDOL. </span> Made with 
+                            <i className="fa fa-heart"></i> by <a target="_blank" href="https://github.com/ArtyomUsov">Me</a></p>
                         </div>
                         </div>
                     </div>

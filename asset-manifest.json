@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/kidol_react/static/css/main.cdbd4e68.css",
-    "main.js": "/kidol_react/static/js/main.b38a6493.js",
+    "main.css": "/kidol_react/static/css/main.7a2a0e50.css",
+    "main.js": "/kidol_react/static/js/main.57405012.js",
     "static/media/fa-solid-900.ttf": "/kidol_react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/ionicons.svg?v=4.5.10-1": "/kidol_react/static/media/ionicons.bb0605ccfbc8cbabadc5.svg",
     "static/media/fa-brands-400.ttf": "/kidol_react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/et-line.svg": "/kidol_react/static/media/et-line.613c7311d2d5a1dd7e49.svg",
     "static/media/fa-solid-900.woff2": "/kidol_react/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/bg1.webp": "/kidol_react/static/media/bg1.c3c504528d1c1e448434.webp",
     "static/media/ionicons.eot?v=4.5.10-1": "/kidol_react/static/media/ionicons.52cc4717a7334500d1bf.eot",
     "static/media/ionicons.ttf?v=4.5.10-1": "/kidol_react/static/media/ionicons.bbef0241a610f92e1e66.ttf",
     "static/media/fa-brands-400.woff2": "/kidol_react/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
@@ -48,6 +49,7 @@
     "static/media/page-blog-details-right-sidebar.webp": "/kidol_react/static/media/page-blog-details-right-sidebar.2bb52b4b14148c7b3721.webp",
     "static/media/page-blog-details.webp": "/kidol_react/static/media/page-blog-details.04debd3ef4826efbb23f.webp",
     "static/media/page-index1.webp": "/kidol_react/static/media/page-index1.38933c6ad992d5173615.webp",
+    "static/media/divider2.webp": "/kidol_react/static/media/divider2.5d68608fe6e7725d3f4d.webp",
     "static/media/FredokaOne-Regular.woff": "/kidol_react/static/media/FredokaOne-Regular.bd54b67bd504501ebed6.woff",
     "static/media/Rubikblackitalic.woff2": "/kidol_react/static/media/Rubikblackitalic.e15ea461f1b5e3108b8e.woff2",
     "static/media/Rubiklightitalic.woff2": "/kidol_react/static/media/Rubiklightitalic.e7f54ca834c903fca195.woff2",
@@ -62,6 +64,7 @@
     "static/media/Rubikmedium.woff2": "/kidol_react/static/media/Rubikmedium.58eb14aa28258055e89e.woff2",
     "static/media/Rubik.woff2": "/kidol_react/static/media/Rubik.34239b273b7ba6ecdfdd.woff2",
     "static/media/Rubikbold.woff2": "/kidol_react/static/media/Rubikbold.55c75b79f7978fe3448d.woff2",
+    "static/media/divider1.webp": "/kidol_react/static/media/divider1.5945925e0a3c0a00a593.webp",
     "static/media/page-shop.webp": "/kidol_react/static/media/page-shop.be791afef8679e246885.webp",
     "static/media/page-shop-left-sidebar.webp": "/kidol_react/static/media/page-shop-left-sidebar.962ce1984a8eeb402dff.webp",
     "static/media/page-shop-right-sidebar.webp": "/kidol_react/static/media/page-shop-right-sidebar.56ee6d4e67287e3f864e.webp",
@@ -83,12 +86,14 @@
     "static/media/logo.webp": "/kidol_react/static/media/logo.aae4087fd9d04a6c1673.webp",
     "static/media/logo-light.webp": "/kidol_react/static/media/logo-light.d9b8a8a13fd532a2e58b.webp",
     "static/media/background.webp": "/kidol_react/static/media/background.c03542ae5bac3e689549.webp",
+    "static/media/shape1.webp": "/kidol_react/static/media/shape1.a73b9793b79838738f99.webp",
+    "static/media/shape2.webp": "/kidol_react/static/media/shape2.cd50c5c986185c94a35b.webp",
     "index.html": "/kidol_react/index.html",
-    "main.cdbd4e68.css.map": "/kidol_react/static/css/main.cdbd4e68.css.map",
-    "main.b38a6493.js.map": "/kidol_react/static/js/main.b38a6493.js.map"
+    "main.7a2a0e50.css.map": "/kidol_react/static/css/main.7a2a0e50.css.map",
+    "main.57405012.js.map": "/kidol_react/static/js/main.57405012.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdbd4e68.css",
-    "static/js/main.b38a6493.js"
+    "static/css/main.7a2a0e50.css",
+    "static/js/main.57405012.js"
   ]
 }

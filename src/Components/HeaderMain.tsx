@@ -33,7 +33,7 @@ const HeaderMain = () => {
                     <div className="row">
                         <div className="col-xs-12 col-sm-5 col-md-4 col-lg-6">
                             <div className="header-info-left">
-                                <p>Free Returns and Free Shipping</p>
+                                <p style={{marginBottom: "0"}}>Free Returns and Free Shipping</p>
                             </div>
                         </div>
                         <div className="col-xs-12 col-sm-7 col-md-8 col-lg-6 sm-pl-0 xs-pl-15 header-top-main-right" >

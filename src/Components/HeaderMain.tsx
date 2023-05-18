@@ -122,14 +122,14 @@ const HeaderMain = () => {
                             <div className="header-navigation-area d-md-block">
                                 <ul className="main-menu nav position-relative">
                                     <li className="has-submenu"
-                                        ><a className="ml--2" href="/homeOne">Home</a>
+                                        ><a className="ml--2" href="/HomeOne">Home</a>
                                         <ul className="submenu-nav">
-                                            <li><a href="/homeOne">Home One</a></li>
-                                            <li><a href="/homeTwo">Home Two</a></li>
+                                            <li><a href="/HomeOne">Home One</a></li>
+                                            <li><a href="/HomeTwo">Home Two</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li className="has-submenu"><a href="index.html">Pages</a>
+                                    <li><a href="/About">About</a></li>
+                                    <li className="has-submenu"><a href="/HomeOne">Pages</a>
                                         <ul className="submenu-nav">
                                             <li><a href="shop-cart.html">Cart page</a></li>
                                             <li><a href="shop-checkout.html">Checkout</a></li>
@@ -137,8 +137,8 @@ const HeaderMain = () => {
                                             <li><a href="shop-wishlist.html">Wishlist</a></li>
                                             <li><a href="shop-compare.html">Compare</a></li>
                                             <li><a href="login-register.html">Login / Register</a></li>
-                                            <li><a href="coming-soon.html">Coming soon</a></li>
-                                            <li><a href="page-not-found.html">404</a></li>
+                                            <li><a href="/ComingSoon">Coming soon</a></li>
+                                            <li><a href="/NotFound">404</a></li>
                                         </ul>
                                     </li>
                                     <li className="has-submenu"><a href="shop.html">Shop</a>
@@ -165,7 +165,7 @@ const HeaderMain = () => {
                                             <li><a href="blog-details-no-sidebar.html">Blog Details No Sidebar</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/Contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>

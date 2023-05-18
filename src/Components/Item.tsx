@@ -4,14 +4,17 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import $ from 'jquery';
 import "../Components/Item.css";
 import React from 'react';
-import { DItem } from '../date/models';
+import { IItem } from '../date/models';
 import { Items } from '../date/Items';
 import { Link } from 'react-router-dom';
 
 
 interface ItemProps {
-    item: DItem
+    item: IItem
 }
+export const BgSection1: IItem[] = Items.slice(0, 6);
+export const BgSection2: IItem[] = Items.slice(6, 12);
+export const BgSection3: IItem[] = Items.slice(12, 18);
 
 export function Item({ item }: ItemProps) {
 

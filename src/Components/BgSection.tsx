@@ -3,11 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import Item from './Item';
+import Item, { BgSection1, BgSection2, BgSection3 } from './Item';
 import "../Components/BgSection.css";
-import { Items } from '../date/Items';
-import { ItemsShop } from '../date/ItemsShop';
-import { ItemsBlog } from '../date/ItemsBlog';
 
 function BgSection() {
     return (
@@ -15,7 +12,7 @@ function BgSection() {
         <div className='bg-gray'>
             <div className="container pb-70 pt-120">
                 <div className="row">
-                { Items.map( (item) => <Item item={item} key={item.id}/> ) }
+                { BgSection1.map( (item) => <Item item={item} key={item.id}/> ) }
                 </div>
             </div>
         </div>
@@ -27,7 +24,7 @@ function BgSection() {
                     </div>
                 </div>
                 <div className="row">
-                { ItemsShop.map( item => <Item item={item} key={item.id}/> ) }
+                { BgSection2.map( item => <Item item={item} key={item.id}/> ) }
                 </div>
             </div>
         </div>
@@ -39,7 +36,7 @@ function BgSection() {
                     </div>
                 </div>
                 <div className="row">
-                { ItemsBlog.map( item => <Item item={item} key={item.id}/> ) }
+                { BgSection3.map( item => <Item item={item} key={item.id}/> ) }
                 </div>
             </div>
         </div>

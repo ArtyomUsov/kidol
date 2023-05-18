@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../pages/Home/HomeOne.css"
+// import styles from "../../pages/Home/Blog.module.scss"
 // import "../../pages/Home/Shop.css"
 import { Image } from "react-bootstrap";
 import three from "../../img/homeOne/3.webp";
@@ -13,15 +14,82 @@ import itemThree from "../../img/3.webp";
 import background from "../../img/homeOne/background.webp";
 import divider1 from "../../img/divider/divider1.webp";
 import divider2 from "../../img/divider/divider2.webp";
-import bg1 from "../../img/divider/bg1.webp";
+import collection1 from "../../img/category/4.webp";
+import collection2 from "../../img/category/5.webp";
+import blog1 from "../../img/blog/1.webp";
+import blog2 from "../../img/blog/2.webp";
+import blog3 from "../../img/blog/3.webp";
 import HeaderMain from "../../Components/HeaderMain";
 import { FooterMain } from "../../Components/FooterMain";
-import Product from "../../Components/Product";
+import { Product, ProductArea } from "../../Components/Product";
 import { Products } from "../../date/Products";
 import { ButtonScrollTop } from "../../Components/ButtonScrollTop";
+import {ProductSlide } from "../../Components/ProductSlide";
+import { IProduct } from "../../date/models";
+
+ 
 
 export function HomeOne() {
 
+    // const ProductAreaSlide: IProduct[] = Products.slice(0, 4);
+//  const [start, setStart] = useState(0);
+//  const [end, setEnd] = useState(3);
+//  const [slicedItems, setSlicedItems] = useState(Products.slice(start, end + 1));
+
+//  useEffect(() => {
+//    // Обновить срез массива при изменении start и end
+//    setSlicedItems(Products.slice(start, end + 1));
+//  }, [start, end]);
+
+//  const handleNext = () => {
+//    // Увеличить срез массива на +1
+//    setStart((start + 1) % Products.length);
+//    setEnd((end + 1) % Products.length);
+//  };
+
+//  const handlePrev = () => {
+//    // Уменьшить срез массива на -1
+//    setStart((start - 1 + Products.length) % Products.length);
+//    setEnd((end - 1 + Products.length) % Products.length);
+//  };
+// -----------------------------------------------------
+//  useEffect(() => {
+//     // Обновить срез массива при изменении start и end
+//     setSlicedItems(Products.slice(start, end + 1));
+//   }, [start, end]);
+
+//   const handleNext = () => {
+//     // Увеличить срез массива на +1, если не достигнут конец массива
+//     if (end < Products.length - 1) {
+//       setStart(start + 1);
+//       setEnd(end + 1);
+//     } else    
+//     setStart((start + 1) % Products.length);
+//     setEnd((end + 1) % Products.length);
+//   };
+
+//   const handlePrev = () => {
+//     // Уменьшить срез массива на -1, если не достигнуто начало массива
+//     if (start > 0) {
+//       setStart(start - 1);
+//       setEnd(end - 1);
+//     } else
+//     setStart((start - 1 + Products.length) % Products.length);
+//     setEnd((end - 1 + Products.length) % Products.length);
+//   };
+// --------------------------------------------------------
+
+    const [index, setIndex] = useState(0);
+  
+    const handleNext = () => {
+      // Увеличить индекс на +1, начать массив сначала при достижении конца
+      setIndex((index + 1) % Products.length);
+    };
+  
+    const handlePrev = () => {
+      // Уменьшить индекс на -1, продолжить массив с конца при достижении начала
+      setIndex((index - 1 + Products.length) % Products.length);
+    };
     return (
         <>
             <HeaderMain/>
@@ -65,11 +133,13 @@ export function HomeOne() {
                             </div>
                             <div className="shape-top"  
                                     // data-bg-img={one} 
-                                    ><Image className="bg-img" src={one}/>
+                                    >
+                                        <Image className="bg-img" src={one}/>
                             </div>
                             <div className="shape-bottom" 
                                     // data-bg-img={two} 
-                                    ><Image className="shape-bottom bg-img" src={two}/>   
+                                    >
+                                        <Image className="shape-bottom bg-img" src={two}/>   
                             </div>
                         </div>
                         </div>
@@ -169,7 +239,8 @@ export function HomeOne() {
                                 <div className="col-lg-12">
                                 <div className="product">
                                     <div className="row">
-                                        { Products.map( (product) => <Product product={product} key={product.id}/> ) }
+                                        {/* { Products.map( (product) => <Product product={product} key={product.id}/> ) } */}
+                                        { ProductArea.map( (product) => <Product product={product} key={product.id} /> ) }
                                     </div>
                                 </div>
                                 </div>
@@ -180,7 +251,8 @@ export function HomeOne() {
                                 <div className="col-lg-12">
                                 <div className="product">
                                     <div className="row">
-                                        { Products.map( (product) => <Product product={product} key={product.id}/> ) }
+                                        {/* { Products.map( (product) => <Product product={product} key={product.id}/> ) } */}
+                                        { ProductArea.map( (product) => <Product product={product} key={product.id} /> ) }
                                     </div>
                                 </div>
                                 </div>
@@ -191,7 +263,7 @@ export function HomeOne() {
                                 <div className="col-lg-12">
                                 <div className="product">
                                     <div className="row">
-                                        { Products.map( (product) => <Product product={product} key={product.id}/> ) }
+                                    { ProductArea.map( (product) => <Product product={product} key={product.id} /> ) }
                                     </div>
                                 </div>
                                 </div>
@@ -239,14 +311,174 @@ export function HomeOne() {
                         </div>
                     </div>
                     <div className="shape-group">
-                        <div className="shape-style1" data-bg-img="assets/img/divider/shape1.png" 
-                        // style="background-image: url(&quot;assets/img/divider/shape1.png&quot;);"
+                        <div className="shape-style1" data-bg-img="../../img/divider/shape1.webp" 
                         ></div>
-                        <div className="shape-style2" data-bg-img="assets/img/divider/shape2.png" 
-                        // style="background-image: url(&quot;assets/img/divider/shape2.png&quot;);"
+                        <div className="shape-style2" data-bg-img="../../img/divider/shape2.webp" 
                         ></div>
                     </div>
                     </section>
+                    <section className="category-area product-category2-area aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="container">
+                        <div className="row category-items2">
+                        <div className="col-md-6">
+                            <div className="category-item">
+                            <div className="thumb">
+                                <img className="w-100" src={collection1} alt="Image"/>
+                                <div className="content">
+                                <div className="contact-info">
+                                    <h2 className="title text-white">Collection</h2>
+                                    <h4 className="price text-white">Flat <span>20%</span> Off</h4>
+                                </div>
+                                <a className="btn-theme" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="category-item mt-sm-50">
+                            <div className="thumb">
+                                <img className="w-100" src={collection2} alt="Image"/>
+                                <div className="content">
+                                <div className="contact-info">
+                                    <h2 className="title">Collection</h2>
+                                    <h4 className="price">Flat <span>30%</span> Off</h4>
+                                </div>
+                                <a className="btn-theme" href="shop.html">Shop Now</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </section>
+                    <section className="product-area product-style2-area">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-6 m-auto">
+                                    <div className="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                                    <h2 className="title">Trending Product</h2>
+                                    <div className="desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. </p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-12">
+                                    <div 
+                                        className="product-tab1-slider aos-init slick-initialized slick-slider aos-animate" 
+                                        data-aos="fade-up" 
+                                        data-aos-duration="1500">
+                                    <button 
+                                        className="slick-prev slick-arrow" 
+                                        aria-label="Previous" 
+                                        type="button"
+                                        onClick={handlePrev}
+                                        >Previous</button>
+                                    <div className="slick-list draggable">
+                                        <div className="slick-track" 
+                                            style={{
+                                                opacity: "1", 
+                                                minWidth: "300px",
+                                                // maxWidth: "1100px", 
+                                                alignItems: "center", 
+                                                // transform: "translate3d(-1200px, 0px, 0px)"
+                                            }}
+                                        >
+                                            {/* , transform: "translate3d(-1200px, 0px, 0px)" */}
+                                        <div className="slick-cloned flex slide-item slick-slide align-items-center"
+                                        // className="slide-item slick-slide slick-cloned flex" 
+                                            // style={{width: "500px"}} 
+                                            // {/*tabindex="-1"*/}
+                                            data-slick-index="-4" id="" aria-hidden="true">
+                                            {Products.slice(index, index + 4).map(product => (<ProductSlide product={product} key={product.id} className=""/>))}
+                                            {/* <div className="slick-cloned flex slide-item slick-slide align-items-center">
+                                            {Products.slice(index, index + 4).map((product, idx) => (
+                                                <ProductSlide key={idx} product={product} className="active"
+                                                    `product-slide ${index === idx ? "" : "active"}`}
+                                                style={{ transform: `translateX(-${index * 100}%)` }}
+                                                />
+                                            ))}
+                                             </div> */}
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <button 
+                                        className="slick-next slick-arrow" 
+                                        aria-label="Next" 
+                                        type="button" 
+                                        onClick = {handleNext}
+                                        >Next</button>
+                                    </div>
+                                    {/* {moveToTheEnd} */}
+                                </div>
+                                </div>
+                            </div>
+                        </section>
+            <section className="blog-area blog-default-area">
+            <div className="container">
+                <div className="row">
+                <div className="col-md-8 col-lg-6 m-auto">
+                    <div className="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 className="title">Latest Blog</h2>
+                    <div className="desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div className="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    {/* <!--== Start Blog Post Item ==--> */}
+                    <div className="post-item">
+                    <div className="thumb">
+                        <a href="blog-details.html"><img src={blog1} alt="Image"/></a>
+                    </div>
+                    <div className="content">
+                        <div className="meta">By, <a className="author" href="blog.html">June Cha </a><span className="dots"></span><span className="post-date">25 May, 2121</span></div>
+                        <h4 className="title">
+                        <a href="blog-details.html">Baby Planet's toys makes learning so easy</a>
+                        </h4>
+                        <a className="btn-theme" href="blog-details.html">Read More</a>
+                    </div>
+                    </div>
+                    {/* <!--== End Blog Post Item ==--> */}
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    {/* <!--== Start Blog Post Item ==--> */}
+                    <div className="post-item mt-xs-30">
+                    <div className="thumb">
+                        <a href="blog-details.html"><img src={blog2} alt="Image"/></a>
+                    </div>
+                    <div className="content">
+                        <div className="meta">By, <a className="author" href="blog.html">June Cha </a><span className="dots"></span><span className="post-date">July 24, 2022</span></div>
+                        <h4 className="title">
+                        <a href="blog-details.html">Mother revolves around her children</a>
+                        </h4>
+                        <a className="btn-theme" href="blog-details.html">Read More</a>
+                    </div>
+                    </div>
+                    {/* <!--== End Blog Post Item ==--> */}
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                    {/* <!--== Start Blog Post Item ==--> */}
+                    <div className="post-item mt-md-30">
+                    <div className="thumb">
+                        <a href="blog-details.html"><img src={blog3} alt="Image"/></a>
+                    </div>
+                    <div className="content">
+                        <div className="meta">By, <a className="author" href="blog.html">June Cha </a><span className="dots"></span><span className="post-date">January 28, 2022</span></div>
+                        <h4 className="title">
+                        <a href="blog-details.html">Learn while you grow toys Baby Planet</a>
+                        </h4>
+                        <a className="btn-theme" href="blog-details.html">Read More</a>
+                    </div>
+                    </div>
+                    {/* <!--== End Blog Post Item ==--> */}
+                </div>
+                </div>
+            </div>
+            </section>
                 <ButtonScrollTop/>
         <FooterMain/>
     </>

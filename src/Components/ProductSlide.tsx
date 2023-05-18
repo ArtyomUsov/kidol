@@ -9,17 +9,20 @@ import { Products } from '../date/Products';
 import { Link } from 'react-router-dom';
 
 interface ProductProps {
-    product: IProduct
+    product: IProduct;
+    className: string;
 }
-export const ProductArea: IProduct[] = Products.filter(product => product.id < 9);
 
-export function Product({ product }: ProductProps) {
+export function ProductSlide({ product, className }: ProductProps) {
 
     return (
         <>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+        <div className=""
+        // "active"
+        >
                 {/* Start Product Item  */}
-                <div className="product-item">
+                <div className="product-item "
+                style={{opacity: "1",  minWidth: "250px", maxWidth: "250px", minHeight: "450px", height: "450px"}}>
                 <div className="product-thumb">
                     <img src={ product.image } alt="Image"/>
                         <div className="product-action">
@@ -44,9 +47,9 @@ export function Product({ product }: ProductProps) {
                     </div>
                 </div>
                 {/*End Product Item*/}
-            </div>
+                </div>
         </>
     )
 }
 
-export default Product;
+export default ProductSlide;

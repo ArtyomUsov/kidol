@@ -7,6 +7,10 @@ import shop5 from "../img/shop/5.webp"
 import shop6 from "../img/shop/6.webp"
 import shop7 from "../img/shop/7.webp"
 import shop8 from "../img/shop/8.webp"
+import nine from "../img/shop/9.webp";
+import ten from "../img/shop/10.webp";
+import eleven from "../img/shop/11.webp";
+import twelve from "../img/shop/12.webp";
 
 const homeOne = "/homeOne"
 const homeTwo = "/homeTwo"
@@ -15,13 +19,14 @@ const NotFound = "/NotFound"
 const ComingSoon = "/ComingSoon"
 const Contact = "/Contact"
 
+
 export const Products: IProduct[] = [
     {
         id: 1,
         title: "Funskool Teddy",
         image: `${shop1}`,
         link: homeOne,
-        price: "$192.12",
+        price: "$102.12",
         rating: "star",
     },
     {
@@ -29,7 +34,7 @@ export const Products: IProduct[] = [
         title: "Baby Play Sets",
         image: `${shop2}`,
         link: homeTwo,
-        price: "$192.12",
+        price: "$112.12",
         rating: "star",
     },
     {
@@ -37,7 +42,7 @@ export const Products: IProduct[] = [
         title: "Jigsaw Puzzles For Kids",
         image: `${shop3}`,
         link: About,
-        price: "$192.12",
+        price: "$122.12",
         rating: "star",
     },
     {
@@ -45,7 +50,7 @@ export const Products: IProduct[] = [
         title: "Abstract Girl Dress",
         image: `${shop4}`,
         link: NotFound,
-        price: "$192.12",
+        price: "$132.12",
         rating: "star",
     },
     {
@@ -53,7 +58,7 @@ export const Products: IProduct[] = [
         title: "Bruder Toys Mini Ships",
         image: `${shop5}`,
         link: ComingSoon,
-        price: "$192.12",
+        price: "$142.12",
         rating: "star",
     },
     {
@@ -61,7 +66,7 @@ export const Products: IProduct[] = [
         title: "Abstract Boy Dress",
         image: `${shop6}`,
         link: Contact,
-        price: "$192.12",
+        price: "$152.12",
         rating: "star",
     },
     {
@@ -69,7 +74,7 @@ export const Products: IProduct[] = [
         title: "Funskool Teddy Pink",
         image: `${shop7}`,
         link: Contact,
-        price: "$192.12",
+        price: "$162.12",
         rating: "star",
     },
     {
@@ -77,7 +82,39 @@ export const Products: IProduct[] = [
         title: "Toys Box For Baby",
         image: `${shop8}`,
         link: Contact,
+        price: "$172.12",
+        rating: "star",
+    },
+    {
+        id: 9,
+        title: "Funskool Teddy Brown",
+        image: `${nine}`,
+        link: Contact,
+        price: "$182.12",
+        rating: "star",
+    },
+    {
+        id: 10,
+        title: "Newborn Kit Set",
+        image: `${ten}`,
+        link: Contact,
         price: "$192.12",
+        rating: "star",
+    },
+    {
+        id: 11,
+        title: "Classic Fisher Gift",
+        image: `${eleven}`,
+        link: Contact,
+        price: "$202.12",
+        rating: "star",
+    },
+    {
+        id: 12,
+        title: "Sassy Crib and Floor Mirror",
+        image: `${twelve}`,
+        link: Contact,
+        price: "$212.12",
         rating: "star",
     },
 ]

@@ -11,11 +11,9 @@ import "../src/css/iconStylePeIcon7Stroke.css";
 import "../src/css/icon.css";
 import "../src/css/styleFredokaOneRegular.css";
 import "../src/css/ionicons.min.css";
-// import "../src/css/ionicons.css";
 import "../src/css/styleRubik.css";
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

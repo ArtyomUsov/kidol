@@ -18,12 +18,12 @@ import BlogLeftDetails from "../img/blog pages/page-blog-details.webp";
 import BlogRightDetails from "../img/blog pages/page-blog-details-right-sidebar.webp";
 import BlogNoDetails from "../img/blog pages/page-blog-details-no-sidebar.webp";
 
-const HomeOne = "/HomeOne"
-const HomeTwo = "/HomeTwo"
-const About = "/About"
-const NotFound = "/NotFound"
-const ComingSoon = "/ComingSoon"
-const Contact = "/Contact"
+export const HomeOne = "/HomeOne"
+export const HomeTwo = "/HomeTwo"
+export const About = "/About"
+export const NotFound = "/NotFound"
+export const ComingSoon = "/ComingSoon"
+export const Contact = "/Contact"
 
 
 

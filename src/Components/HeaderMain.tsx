@@ -4,7 +4,9 @@ import "../Components/HeaderMain.css";
 import logo from "../img/logo.webp";
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { About, ComingSoon, Contact, HomeOne, HomeTwo, NotFound } from "../date/Items";
+
 
 const HeaderMain = () => {
   const [sticky, setSticky] = useState("");
@@ -122,50 +124,50 @@ const HeaderMain = () => {
                             <div className="header-navigation-area d-md-block">
                                 <ul className="main-menu nav position-relative">
                                     <li className="has-submenu"
-                                        ><a className="ml--2" href="/HomeOne">Home</a>
+                                        ><a className="ml--2" href="/HomeOne">Home<Link to={HomeOne}></Link></a>
                                         <ul className="submenu-nav">
-                                            <li><a href="/HomeOne">Home One</a></li>
-                                            <li><a href="/HomeTwo">Home Two</a></li>
+                                            <li><a href="/HomeOne">Home One<Link to={HomeOne}></Link></a></li>
+                                            <li><a href="/HomeTwo">Home Two<Link to={HomeTwo}></Link></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/About">About</a></li>
-                                    <li className="has-submenu"><a href="/HomeOne">Pages</a>
+                                    <li><a href="/About">About<Link to={About}></Link></a></li>
+                                    <li className="has-submenu"><a href="/HomeOne">Pages<Link to={HomeOne}></Link></a>
                                         <ul className="submenu-nav">
-                                            <li><a href="shop-cart.html">Cart page</a></li>
-                                            <li><a href="shop-checkout.html">Checkout</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="shop-wishlist.html">Wishlist</a></li>
-                                            <li><a href="shop-compare.html">Compare</a></li>
-                                            <li><a href="login-register.html">Login / Register</a></li>
-                                            <li><a href="/ComingSoon">Coming soon</a></li>
-                                            <li><a href="/NotFound">404</a></li>
+                                            <li><a href="shop-cart.html">Cart page<Link to={""}></Link></a></li>
+                                            <li><a href="shop-checkout.html">Checkout<Link to={""}></Link></a></li>
+                                            <li><a href="my-account.html">My Account<Link to={""}></Link></a></li>
+                                            <li><a href="shop-wishlist.html">Wishlist<Link to={""}></Link></a></li>
+                                            <li><a href="shop-compare.html">Compare<Link to={""}></Link></a></li>
+                                            <li><a href="login-register.html">Login / Register<Link to={""}></Link></a></li>
+                                            <li><a href="/ComingSoon">Coming soon<Link to={ComingSoon}></Link></a></li>
+                                            <li><a href="/NotFound">404<Link to={NotFound}></Link></a></li>
                                         </ul>
                                     </li>
-                                    <li className="has-submenu"><a href="shop.html">Shop</a>
+                                    <li className="has-submenu"><a href="shop.html">Shop<Link to={""}></Link></a>
                                         <ul className="submenu-nav">
-                                            <li><a href="shop-3-column.html">Shop 3 Column</a></li>
-                                            <li><a href="shop.html">Shop 4 Column</a></li>
-                                            <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                            <li><a href="shop.html">Shop No Sidebar</a></li>
-                                            <li><a href="shop-single-product.html">Product Details</a></li>
-                                            <li><a href="shop-single-product-variable.html">Product Variable</a></li>
-                                            <li><a href="shop-single-product-grouped.html">Product Grouped</a></li>
+                                            <li><a href="shop-3-column.html">Shop 3 Column<Link to={""}></Link></a></li>
+                                            <li><a href="shop.html">Shop 4 Column<Link to={""}></Link></a></li>
+                                            <li><a href="shop-left-sidebar.html">Shop Left Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="shop.html">Shop No Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="shop-single-product.html">Product Details<Link to={""}></Link></a></li>
+                                            <li><a href="shop-single-product-variable.html">Product Variable<Link to={""}></Link></a></li>
+                                            <li><a href="shop-single-product-grouped.html">Product Grouped<Link to={""}></Link></a></li>
                                         </ul>
                                     </li>
-                                    <li className="has-submenu"><a href="blog.html">Blog</a>
+                                    <li className="has-submenu"><a href="blog.html">Blog<Link to={""}></Link></a>
                                         <ul className="submenu-nav">
-                                            <li><a href="blog.html">Blog 3 Column</a></li>
-                                            <li><a href="blog-4-column.html">Blog 4 Column</a></li>
-                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                            <li><a href="blog.html">Blog No Sidebar</a></li>
-                                            <li><a href="blog-details.html">Blog Details Left Sidebar</a></li>
-                                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                                            <li><a href="blog-details-no-sidebar.html">Blog Details No Sidebar</a></li>
+                                            <li><a href="blog.html">Blog 3 Column<Link to={""}></Link></a></li>
+                                            <li><a href="blog-4-column.html">Blog 4 Column<Link to={""}></Link></a></li>
+                                            <li><a href="blog-left-sidebar.html">Blog Left Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="blog-right-sidebar.html">Blog Right Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="blog.html">Blog No Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="blog-details.html">Blog Details Left Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar<Link to={""}></Link></a></li>
+                                            <li><a href="blog-details-no-sidebar.html">Blog Details No Sidebar<Link to={""}></Link></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/Contact">Contact</a></li>
+                                    <li><a href="/Contact">Contact<Link to={Contact}></Link></a></li>
                                 </ul>
                             </div>
                         </div>

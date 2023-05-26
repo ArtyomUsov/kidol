@@ -13,5 +13,13 @@
 			]
 		}
 	},
-	"cacheDirectory": true
+	"cacheDirectory": true,
+	"fontawesome-svg-core": {
+		"license": "free"
+	},
+	"styledComponents": {
+		"pure": true,
+		"displayName": true,
+		"fileName": true
+	}
 }

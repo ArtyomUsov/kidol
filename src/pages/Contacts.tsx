@@ -5,11 +5,10 @@ import HeaderMain from '../Components/HeaderMain';
 import { FooterMain } from '../Components/FooterMain';
 
 export function Contact() {
-    
-    return (
-    <>
-        <HeaderMain/>
-        <FooterMain/>
-    </>
-    );
+	return (
+		<>
+			<HeaderMain />
+			<FooterMain />
+		</>
+	);
 }

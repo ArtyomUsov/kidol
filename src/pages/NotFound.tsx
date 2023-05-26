@@ -4,10 +4,9 @@ import React from 'react';
 import HeaderMain from '../Components/HeaderMain';
 
 export function NotFound() {
-    
-    return (
-    <>
-        <HeaderMain/>
-    </>
-    );
+	return (
+		<>
+			<HeaderMain />
+		</>
+	);
 }

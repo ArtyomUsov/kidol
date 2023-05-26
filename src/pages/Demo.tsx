@@ -6,14 +6,13 @@ import BgSection from '../Components/BgSection';
 import FeatureSection from '../Components/FeatureSection';
 import Footer from '../Components/Footer';
 
-
 export function Demo() {
-    return (
-        <div className='body-demo'>
-            <Header/>
-            <BgSection/>
-            <FeatureSection/>
-            <Footer/>
-        </div>
-    )
+	return (
+		<div className='body-demo'>
+			<Header />
+			<BgSection />
+			<FeatureSection />
+			<Footer />
+		</div>
+	);
 }

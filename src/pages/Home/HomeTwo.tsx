@@ -763,7 +763,7 @@ export function HomeTwo() {
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo1} alt='Image' />
+													<img src={photo3} alt='Image' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Akhil Newman</h4>

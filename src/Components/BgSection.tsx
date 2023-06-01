@@ -50,4 +50,3 @@ function BgSection() {
 }
 
 export default BgSection;
-

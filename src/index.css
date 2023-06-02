@@ -1224,134 +1224,134 @@ body-demo {
 .container {
 	padding-left: 15px;
 	padding-right: 15px;
-  }
-  @media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1200px) {
 	.container {
-	  max-width: 1200px;
+		max-width: 1200px;
 	}
-  }
-  @media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 1199px) {
 	.container {
-	  max-width: 100%;
+		max-width: 100%;
 	}
-  }
-  
-  .row {
+}
+
+.row {
 	margin-right: -15px;
 	margin-left: -15px;
-  }
-  .row > [class*=col-] {
+}
+.row > [class*='col-'] {
 	padding-right: 15px;
 	padding-left: 15px;
-  }
-  
-  .section-title {
+}
+
+.section-title {
 	margin-bottom: 51px;
-  }
-  @media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 991px) {
 	.section-title {
-	  margin-bottom: 40px;
+		margin-bottom: 40px;
 	}
-  }
-  .section-title .title {
+}
+.section-title .title {
 	font-size: 36px;
 	margin-bottom: 13px;
-  }
-  @media only screen and (max-width: 575px) {
+}
+@media only screen and (max-width: 575px) {
 	.section-title .title {
-	  font-size: 30px;
+		font-size: 30px;
 	}
-  }
-  .section-title p {
+}
+.section-title p {
 	color: #2d2d2d;
-  }
-  
-  .bg-img {
+}
+
+.bg-img {
 	background: no-repeat center center;
 	background-size: cover;
-  }
-  .bg-img.bg-img-top {
+}
+.bg-img.bg-img-top {
 	background-position: top center;
-  }
-  
-  .bg-img-cover {
+}
+
+.bg-img-cover {
 	background-size: cover;
-  }
-  
-  .site-wrapper-reveal {
-	background-color: #FFFFFF;
+}
+
+.site-wrapper-reveal {
+	background-color: #ffffff;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-  }
-  
-  .niceselect {
+}
+
+.niceselect {
 	float: inherit;
-  }
-  .niceselect .list {
+}
+.niceselect .list {
 	border-radius: 0;
 	width: 100%;
-  }
-  
-  .no-border {
+}
+
+.no-border {
 	border: none !important;
-  }
-  
-  .z-index-1 {
+}
+
+.z-index-1 {
 	z-index: 1;
-  }
-  
-  .z-index-2 {
+}
+
+.z-index-2 {
 	z-index: 2;
-  }
-  
-  .content-items-center {
+}
+
+.content-items-center {
 	align-items: center;
 	display: flex;
-  }
-  
-  .justify-items-center {
+}
+
+.justify-items-center {
 	display: flex;
 	justify-content: center;
-  }
-  
-  .form-message.alert {
+}
+
+.form-message.alert {
 	margin-top: 10px;
-  }
-  .form-message.alert .btn-close {
+}
+.form-message.alert .btn-close {
 	background-image: none;
-  }
-  
-  .row-gutter-0 {
+}
+
+.row-gutter-0 {
 	margin: 0;
-  }
-  .row-gutter-0 [class*=col-] {
+}
+.row-gutter-0 [class*='col-'] {
 	margin: 0;
 	padding: 0;
-  }
-  
-  @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) {
 	.row-gutter-80 {
-	  margin-right: -40px;
-	  margin-left: -40px;
+		margin-right: -40px;
+		margin-left: -40px;
 	}
-	.row-gutter-80 [class*=col] {
-	  padding-left: 40px;
-	  padding-right: 40px;
+	.row-gutter-80 [class*='col'] {
+		padding-left: 40px;
+		padding-right: 40px;
 	}
-  }
-  
-  @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) {
 	.row-gutter-20 {
-	  margin-right: -10px;
-	  margin-left: -10px;
+		margin-right: -10px;
+		margin-left: -10px;
 	}
-	.row-gutter-20 [class*=col] {
-	  padding-left: 10px;
-	  padding-right: 10px;
+	.row-gutter-20 [class*='col'] {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-  }
-  
-  .wrapper {
+}
+
+.wrapper {
 	overflow-x: hidden;
-  }
+}

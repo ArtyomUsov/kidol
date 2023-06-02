@@ -1,19 +1,18 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react';
 // import axios, {AxiosError} from 'axios'
 // import { DItem } from '../date/models'
 
-
 // export function useItems() {
 
-//     const [Items, setItems] = useState<DItem[]>([]) 
+//     const [Items, setItems] = useState<DItem[]>([])
 //     const[Loading, setLoading] = useState(false)
 //     const[error, setError] = useState('')
-  
+
 //   function addProduct(product: DItem) {
 //     setItems(prev => [...prev, product])
 //   }
 
-//     async function fetchProducts() { 
+//     async function fetchProducts() {
 //       try{
 //         setError('')
 //         setLoading(true)
@@ -26,7 +25,7 @@ import React, {useEffect, useState} from 'react'
 //         setError(error.message)
 //       }
 //     }
-  
+
 //     useEffect( () => {
 //       fetchProducts()
 //     }, [])

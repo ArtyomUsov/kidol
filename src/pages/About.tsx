@@ -23,6 +23,8 @@ import kids4 from '../img/about/4.webp';
 import team1 from '../img/about/1.webp';
 import team2 from '../img/about/2.webp';
 import team3 from '../img/about/3.webp';
+import { Link } from 'react-router-dom';
+import { HomeOne } from '../date/Items';
 
 export function About() {
 	return (
@@ -40,10 +42,7 @@ export function About() {
 									About Us
 								</h2>
 								<div className='bread-crumbs' style={{}}>
-									<a href='index.html' style={{}}>
-										{' '}
-										Home{' '}
-									</a>
+									<Link to={HomeOne}>Home</Link>
 									<span className='breadcrumb-sep' style={{}}>
 										{' '}
 										//{' '}

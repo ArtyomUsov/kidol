@@ -6294,3 +6294,616 @@ img {
 .error-content .error-search form button i:hover {
 	color: #f379a7;
 }
+/*
+-----------------------------------------------------------------------
+    Contact CSS
+-----------------------------------------------------------------------
+*/
+.contact-page-wrap {
+	background-color: #fbfbfb;
+  }
+  .contact-page-wrap .contact-info-items {
+	padding: 110px 0 107px;
+  }
+  @media only screen and (max-width: 991px) {
+	.contact-page-wrap .contact-info-items {
+	  padding: 80px 0;
+	}
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.1);
+	padding: 50px 24px 43px 25px;
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item .icon {
+	margin-bottom: 37px;
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item h2 {
+	font-family: 'Fredoka One Regular', cursive;
+	color: #2e2e2e;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 15px;
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item .content p {
+	color: #000;
+	font-size: 18px;
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item .content a {
+	font-family: 'Rubik', sans-serif;
+	color: #000;
+	font-size: 18px;
+  }
+  .contact-page-wrap .contact-info-items .contact-info-item .content a:hover {
+	color: #f379a7;
+  }
+  
+  .contact-map-area {
+	height: 500px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.contact-map-area {
+	  height: 380px;
+	}
+  }
+  @media only screen and (max-width: 991px) {
+	.contact-map-area {
+	  height: 220px;
+	}
+  }
+  .contact-map-area iframe {
+	height: 100%;
+	width: 100%;
+  }
+  /*
+-----------------------------------------------------------------------
+	Form CSS
+-----------------------------------------------------------------------
+*/
+.contact-form {
+	padding: 104px 0 80px;
+  }
+  @media only screen and (max-width: 991px) {
+	.contact-form {
+	  padding: 75px 0 52px;
+	}
+  }
+  .contact-form .contact-form-wrapper {
+	margin-left: 20px;
+	margin-right: 20px;
+  }
+  .contact-form .contact-form-wrapper .section-title {
+	margin-bottom: 53px;
+	text-align: center;
+  }
+  .contact-form .contact-form-wrapper .section-title .title {
+	font-weight: 400;
+	font-size: 36px;
+  }
+  .contact-form .contact-form-wrapper .form-group .form-control {
+	border-radius: 15px;
+	letter-spacing: 0.15px;
+  }
+  .contact-form .contact-form-wrapper .form-group textarea.form-control {
+	min-height: 200px;
+  }
+  @media only screen and (max-width: 991px) {
+	.contact-form .contact-form-wrapper .form-group textarea.form-control {
+	  min-height: 170px;
+	}
+  }
+  .contact-form .contact-form-wrapper .form-group .btn-theme {
+	border-radius: 35px;
+	height: 70px;
+	padding: 10px 59.8px;
+  }
+  
+  .comment-form-wrap {
+	background-color: #f9f9f9;
+	border-radius: 4px;
+	padding: 46px 40px 21px 40px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.comment-form-wrap {
+	  margin-bottom: 70px;
+	}
+  }
+  @media only screen and (max-width: 767px) {
+	.comment-form-wrap {
+	  padding: 33px 18px 10px 18px;
+	}
+  }
+  .comment-form-wrap .comment-form-wrapper .title {
+	color: #535353;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 55px;
+	position: relative;
+  }
+  .comment-form-wrap .comment-form-wrapper .title:before {
+	background-color: #ee3231;
+	content: "";
+	width: 9px;
+	height: 17px;
+	position: absolute;
+	left: -40px;
+	top: 4px;
+  }
+  @media only screen and (max-width: 767px) {
+	.comment-form-wrap .comment-form-wrapper .form-group textarea.form-control {
+	  min-height: 160px;
+	}
+  }
+  .comment-form-wrap .comment-form-wrapper .form-group .btn-theme {
+	margin-top: 5px;
+  }
+  
+  .form-group {
+	margin-bottom: 30px;
+  }
+  .form-group .form-control {
+	border-color: #d7d7d7;
+	border-radius: 24.5px;
+	box-shadow: none;
+	color: #000;
+	height: 49px;
+	font-size: 14px;
+	font-style: italic;
+	padding: 8px 17px 7px 17px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+  }
+  .form-group .form-control::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #999999;
+  }
+  .form-group .form-control::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #999999;
+  }
+  .form-group .form-control:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #999999;
+  }
+  .form-group .form-control:-moz-placeholder {
+	/* Firefox 18- */
+	color: #999999;
+  }
+  .form-group .form-control:focus {
+	border-color: #f379a7;
+  }
+  .form-group .form-control:focus::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #000;
+  }
+  .form-group .form-control:focus::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #000;
+  }
+  .form-group .form-control:focus:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #000;
+  }
+  .form-group .form-control:focus:-moz-placeholder {
+	/* Firefox 18- */
+	color: #000;
+  }
+  .form-group textarea {
+	border-radius: 15px !important;
+	min-height: 250px;
+	padding: 25px 18px !important;
+  }
+  .form-group .btn-theme {
+	border-radius: 32px;
+	font-family: "Fredoka One Regular", cursive;
+	font-weight: 400;
+	font-size: 16px;
+	margin-top: 30px;
+	height: 64px;
+	padding: 10px 49.52px;
+  }
+  
+  .login-register-area {
+	padding: 110px 0 100px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.login-register-area {
+	  padding: 80px 0 90px;
+	}
+  }
+  @media only screen and (max-width: 991px) {
+	.login-register-area {
+	  padding: 60px 0 70px;
+	}
+  }
+  
+  .login-register-title h2 {
+	font-family: "Fredoka One Regular", cursive;
+	font-weight: 400;
+	font-size: 36px;
+	margin: 0 0 15px;
+	line-height: 1;
+  }
+  .login-register-title p {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #999;
+	width: 85%;
+  }
+  @media only screen and (max-width: 767px) {
+	.login-register-title p {
+	  width: 100%;
+	}
+  }
+  
+  .login-register-pr {
+	padding-right: 100px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.login-register-pr {
+	  padding-right: 0;
+	}
+  }
+  
+  .login-register-pl {
+	padding-left: 100px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.login-register-pl {
+	  padding-left: 0;
+	}
+  }
+  @media only screen and (max-width: 767px) {
+	.login-register-pl {
+	  margin-top: 40px;
+	}
+  }
+  
+  .login-register-border {
+	border-right: 1px solid #e5e5e5;
+  }
+  @media only screen and (max-width: 767px) {
+	.login-register-border {
+	  border: none;
+	}
+  }
+  
+  .login-register-content.lr-content-padding-mrg {
+	margin: auto;
+	max-width: 20.8333333333%;
+	padding: 76px 0 120px;
+  }
+  .login-register-content .login-register-style {
+	margin: 33px 0 0;
+  }
+  .login-register-content .login-register-style p {
+	color: #000;
+	font-family: "Rubik", sans-serif;
+	font-size: 15px;
+	line-height: 1.8;
+	margin: 0 0 35px;
+  }
+  .login-register-content .login-register-style form .login-register-input {
+	position: relative;
+	margin-bottom: 10px;
+  }
+  .login-register-content .login-register-style form .login-register-input input {
+	color: #495057;
+	width: 100%;
+	height: 51px;
+	background-color: transparent;
+	border: 1px solid #e5e5e5;
+	font-family: "Rubik", sans-serif;
+	padding: 2px 80px 2px 16px;
+	font-size: 15px;
+  }
+  .login-register-content .login-register-style form .login-register-input input::-webkit-input-placeholder {
+	color: #495057;
+	opacity: 1;
+  }
+  .login-register-content .login-register-style form .login-register-input input::-moz-input-placeholder {
+	color: #495057;
+	opacity: 1;
+  }
+  .login-register-content .login-register-style form .login-register-input input:focus {
+	border-color: #f379a7;
+  }
+  .login-register-content .login-register-style form .login-register-input .forgot {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  .login-register-content .login-register-style form .login-register-input .forgot a {
+	color: #4bb1cf;
+	font-family: "Rubik", sans-serif;
+	font-size: 15px;
+  }
+  .login-register-content .login-register-style form .login-register-paragraph {
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	padding: 15px 0;
+	margin: 30px 0 30px;
+  }
+  .login-register-content .login-register-style form .login-register-paragraph p {
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	color: #666;
+	line-height: 1.9;
+	margin: 0;
+  }
+  .login-register-content .login-register-style form .login-register-paragraph p a {
+	font-size: 14px;
+	color: #f379a7;
+  }
+  .login-register-content .login-register-style form .login-register-paragraph p a:hover {
+	color: #95b3e0;
+  }
+  .login-register-content .login-register-style form .remember-me-btn {
+	display: flex;
+	align-items: center;
+	margin: 19px 0 0px;
+  }
+  .login-register-content .login-register-style form .remember-me-btn input {
+	cursor: pointer;
+	width: auto;
+	height: auto;
+	margin-right: 10px;
+  }
+  .login-register-content .login-register-style form .remember-me-btn label {
+	color: #000;
+	font-family: "Rubik", sans-serif;
+	font-size: 15px;
+  }
+  .login-register-content .login-register-style form .btn-style-3 {
+	margin: 21px 0 0px;
+  }
+  .login-register-content .login-register-style form .btn-style-3 button {
+	font-family: "Fredoka One Regular", cursive;
+	font-size: 16px;
+	border-radius: 3px;
+	font-weight: 400;
+	color: #fff;
+	background-color: #f379a7;
+	border: none;
+	line-height: 1;
+	width: 100%;
+	text-align: center;
+	padding: 19px 10px 22px;
+	text-transform: uppercase;
+  }
+  .login-register-content .login-register-style form .btn-style-3 button:hover {
+	background-color: #95b3e0;
+  }
+  .login-register-content .login-register-style .register-benefits {
+	background-color: #f3f3f3;
+	padding: 40px 30px;
+	margin-top: 60px;
+  }
+  @media only screen and (max-width: 991px) {
+	.login-register-content .login-register-style .register-benefits {
+	  padding: 30px 20px;
+	}
+  }
+  .login-register-content .login-register-style .register-benefits h3 {
+	color: #000;
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+  }
+  .login-register-content .login-register-style .register-benefits p {
+	line-height: 1.6;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	color: #666;
+	margin: 0 0 28px;
+  }
+  .login-register-content .login-register-style .register-benefits ul {
+	margin: 0;
+  }
+  .login-register-content .login-register-style .register-benefits ul li {
+	font-family: "Rubik", sans-serif;
+	font-size: 18px;
+	color: #000;
+	margin: 0 0 16px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.login-register-content .login-register-style .register-benefits ul li {
+	  font-size: 15px;
+	}
+  }
+  .login-register-content .login-register-style .register-benefits ul li:last-child {
+	margin: 0 0 0;
+  }
+  .login-register-content .login-register-style .register-benefits ul li i {
+	font-size: 20px;
+	color: #95b3e0;
+	margin-right: 15px;
+	position: relative;
+	top: 4px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.login-register-content .login-register-style .register-benefits ul li i {
+	  margin-right: 0;
+	}
+  }
+  
+  .my-account-area {
+	padding: 110px 0 100px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.my-account-area {
+	  padding: 80px 0 90px;
+	}
+  }
+  
+  .myaccount-tab-menu {
+	flex-direction: column;
+  }
+  @media only screen and (max-width: 767px) {
+	.myaccount-tab-menu {
+	  margin-bottom: 40px;
+	}
+  }
+  .myaccount-tab-menu.nav-tabs .nav-link {
+	background-color: transparent;
+	border: 1px solid #e5e5e5;
+	border-bottom: none;
+	border-radius: 0;
+	color: #000;
+	font-family: "Fredoka One Regular", cursive;
+	font-size: 15px;
+	display: block;
+	padding: 10px 15px;
+	text-align: left;
+	text-transform: capitalize;
+  }
+  .myaccount-tab-menu.nav-tabs .nav-link:last-child {
+	border-bottom: 1px solid #e5e5e5;
+  }
+  .myaccount-tab-menu.nav-tabs .nav-link.active {
+	background-color: #f379a7;
+  }
+  .myaccount-tab-menu.nav-tabs .nav-link:hover, .myaccount-tab-menu.nav-tabs .nav-link.active {
+	background-color: #f379a7;
+	border-color: #f379a7;
+	color: #fff;
+  }
+  
+  .myaccount-content {
+	border: 1px solid #eeeeee;
+	padding: 30px;
+  }
+  @media only screen and (max-width: 1199px) {
+	.myaccount-content {
+	  padding: 20px;
+	}
+  }
+  .myaccount-content form {
+	margin-top: -20px;
+  }
+  .myaccount-content .check-btn:hover {
+	color: #95b3e0;
+  }
+  .myaccount-content h3 {
+	font-family: "Fredoka One Regular", cursive;
+	font-weight: 400;
+	font-size: 20px;
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+  }
+  .myaccount-content .welcome a {
+	font-family: "Fredoka One Regular", cursive;
+  }
+  .myaccount-content .welcome a:hover {
+	color: #95b3e0;
+  }
+  .myaccount-content .welcome strong {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+	color: #f379a7;
+  }
+  .myaccount-content p {
+	font-family: "Rubik", sans-serif;
+	line-height: 28px;
+	margin-bottom: 2px;
+  }
+  .myaccount-content fieldset {
+	margin-top: 20px;
+  }
+  .myaccount-content fieldset legend {
+	font-family: "Rubik", sans-serif;
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+  }
+  .myaccount-content .account-details-form {
+	margin-top: 50px;
+  }
+  .myaccount-content .account-details-form .single-input-item {
+	margin-bottom: 20px;
+  }
+  .myaccount-content .account-details-form .single-input-item label {
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	text-transform: capitalize;
+	display: block;
+	margin: 0 0 5px;
+  }
+  .myaccount-content .account-details-form .single-input-item input {
+	border: 1px solid #e8e8e8;
+	width: 100%;
+	height: 50px;
+	background-color: transparent;
+	padding: 2px 20px;
+	color: #1f2226;
+	font-family: "Rubik", sans-serif;
+	font-size: 13px;
+  }
+  .myaccount-content .account-details-form .single-input-item input:focus {
+	border: 1px solid #f379a7;
+  }
+  .myaccount-content .account-details-form .single-input-item button {
+	border: none;
+	background-color: #f379a7;
+	font-family: "Fredoka One Regular", cursive;
+	font-weight: 400;
+	padding: 9px 25px;
+	color: #fff;
+	font-size: 13px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+  }
+  .myaccount-content .account-details-form .single-input-item button:hover {
+	background-color: #95b3e0;
+  }
+  
+  .myaccount-table {
+	white-space: nowrap;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+  }
+  .myaccount-table table th,
+  .myaccount-table .table th {
+	padding: 10px;
+	font-family: "Rubik", sans-serif;
+	font-weight: 600;
+	background-color: #f8f8f8;
+	border-color: #ccc;
+	border-bottom: 0;
+	color: #1f2226;
+  }
+  .myaccount-table table td,
+  .myaccount-table .table td {
+	padding: 10px;
+	vertical-align: middle;
+	border-color: #ccc;
+  }
+  .myaccount-table table td a,
+  .myaccount-table .table td a {
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	color: #000;
+  }
+  
+  .saved-message {
+	background-color: #fff;
+	border-top: 3px solid #f379a7;
+	font-family: "Rubik", sans-serif;
+	font-size: 14px;
+	padding: 20px 0;
+	color: #333;
+  }

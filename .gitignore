@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/pages/Home/HomeOne.module.scss
+src/pages/Home/Shop.css
+src/pages/Home/HomeOne copy.tsx
+src/pages/Home/Blog.module.scss
+src/pages/Home/HomeOne.module.scss
+src/Components/Hooks.ts

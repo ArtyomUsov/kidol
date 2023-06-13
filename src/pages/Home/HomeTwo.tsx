@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React, { useState } from 'react';
+import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/FooterMain';
 import { Product, ProductArea } from '../../Components/Product';
@@ -40,19 +40,9 @@ import collection2 from '../../img/category/5.webp';
 import blog1 from '../../img/blog/1.webp';
 import blog2 from '../../img/blog/2.webp';
 import blog3 from '../../img/blog/3.webp';
+import { Slider } from '../../Components/Slider';
 
 export function HomeTwo() {
-	const [index, setIndex] = useState(0);
-
-	const handleNext = () => {
-		// Увеличить индекс на +1, начать массив сначала при достижении конца
-		setIndex((index + 1) % Products.length);
-	};
-
-	const handlePrev = () => {
-		// Уменьшить индекс на -1, продолжить массив с конца при достижении начала
-		setIndex((index - 1 + Products.length) % Products.length);
-	};
 	return (
 		<>
 			<HeaderMain />
@@ -340,67 +330,7 @@ export function HomeTwo() {
 					</div>
 				</div>
 			</section>
-			<section className='product-area product-style2-area'>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-6 m-auto'>
-							<div
-								className='section-title text-center aos-init aos-animate'
-								data-aos='fade-up'
-								data-aos-duration='1000'
-							>
-								<h2 className='title'>Trending Product</h2>
-								<div className='desc'>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et
-										dolore magna aliqua.{' '}
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className='row'>
-						<div className='col-12'>
-							<div
-								className='product-tab1-slider aos-init slick-initialized slick-slider aos-animate'
-								data-aos='fade-up'
-								data-aos-duration='1500'
-							>
-								<button className='slick-prev slick-arrow' aria-label='Previous' type='button' onClick={handlePrev}>
-									Previous
-								</button>
-								<div className='slick-list draggable'>
-									<div
-										className='slick-track'
-										style={{
-											opacity: '1',
-											minWidth: '300px',
-											// maxWidth: "1100px",
-											alignItems: 'center',
-											// transform: "translate3d(-1200px, 0px, 0px)"
-										}}
-									>
-										<div
-											className='slick-cloned flex slide-item slick-slide align-items-center'
-											data-slick-index='-4'
-											id=''
-											aria-hidden='true'
-										>
-											{Products.slice(index, index + 4).map(product => (
-												<ProductSlide product={product} key={product.id} className='' />
-											))}
-										</div>
-									</div>
-								</div>
-								<button className='slick-next slick-arrow' aria-label='Next' type='button' onClick={handleNext}>
-									Next
-								</button>
-							</div>
-							{/* {moveToTheEnd} */}
-						</div>
-					</div>
-				</div>
-			</section>
+			<Slider />
 			<section
 				className='divider-area divider-style1-area bg-img aos-init aos-animate'
 				// data-bg-img={bg1}
@@ -590,9 +520,10 @@ export function HomeTwo() {
 											<div className='col-lg-12'>
 												<div className='product'>
 													<div className='row'>
-														{/* { Products.map( (product) => <Product product={product} key={product.id}/> ) } */}
 														{ProductArea.map(product => (
-															<Product product={product} key={product.id} />
+															<div className='col-lg-3 col-md-4 col-sm-6'>
+																<Product product={product} key={product.id} className='' />
+															</div>
 														))}
 													</div>
 												</div>
@@ -604,9 +535,10 @@ export function HomeTwo() {
 											<div className='col-lg-12'>
 												<div className='product'>
 													<div className='row'>
-														{/* { Products.map( (product) => <Product product={product} key={product.id}/> ) } */}
 														{ProductArea.map(product => (
-															<Product product={product} key={product.id} />
+															<div className='col-lg-3 col-md-4 col-sm-6'>
+																<Product product={product} key={product.id} className='' />
+															</div>
 														))}
 													</div>
 												</div>
@@ -619,7 +551,9 @@ export function HomeTwo() {
 												<div className='product'>
 													<div className='row'>
 														{ProductArea.map(product => (
-															<Product product={product} key={product.id} />
+															<div className='col-lg-3 col-md-4 col-sm-6'>
+																<Product product={product} key={product.id} className='' />
+															</div>
 														))}
 													</div>
 												</div>

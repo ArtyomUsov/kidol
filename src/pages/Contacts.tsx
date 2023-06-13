@@ -9,6 +9,7 @@ import six from '../img/Contact Us/6.webp';
 import seven from '../img/Contact Us/7.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../date/Items';
+import ButtonScrollTop from '../Components/ButtonScrollTop';
 
 export function Contact() {
 	return (
@@ -177,6 +178,7 @@ export function Contact() {
 				</div>
 			</section>
 			<FooterMain />
+			<ButtonScrollTop />
 		</>
 	);
 }

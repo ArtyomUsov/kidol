@@ -5,7 +5,22 @@ import logo from '../img/logo.webp';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { About, ComingSoon, Contact, HomeOne, HomeTwo, NotFound } from '../date/Items';
+import {
+	About,
+	ComingSoon,
+	Contact,
+	HomeOne,
+	HomeTwo,
+	NotFound,
+	ShopNoSidebar,
+	Shop3Column,
+	Shop4Column,
+	ShopLeftSidebar,
+	ShopRightSidebar,
+	ProductDetails,
+	ProductVariable,
+	ProductGrouped,
+} from '../date/Items';
 
 const HeaderMain = () => {
 	const [sticky, setSticky] = useState('');
@@ -168,31 +183,31 @@ const HeaderMain = () => {
 											</ul>
 										</li>
 										<li className='has-submenu'>
-											<Link to={''}>Shop</Link>
+											<Link to={ShopNoSidebar}>Shop</Link>
 											<ul className='submenu-nav'>
 												<li>
-													<Link to={''}>Shop 3 Column</Link>
+													<Link to={Shop3Column}>Shop 3 Column</Link>
 												</li>
 												<li>
-													<Link to={''}>Shop 4 Column</Link>
+													<Link to={Shop4Column}>Shop 4 Column</Link>
 												</li>
 												<li>
-													<Link to={''}>Shop Left Sidebar</Link>
+													<Link to={ShopLeftSidebar}>Shop Left Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Shop Right Sidebar</Link>
+													<Link to={ShopRightSidebar}>Shop Right Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Shop No Sidebar</Link>
+													<Link to={ShopNoSidebar}>Shop No Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Product Details</Link>
+													<Link to={ProductDetails}>Product Details</Link>
 												</li>
 												<li>
-													<Link to={''}>Product Variable</Link>
+													<Link to={ProductVariable}>Product Variable</Link>
 												</li>
 												<li>
-													<Link to={''}>Product Grouped</Link>
+													<Link to={ProductGrouped}>Product Grouped</Link>
 												</li>
 											</ul>
 										</li>

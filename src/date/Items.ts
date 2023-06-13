@@ -8,9 +8,9 @@ import PageContact from '../img/pages/page-contact.webp';
 import Shop from '../img/shop pages/page-shop.webp';
 import ShopLeft from '../img/shop pages/page-shop-left-sidebar.webp';
 import ShopRight from '../img/shop pages/page-shop-right-sidebar.webp';
-import ProductDetails from '../img/shop pages/page-shop-single-product.webp';
-import ProductVariable from '../img/shop pages/page-product-details-variable.webp';
-import ProductGrouped from '../img/shop pages/page-product-details-grouped.webp';
+import ImgProductDetails from '../img/shop pages/page-shop-single-product.webp';
+import ImgProductVariable from '../img/shop pages/page-product-details-variable.webp';
+import ImgProductGrouped from '../img/shop pages/page-product-details-grouped.webp';
 import Blog from '../img/blog pages/page-blog.webp';
 import BlogLeft from '../img/blog pages/page-blog-left-sidebar.webp';
 import BlogRight from '../img/blog pages/page-blog-right-sidebar.webp';
@@ -24,6 +24,14 @@ export const About = '/About';
 export const NotFound = '/NotFound';
 export const ComingSoon = '/ComingSoon';
 export const Contact = '/Contact';
+export const ShopNoSidebar = '/ShopNoSidebar';
+export const Shop3Column = '/Shop3Column';
+export const Shop4Column = '/Shop4Column';
+export const ShopLeftSidebar = '/ShopLeftSidebar';
+export const ShopRightSidebar = '/ShopRightSidebar';
+export const ProductDetails = '/ProductDetails';
+export const ProductVariable = '/ProductVariable';
+export const ProductGrouped = '/ProductGrouped';
 
 export const Items: IItem[] = [
 	{
@@ -66,37 +74,37 @@ export const Items: IItem[] = [
 		id: 7,
 		title: 'Shop',
 		image: `${Shop}`,
-		link: '',
+		link: ShopNoSidebar,
 	},
 	{
 		id: 8,
 		title: 'Shop Left Sidebar',
 		image: `${ShopLeft}`,
-		link: '',
+		link: ShopLeftSidebar,
 	},
 	{
 		id: 9,
 		title: 'Shop Right Sidebar',
 		image: `${ShopRight}`,
-		link: '',
+		link: ShopRightSidebar,
 	},
 	{
 		id: 10,
 		title: 'Product Details',
-		image: `${ProductDetails}`,
-		link: '',
+		image: `${ImgProductDetails}`,
+		link: ProductDetails,
 	},
 	{
 		id: 11,
 		title: 'Product Variable',
-		image: `${ProductVariable}`,
-		link: '',
+		image: `${ImgProductVariable}`,
+		link: ProductVariable,
 	},
 	{
 		id: 12,
 		title: 'Product Grouped',
-		image: `${ProductGrouped}`,
-		link: '',
+		image: `${ImgProductGrouped}`,
+		link: ProductGrouped,
 	},
 	{
 		id: 13,

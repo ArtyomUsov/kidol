@@ -9,6 +9,7 @@ export interface IProduct {
 	id: number;
 	title: string;
 	image: string;
+	description: string;
 	price: string;
 	rating: string;
 	link: string;

@@ -24,6 +24,8 @@ export const Products: IProduct[] = [
 		id: 1,
 		title: 'Funskool Teddy',
 		image: `${shop1}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: homeOne,
 		price: '$102.12',
 		rating: 'star',
@@ -32,6 +34,8 @@ export const Products: IProduct[] = [
 		id: 2,
 		title: 'Baby Play Sets',
 		image: `${shop2}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: homeTwo,
 		price: '$112.12',
 		rating: 'star',
@@ -40,6 +44,8 @@ export const Products: IProduct[] = [
 		id: 3,
 		title: 'Jigsaw Puzzles For Kids',
 		image: `${shop3}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: About,
 		price: '$122.12',
 		rating: 'star',
@@ -48,6 +54,8 @@ export const Products: IProduct[] = [
 		id: 4,
 		title: 'Abstract Girl Dress',
 		image: `${shop4}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: NotFound,
 		price: '$132.12',
 		rating: 'star',
@@ -56,6 +64,8 @@ export const Products: IProduct[] = [
 		id: 5,
 		title: 'Bruder Toys Mini Ships',
 		image: `${shop5}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: ComingSoon,
 		price: '$142.12',
 		rating: 'star',
@@ -64,6 +74,8 @@ export const Products: IProduct[] = [
 		id: 6,
 		title: 'Abstract Boy Dress',
 		image: `${shop6}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$152.12',
 		rating: 'star',
@@ -72,6 +84,8 @@ export const Products: IProduct[] = [
 		id: 7,
 		title: 'Funskool Teddy Pink',
 		image: `${shop7}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$162.12',
 		rating: 'star',
@@ -80,6 +94,8 @@ export const Products: IProduct[] = [
 		id: 8,
 		title: 'Toys Box For Baby',
 		image: `${shop8}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$172.12',
 		rating: 'star',
@@ -88,6 +104,8 @@ export const Products: IProduct[] = [
 		id: 9,
 		title: 'Funskool Teddy Brown',
 		image: `${nine}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$182.12',
 		rating: 'star',
@@ -96,6 +114,8 @@ export const Products: IProduct[] = [
 		id: 10,
 		title: 'Newborn Kit Set',
 		image: `${ten}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$192.12',
 		rating: 'star',
@@ -104,6 +124,8 @@ export const Products: IProduct[] = [
 		id: 11,
 		title: 'Classic Fisher Gift',
 		image: `${eleven}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$202.12',
 		rating: 'star',
@@ -112,6 +134,8 @@ export const Products: IProduct[] = [
 		id: 12,
 		title: 'Sassy Crib and Floor Mirror',
 		image: `${twelve}`,
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
 		price: '$212.12',
 		rating: 'star',

@@ -15,7 +15,7 @@ export const ProductArea: IProduct[] = Products.filter(product => product.id < 9
 export function Product({ product, className }: ProductProps) {
 	return (
 		<>
-			<div className={`product-item ${className}`}>
+			<div className='product-item'>
 				<div className='product-thumb'>
 					<img src={product.image} />
 					<div className='product-action'>
@@ -49,6 +49,7 @@ export function Product({ product, className }: ProductProps) {
 					<div className='prices'>
 						<span className='price'>{product.price}</span>
 					</div>
+					<p className={`product-item-description ${className}`}>{product.description}</p>
 				</div>
 			</div>
 		</>

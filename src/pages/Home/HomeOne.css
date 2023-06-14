@@ -822,6 +822,9 @@ img {
 	justify-content: center;
 	width: 100%;
 }
+.product-item-description {
+	display: none;
+}
 .product-item .product-thumb .product-action {
 	bottom: calc(50% - 60px);
 	position: absolute;

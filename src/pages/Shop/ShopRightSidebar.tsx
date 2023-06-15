@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/FooterMain';
 import one from '../../img/homeOne/1.webp';
@@ -9,8 +9,11 @@ import { HomeOne } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Products } from '../../date/Products';
 import Product from '../../Components/Product';
+import { Sidebar } from '../../Components/Sidebar';
 
 export function ShopRightSidebar() {
+	const [activeTab, setActiveTab] = useState(1);
+
 	return (
 		<>
 			<HeaderMain />
@@ -45,189 +48,7 @@ export function ShopRightSidebar() {
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-3 order-0 order-lg-1'>
-							<div className='sidebar-area shop-sidebar-area'>
-								<div className='widget-item'>
-									<div className='widget-title'>
-										<h3 className='title'>Product Categories</h3>
-									</div>
-									<div className='widget-body'>
-										<div className='widget-categories'>
-											<ul>
-												<li>
-													<a href='shop.html'>
-														Accesasories <span>(6)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Computer <span>(4)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Covid-19 <span>(2)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Electronics <span>(6)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Frame Sunglasses <span>(12)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Furniture <span>(7)</span>
-													</a>
-												</li>
-												<li>
-													<a href='shop.html'>
-														Genuine Leather <span>(9)</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div className='widget-item'>
-									<div className='widget-filter'>
-										<div className='widget-title'>
-											<h3 className='title'>Price Filter</h3>
-										</div>
-										<div className='widget-body'>
-											<div className='widget-price-filter'>
-												<div className='slider-labels'>
-													<div className='caption'>
-														<span id='slider-range-value1'>$16</span>
-													</div>
-													<span className='range-separator'></span>
-													<div className='caption'>
-														<span id='slider-range-value2'>$306</span>
-													</div>
-												</div>
-												<div
-													className='slider-range noUi-target noUi-ltr noUi-horizontal noUi-background'
-													id='slider-range'
-												>
-													<div className='noUi-base'>
-														<div className='noUi-origin noUi-connect' style={{ left: '0%' }}>
-															<div className='noUi-handle noUi-handle-lower'></div>
-														</div>
-														<div className='noUi-origin noUi-background' style={{ left: '75.5208%' }}>
-															<div className='noUi-handle noUi-handle-upper'></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className='widget-item'>
-									<div className='widget-title'>
-										<h3 className='title'>Color</h3>
-									</div>
-									<div className='widget-body'>
-										<div className='widget-color'>
-											<div className='form-check'>
-												<input
-													className='form-check-input red'
-													type='radio'
-													name='colorRadio'
-													id='colorRadio1'
-													//   checked=""
-												/>
-												<label
-													className='form-check-label'
-													//   for="colorRadio1"
-												>
-													Red (12)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input black' type='radio' name='colorRadio' id='colorRadio2' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio2"
-												>
-													Light Black (09)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input blue' type='radio' name='colorRadio' id='colorRadio3' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio3"
-												>
-													Dark Blue (07)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input gray' type='radio' name='colorRadio' id='colorRadio4' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio4"
-												>
-													Gray (11)
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className='widget-item mb-md-0'>
-									<div className='widget-title'>
-										<h3 className='title'>Size</h3>
-									</div>
-									<div className='widget-body'>
-										<div className='widget-size'>
-											<div className='form-check'>
-												<input
-													className='form-check-input black'
-													type='radio'
-													name='colorRadio2'
-													id='colorRadio5'
-													//   checked=""
-												/>
-												<label
-													className='form-check-label'
-													//   for="colorRadio5"
-												>
-													M (12)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input black' type='radio' name='colorRadio2' id='colorRadio6' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio6"
-												>
-													L (09)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input black' type='radio' name='colorRadio2' id='colorRadio7' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio7"
-												>
-													XL (07)
-												</label>
-											</div>
-											<div className='form-check'>
-												<input className='form-check-input black' type='radio' name='colorRadio2' id='colorRadio8' />
-												<label
-													className='form-check-label'
-													//   for="colorRadio8"
-												>
-													XXL (11)
-												</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							<Sidebar />
 						</div>
 						<div className='col-lg-9 order-1 order-lg-0'>
 							<div className='shop-toolbar-wrap'>
@@ -240,40 +61,25 @@ export function ShopRightSidebar() {
 									<nav>
 										<div className='nav nav-tabs active' id='nav-tab' role='tablist'>
 											<button
-												className='nav-link active'
-												id='column-three-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#column-three'
+												className={`nav-link ${activeTab === 1 ? 'active' : ''}`}
+												onClick={() => setActiveTab(1)}
 												type='button'
-												role='tab'
-												aria-controls='column-three'
-												aria-selected='true'
 											>
 												<i className='fa fa-th'></i>
 											</button>
 
 											<button
-												className='nav-link'
-												id='nav-list-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#nav-list'
+												className={`nav-link ${activeTab === 2 ? 'active' : ''}`}
+												onClick={() => setActiveTab(2)}
 												type='button'
-												role='tab'
-												aria-controls='nav-list'
-												aria-selected='false'
 											>
 												<i className='fa fa-list'></i>
 											</button>
 
 											<button
-												className='nav-link'
-												id='column-two-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#column-two'
+												className={`nav-link ${activeTab === 3 ? 'active' : ''}`}
+												onClick={() => setActiveTab(3)}
 												type='button'
-												role='tab'
-												aria-controls='column-two'
-												aria-selected='true'
 											>
 												<i className='fa fa-th-large'></i>
 											</button>
@@ -317,20 +123,43 @@ export function ShopRightSidebar() {
 								</div>
 							</div>
 							<div className='tab-content' id='nav-tabContent'>
-								<div
-									className='tab-pane fade show active'
-									id='column-three'
-									role='tabpanel'
-									aria-labelledby='column-three-tab'
-								>
-									<div className='row'>
-										{Products.map(product => (
-											<div className='col-lg-4 col-md-4 col-sm-6'>
-												<Product product={product} key={product.id} className='' />
-											</div>
-										))}
+								{activeTab === 1 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-lg-4 col-md-4 col-sm-6'>
+													<Product product={product} key={product.id} className='' />
+												</div>
+											))}
+										</div>
 									</div>
-								</div>
+								)}
+							</div>
+							<div className='tab-content' id='nav-tabContent'>
+								{activeTab === 2 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-12 product-items-list'>
+													<Product product={product} key={product.id} className='d-block' />
+												</div>
+											))}
+										</div>
+									</div>
+								)}
+							</div>
+							<div className='tab-content' id='nav-tabContent'>
+								{activeTab === 3 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-sm-6'>
+													<Product product={product} key={product.id} className='' />
+												</div>
+											))}
+										</div>
+									</div>
+								)}
 							</div>
 							<div className='row'>
 								<div className='col-lg-12'>

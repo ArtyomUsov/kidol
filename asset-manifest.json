@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kidol_react/static/css/main.37acb885.css",
-    "main.js": "/kidol_react/static/js/main.60307e35.js",
+    "main.css": "/kidol_react/static/css/main.eec3bdea.css",
+    "main.js": "/kidol_react/static/js/main.cf4bc532.js",
     "static/media/fa-solid-900.ttf": "/kidol_react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/ionicons.svg?v=4.5.10-1": "/kidol_react/static/media/ionicons.bb0605ccfbc8cbabadc5.svg",
     "static/media/fa-brands-400.ttf": "/kidol_react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -86,9 +86,12 @@
     "static/media/page-coming-soon.webp": "/kidol_react/static/media/page-coming-soon.361c3e10a5bef7e65b70.webp",
     "static/media/9.webp": "/kidol_react/static/media/9.b9a2b46faf71c930d558.webp",
     "static/media/6.webp": "/kidol_react/static/media/6.b74f0a6ae9bae4a3e028.webp",
+    "static/media/14.webp": "/kidol_react/static/media/14.b30966ff6f98e48edd50.webp",
     "static/media/12.webp": "/kidol_react/static/media/12.60f73cb419ed08c0a9c5.webp",
     "static/media/7.webp": "/kidol_react/static/media/7.9aff0b858d1643766f6f.webp",
     "static/media/8.webp": "/kidol_react/static/media/8.dd9707d3bf13831561b1.webp",
+    "static/media/15.webp": "/kidol_react/static/media/15.7d32437df69fe888f372.webp",
+    "static/media/13.webp": "/kidol_react/static/media/13.18d2f94883c20bd7e79d.webp",
     "static/media/quotes.webp": "/kidol_react/static/media/quotes.5fef3ea9d47505e27d11.webp",
     "static/media/fa-v4compatibility.woff2": "/kidol_react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "static/media/11.webp": "/kidol_react/static/media/11.b24e9563cdfae3360368.webp",
@@ -99,6 +102,9 @@
     "static/media/logo.webp": "/kidol_react/static/media/logo.aae4087fd9d04a6c1673.webp",
     "static/media/logo-light.webp": "/kidol_react/static/media/logo-light.d9b8a8a13fd532a2e58b.webp",
     "static/media/background.webp": "/kidol_react/static/media/background.c03542ae5bac3e689549.webp",
+    "static/media/nav1.webp": "/kidol_react/static/media/nav1.b16b9e43c79bceb9d626.webp",
+    "static/media/nav2.webp": "/kidol_react/static/media/nav2.8d985e6a156e18e1ca56.webp",
+    "static/media/nav3.webp": "/kidol_react/static/media/nav3.8a6e643b69a54ee1af4a.webp",
     "static/media/f6.webp": "/kidol_react/static/media/f6.5c34c8ca6c9a8f2b3424.webp",
     "static/media/f4.webp": "/kidol_react/static/media/f4.5ab97a23c95c3a39d9d7.webp",
     "static/media/f3.webp": "/kidol_react/static/media/f3.d75ddc02da17aee5db94.webp",
@@ -107,11 +113,11 @@
     "static/media/f2.webp": "/kidol_react/static/media/f2.0363b36cb69da8ce4609.webp",
     "index.html": "/kidol_react/index.html",
     "static/media/shape1.webp": "/kidol_react/static/media/shape1.45675e07e8e70f6c03eb.webp",
-    "main.37acb885.css.map": "/kidol_react/static/css/main.37acb885.css.map",
-    "main.60307e35.js.map": "/kidol_react/static/js/main.60307e35.js.map"
+    "main.eec3bdea.css.map": "/kidol_react/static/css/main.eec3bdea.css.map",
+    "main.cf4bc532.js.map": "/kidol_react/static/js/main.cf4bc532.js.map"
   },
   "entrypoints": [
-    "static/css/main.37acb885.css",
-    "static/js/main.60307e35.js"
+    "static/css/main.eec3bdea.css",
+    "static/js/main.cf4bc532.js"
   ]
 }

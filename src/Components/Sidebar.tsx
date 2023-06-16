@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../Components/Sidebar.css';
+import 'swiper/css/bundle';
 import React, { useState } from 'react';
 
 export const Sidebar = () => {
@@ -193,3 +195,51 @@ export const Sidebar = () => {
 		</>
 	);
 };
+
+// function PriceFilterWidget({ filter, setFilter }) {
+// 	const [minPrice, setMinPrice] = useState(filter.minPrice || 16);
+// 	const [maxPrice, setMaxPrice] = useState(filter.maxPrice || 306);
+
+// 	const handleMinPriceChange = (event: { target: { value: any; }; }) => {
+// 	  setMinPrice(event.target.value);
+// 	  setFilter({ ...filter, minPrice: event.target.value });
+// 	};
+
+// 	const handleMaxPriceChange = (event: { target: { value: any; }; }) => {
+// 	  setMaxPrice(event.target.value);
+// 	  setFilter({ ...filter, maxPrice: event.target.value });
+// 	};
+
+// 	const handleResetClick = () => {
+// 	  setMinPrice('');
+// 	  setMaxPrice('');
+// 	  setFilter({});
+// 	};
+
+// 	return (
+// 	  <div className='price-filter-widget'>
+// 		<h2>Filter by Price:</h2>
+// 		<div className='price-filter'>
+// 		  <label htmlFor='min-price'>Min Price:</label>
+// 		  <input
+// 			type='number'
+// 			id='min-price'
+// 			name='min-price'
+// 			value={minPrice}
+// 			onChange={handleMinPriceChange}
+// 		  />
+// 		  <label htmlFor='max-price'>Max Price:</label>
+// 		  <input
+// 			type='number'
+// 			id='max-price'
+// 			name='max-price'
+// 			value={maxPrice}
+// 			onChange={handleMaxPriceChange}
+// 		  />
+// 		  <button onClick={handleResetClick}>Reset</button>
+// 		</div>
+// 	  </div>
+// 	);
+//   }
+
+//   export default PriceFilterWidget;

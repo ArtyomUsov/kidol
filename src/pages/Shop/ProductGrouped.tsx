@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/FooterMain';
 import one from '../../img/homeOne/1.webp';
@@ -10,6 +10,7 @@ import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Slider } from '../../Components/Slider';
 
 export function ProductGrouped() {
+	const [count, setCount] = useState(0);
 	return (
 		<>
 			<HeaderMain />
@@ -247,11 +248,11 @@ export function ProductGrouped() {
 								<div className='quick-product-action'>
 									<div className='action-top'>
 										<div className='pro-qty'>
-											<input type='text' id='quantity' title='Quantity' value='01' />
-											<a href='#' className='inc qty-btn'>
+											<input type='text' id='quantity' title='Quantity' value={count} />
+											<a className='inc qty-btn' onClick={() => setCount(count + 1)}>
 												<i className='fa fa-plus'></i>
 											</a>
-											<a href='#' className='dec qty-btn'>
+											<a className='dec qty-btn' onClick={() => count > 0 && setCount(count - 1)}>
 												<i className='fa fa-minus'></i>
 											</a>
 										</div>
@@ -262,20 +263,26 @@ export function ProductGrouped() {
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>SKU:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										SKU:
+									</h3>
 									<div className='widget-tags'>
 										<span>Ch-256xl</span>
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>Categories:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										Categories:
+									</h3>
 									<div className='widget-tags'>
 										<a href='blog.html'>Toys.</a>
 										<a href='blog.html'>Dresss</a>
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>Tag:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										Tag:
+									</h3>
 									<div className='widget-tags'>
 										<a href='blog.html'>Toys,</a>
 										<a href='blog.html'>Dress</a>

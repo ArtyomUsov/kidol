@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/FooterMain';
 import one from '../../img/homeOne/1.webp';
@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Slider } from '../../Components/Slider';
+import { SingleSlider } from '../../Components/SingleSlider';
 
 export function ProductDetails() {
+	const [count, setCount] = useState(0);
 	return (
 		<>
 			<HeaderMain />
@@ -43,108 +45,7 @@ export function ProductDetails() {
 			<section className='product-single-area'>
 				<div className='container'>
 					<div className='row'>
-						<div className='col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-0'>
-							<div className='single-product-slider'>
-								<div className='single-product-thumb'>
-									<div className='swiper-container single-product-thumb-slider swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-free-mode'>
-										<div className='swiper-wrapper' style={{ transitionDuration: '0ms' }}>
-											<div
-												className='swiper-slide zoom zoom-hover'
-												// style={{
-												// 	width: '570px',
-												// 	opacity: '0',
-												// 	transform: 'translate3d(0px, 0px, 0px)',
-												// 	position: 'relative',
-												// 	overflow: 'hidden',
-												// 	transitionDuration: '0ms'}}
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/1.jpg'>
-														<img src='assets/img/shop/details/1.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/1.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-prev'
-												// style="width: 570px; opacity: 0; transform: translate3d(-570px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/2.jpg'>
-														<img src='assets/img/shop/details/2.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/2.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-active'
-												// style="width: 570px; opacity: 1; transform: translate3d(-1140px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/3.jpg'>
-														<img src='assets/img/shop/details/3.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/3.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
-									</div>
-								</div>
-								<div className='single-product-nav'>
-									<div className='swiper-container single-product-nav-slider swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs'>
-										<div
-											className='swiper-wrapper'
-											// style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
-										>
-											<div
-												className='swiper-slide swiper-slide-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav1.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-											<div
-												className='swiper-slide swiper-slide-next'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav2.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-											<div
-												className='swiper-slide swiper-slide-thumb-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav3.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<SingleSlider />
 						<div className='col-lg-6'>
 							<div className='single-product-info'>
 								<h4 className='title'>Jigsaw Puzzles For Kids</h4>
@@ -184,11 +85,11 @@ export function ProductDetails() {
 								<div className='quick-product-action'>
 									<div className='action-top'>
 										<div className='pro-qty'>
-											<input type='text' id='quantity' title='Quantity' value='01' />
-											<a href='#' className='inc qty-btn'>
+											<input type='text' id='quantity' title='Quantity' value={count} />
+											<a className='inc qty-btn' onClick={() => setCount(count + 1)}>
 												<i className='fa fa-plus'></i>
 											</a>
-											<a href='#' className='dec qty-btn'>
+											<a className='dec qty-btn' onClick={() => count > 0 && setCount(count - 1)}>
 												<i className='fa fa-minus'></i>
 											</a>
 										</div>
@@ -199,27 +100,33 @@ export function ProductDetails() {
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>SKU:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										SKU:
+									</h3>
 									<div className='widget-tags'>
 										<span>Ch-256xl</span>
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>Categories:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										Categories:
+									</h3>
 									<div className='widget-tags'>
 										<a href='blog.html'>Toys.</a>
 										<a href='blog.html'>Dresss</a>
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>Tag:</h3>
+									<h3 className='title' style={{ marginRight: '5px' }}>
+										Tag:
+									</h3>
 									<div className='widget-tags'>
 										<a href='blog.html'>Toys,</a>
 										<a href='blog.html'>Dress</a>
 									</div>
 								</div>
 								<div className='widget'>
-									<h3 className='title'>Share:</h3>
+									<h3 className='title'>Share: </h3>
 									<div className='widget-tags widget-share'>
 										<span className='fa fa-facebook'></span>
 										<span className='fa fa-dribbble'></span>
@@ -249,28 +156,28 @@ export function ProductDetails() {
 										</li>
 										<li className='nav-item' role='presentation'>
 											<button
-												className='nav-link'
+												className='nav-link active'
 												id='product-desc-tab'
 												data-bs-toggle='tab'
 												data-bs-target='#productDesc'
 												type='button'
 												role='tab'
 												aria-controls='productDesc'
-												aria-selected='false'
+												aria-selected='true'
 											>
 												Description
 											</button>
 										</li>
 										<li className='nav-item' role='presentation'>
 											<button
-												className='nav-link active'
+												className='nav-link'
 												id='product-review-tab'
 												data-bs-toggle='tab'
 												data-bs-target='#productReview'
 												type='button'
 												role='tab'
 												aria-controls='productReview'
-												aria-selected='true'
+												aria-selected='false'
 											>
 												Reviews (03)
 											</button>
@@ -297,7 +204,12 @@ export function ProductDetails() {
 												</p>
 											</div>
 										</div>
-										<div className='tab-pane fade' id='productDesc' role='tabpanel' aria-labelledby='product-desc-tab'>
+										<div
+											className='tab-pane fade active show'
+											id='productDesc'
+											role='tabpanel'
+											aria-labelledby='product-desc-tab'
+										>
 											<div className='product-desc'>
 												<p>
 													Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut
@@ -313,7 +225,7 @@ export function ProductDetails() {
 											</div>
 										</div>
 										<div
-											className='tab-pane fade active show'
+											className='tab-pane fade'
 											id='productReview'
 											role='tabpanel'
 											aria-labelledby='product-review-tab'
@@ -520,6 +432,95 @@ export function ProductDetails() {
 					</div>
 				</div>
 			</section>
+			{/* zoom slider */}
+			{/* <div
+				className='fancybox-container fancybox-is-open fancybox-is-zoomable fancybox-can-zoomIn'
+				role='dialog'
+				// tabindex="-1"
+				id='fancybox-container-1'
+				// style="transition-duration: 366ms;"
+			>
+				<div className='fancybox-bg'></div>
+				<div className='fancybox-inner'>
+					<div className='fancybox-infobar'>
+						<span data-fancybox-index=''>3</span>&nbsp;/&nbsp;<span data-fancybox-count=''>3</span>
+					</div>
+					<div className='fancybox-toolbar'>
+						<button data-fancybox-zoom='' className='fancybox-button fancybox-button--zoom' title='Zoom'>
+							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+								<path d='M18.7 17.3l-3-3a5.9 5.9 0 0 0-.6-7.6 5.9 5.9 0 0 0-8.4 0 5.9 5.9 0 0 0 0 8.4 5.9 5.9 0 0 0 7.7.7l3 3a1 1 0 0 0 1.3 0c.4-.5.4-1 0-1.5zM8.1 13.8a4 4 0 0 1 0-5.7 4 4 0 0 1 5.7 0 4 4 0 0 1 0 5.7 4 4 0 0 1-5.7 0z'></path>
+							</svg>
+						</button>
+						<button data-fancybox-play='' className='fancybox-button fancybox-button--play' title='Start slideshow'>
+							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+								<path d='M6.5 5.4v13.2l11-6.6z'></path>
+							</svg>
+							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+								<path d='M8.33 5.75h2.2v12.5h-2.2V5.75zm5.15 0h2.2v12.5h-2.2V5.75z'></path>
+							</svg>
+						</button>
+						<button data-fancybox-thumbs='' className='fancybox-button fancybox-button--thumbs' title='Thumbnails'>
+							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+								<path d='M14.59 14.59h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76H5.65v-3.76zm8.94-4.47h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76h-3.76v-3.76zm-4.47 0h3.76v3.76H5.65v-3.76zm8.94-4.47h3.76v3.76h-3.76V5.65zm-4.47 0h3.76v3.76h-3.76V5.65zm-4.47 0h3.76v3.76H5.65V5.65z'></path>
+							</svg>
+						</button>
+						<button data-fancybox-close='' className='fancybox-button fancybox-button--close' title='Close'>
+							<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+								<path d='M12 10.6L6.6 5.2 5.2 6.6l5.4 5.4-5.4 5.4 1.4 1.4 5.4-5.4 5.4 5.4 1.4-1.4-5.4-5.4 5.4-5.4-1.4-1.4-5.4 5.4z'></path>
+							</svg>
+						</button>
+					</div>
+					<div className='fancybox-navigation'>
+						<button data-fancybox-prev='' className='fancybox-button fancybox-button--arrow_left' title='Previous'>
+							<div>
+								<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+									<path d='M11.28 15.7l-1.34 1.37L5 12l4.94-5.07 1.34 1.38-2.68 2.72H19v1.94H8.6z'></path>
+								</svg>
+							</div>
+						</button>
+						<button
+							data-fancybox-next=''
+							className='fancybox-button fancybox-button--arrow_right'
+							title='Next'
+							// disabled=""
+						>
+							<div>
+								<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+									<path d='M15.4 12.97l-2.68 2.72 1.34 1.38L19 12l-4.94-5.07-1.34 1.38 2.68 2.72H5v1.94z'></path>
+								</svg>
+							</div>
+						</button>
+					</div>
+					<div className='fancybox-stage'>
+						<div
+							className='fancybox-slide fancybox-slide--image'
+							// style=""
+						>
+							<div
+								className='fancybox-content'
+								// style="transform: translate(488px, 44px); width: 558.037px; height: 634.4px;"
+							>
+								<img className='fancybox-image' src={fourteen} />
+							</div>
+						</div>
+						<div
+							className='fancybox-slide fancybox-slide--image fancybox-slide--current fancybox-slide--complete'
+							// style=""
+						>
+							<div
+								className='fancybox-content'
+								// style="transform: translate(488px, 44px); width: 558.037px; height: 634.4px;"
+							>
+								<img className='fancybox-image' src={fifteen} />
+							</div>
+						</div>
+					</div>
+					<div className='fancybox-caption fancybox-caption--separate'>
+						<div className='fancybox-caption__body'></div>
+					</div>
+					<div className='fancybox-progress'></div>
+				</div>
+			</div> */}
 			<Slider />
 			<FooterMain />
 			<ButtonScrollTop />

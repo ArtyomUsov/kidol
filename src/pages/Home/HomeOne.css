@@ -1081,6 +1081,7 @@ img {
 	font-size: 24px;
 	line-height: 1;
 	margin-bottom: 21px;
+	font-family: 'Fredoka One Regular', cursive;
 }
 .product-description-review .tab-content .product-review .review-header .review-info .review-rating {
 	display: inline-block;
@@ -1214,6 +1215,7 @@ img {
 	font-size: 16px;
 	line-height: 1;
 	margin-bottom: 21px;
+	font-family: 'Fredoka One Regular', cursive;
 }
 .product-description-review .tab-content .product-review .review-content .review-item .review-date {
 	font-style: italic;
@@ -1221,13 +1223,20 @@ img {
 	opacity: 0.5;
 	display: inline-block;
 	margin-bottom: 15px;
+	color: #000;
+	font-family: 'Fredoka One Regular', cursive;
+	font-weight: 400;
+	line-height: 1.2;
 }
 .product-description-review .tab-content .product-review .review-content .review-item .review-date span {
 	font-weight: 700;
+	font-family: 'Fredoka One Regular', cursive;
+	color: #000;
 }
 .product-description-review .tab-content .product-review .review-content .review-item p {
 	font-size: 13px;
 	margin-bottom: 20px;
+	color: #777;
 }
 .product-description-review .tab-content .product-review .review-content .review-item .review-report {
 	color: #242424;

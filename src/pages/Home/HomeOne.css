@@ -1629,6 +1629,8 @@ img {
 	font-weight: 400;
 	margin-bottom: 13px;
 	position: relative;
+	font-family: "Fredoka One Regular", cursive;
+	line-height: 1.2;
 }
 .sidebar-area.shop-sidebar-area .widget-item .widget-title .title:before {
 	background-color: #f379a7;

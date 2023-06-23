@@ -47,7 +47,7 @@ export function Product({ product, className }: ProductProps) {
 						</Link>
 					</h4>
 					<div className='prices'>
-						<span className='price'>{product.price}</span>
+						<span className='price'>${product.price}</span>
 					</div>
 					<p className={`product-item-description ${className}`}>{product.description}</p>
 				</div>

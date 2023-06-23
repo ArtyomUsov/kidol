@@ -1696,7 +1696,7 @@ img {
 	justify-content: space-between;
 	margin-bottom: 6px;
 	margin-top: 17px;
-	padding-right: 13px;
+	/* padding-right: 13px; */
 }
 .sidebar-area.shop-sidebar-area .widget-filter .widget-body .widget-price-filter .slider-labels .price {
 	color: #656565;

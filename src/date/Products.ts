@@ -27,7 +27,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: homeOne,
-		price: '$102.12',
+		price: 102.12,
 		rating: 'star',
 	},
 	{
@@ -37,7 +37,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: homeTwo,
-		price: '$112.12',
+		price: 112.12,
 		rating: 'star',
 	},
 	{
@@ -47,7 +47,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: About,
-		price: '$122.12',
+		price: 122.12,
 		rating: 'star',
 	},
 	{
@@ -57,7 +57,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: NotFound,
-		price: '$132.12',
+		price: 132.12,
 		rating: 'star',
 	},
 	{
@@ -67,7 +67,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: ComingSoon,
-		price: '$142.12',
+		price: 142.12,
 		rating: 'star',
 	},
 	{
@@ -77,7 +77,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$152.12',
+		price: 152.12,
 		rating: 'star',
 	},
 	{
@@ -87,7 +87,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$162.12',
+		price: 162.12,
 		rating: 'star',
 	},
 	{
@@ -97,7 +97,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$172.12',
+		price: 172.12,
 		rating: 'star',
 	},
 	{
@@ -107,7 +107,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$182.12',
+		price: 182.12,
 		rating: 'star',
 	},
 	{
@@ -117,7 +117,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$192.12',
+		price: 192.12,
 		rating: 'star',
 	},
 	{
@@ -127,7 +127,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$202.12',
+		price: 202.12,
 		rating: 'star',
 	},
 	{
@@ -137,7 +137,7 @@ export const Products: IProduct[] = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
 		link: Contact,
-		price: '$212.12',
+		price: 212.12,
 		rating: 'star',
 	},
 ];

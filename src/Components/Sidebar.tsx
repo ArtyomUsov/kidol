@@ -3,11 +3,23 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../Components/Sidebar.css';
 import 'swiper/css/bundle';
 import React, { useState } from 'react';
+import Nouislider from 'nouislider-react';
+import { Products } from '../date/Products';
 
 export const Sidebar = () => {
 	const [selectedValue, setSelectedValue] = useState('Radio1');
 	const [selectedValue1, setSelectedValue1] = useState('Radio5');
+	const [minPrice, setMinPrice] = useState(16);
+	const [maxPrice, setMaxPrice] = useState(306);
 
+	const filteredProducts = Products.filter(product => {
+		return product.price >= minPrice && product.price <= maxPrice;
+	});
+
+	const handleSliderChange = (values: number[]) => {
+		setMinPrice(Math.round(values[0]));
+		setMaxPrice(Math.round(values[1]));
+	};
 	const handleChange = (event: { target: { value: React.SetStateAction<string> } }) => {
 		setSelectedValue(event.target.value);
 	};
@@ -72,23 +84,19 @@ export const Sidebar = () => {
 							<div className='widget-price-filter'>
 								<div className='slider-labels'>
 									<div className='caption'>
-										<span id='slider-range-value1'>$16</span>
+										<span id='slider-range-value1'>${minPrice}</span>
 									</div>
 									<span className='range-separator'></span>
 									<div className='caption'>
-										<span id='slider-range-value2'>$306</span>
+										<span id='slider-range-value2'>${maxPrice}</span>
 									</div>
 								</div>
-								<div className='slider-range noUi-target noUi-ltr noUi-horizontal noUi-background' id='slider-range'>
-									<div className='noUi-base'>
-										<div className='noUi-origin noUi-connect' style={{ left: '0%' }}>
-											<div className='noUi-handle noUi-handle-lower'></div>
-										</div>
-										<div className='noUi-origin noUi-background' style={{ left: '75.5208%' }}>
-											<div className='noUi-handle noUi-handle-upper'></div>
-										</div>
-									</div>
-								</div>
+								<Nouislider
+									range={{ min: 16, max: 400 }}
+									start={[minPrice, maxPrice]}
+									connect
+									onSlide={handleSliderChange}
+								/>
 							</div>
 						</div>
 					</div>
@@ -195,51 +203,3 @@ export const Sidebar = () => {
 		</>
 	);
 };
-
-// function PriceFilterWidget({ filter, setFilter }) {
-// 	const [minPrice, setMinPrice] = useState(filter.minPrice || 16);
-// 	const [maxPrice, setMaxPrice] = useState(filter.maxPrice || 306);
-
-// 	const handleMinPriceChange = (event: { target: { value: any; }; }) => {
-// 	  setMinPrice(event.target.value);
-// 	  setFilter({ ...filter, minPrice: event.target.value });
-// 	};
-
-// 	const handleMaxPriceChange = (event: { target: { value: any; }; }) => {
-// 	  setMaxPrice(event.target.value);
-// 	  setFilter({ ...filter, maxPrice: event.target.value });
-// 	};
-
-// 	const handleResetClick = () => {
-// 	  setMinPrice('');
-// 	  setMaxPrice('');
-// 	  setFilter({});
-// 	};
-
-// 	return (
-// 	  <div className='price-filter-widget'>
-// 		<h2>Filter by Price:</h2>
-// 		<div className='price-filter'>
-// 		  <label htmlFor='min-price'>Min Price:</label>
-// 		  <input
-// 			type='number'
-// 			id='min-price'
-// 			name='min-price'
-// 			value={minPrice}
-// 			onChange={handleMinPriceChange}
-// 		  />
-// 		  <label htmlFor='max-price'>Max Price:</label>
-// 		  <input
-// 			type='number'
-// 			id='max-price'
-// 			name='max-price'
-// 			value={maxPrice}
-// 			onChange={handleMaxPriceChange}
-// 		  />
-// 		  <button onClick={handleResetClick}>Reset</button>
-// 		</div>
-// 	  </div>
-// 	);
-//   }
-
-//   export default PriceFilterWidget;

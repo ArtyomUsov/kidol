@@ -4,6 +4,8 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*! nouislider - 14.7.0 - 4/6/2021 */
+
 /**
  * @license React
  * react-dom.production.min.js

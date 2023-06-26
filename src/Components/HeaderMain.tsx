@@ -20,6 +20,14 @@ import {
 	ProductDetails,
 	ProductVariable,
 	ProductGrouped,
+	BlogNoSidebar,
+	Blog3Column,
+	Blog4Column,
+	BlogLeftSidebar,
+	BlogRightSidebar,
+	BlogDetailsLeftSidebar,
+	BlogDetailsRightSidebar,
+	BlogDetailsNoSidebar,
 } from '../date/Items';
 
 const HeaderMain = () => {
@@ -212,31 +220,31 @@ const HeaderMain = () => {
 											</ul>
 										</li>
 										<li className='has-submenu'>
-											<Link to={''}>Blog</Link>
+											<Link to={HomeOne}>Blog</Link>
 											<ul className='submenu-nav'>
 												<li>
-													<Link to={''}>Blog 3 Column</Link>
+													<Link to={Blog3Column}>Blog 3 Column</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog 4 Column</Link>
+													<Link to={Blog4Column}>Blog 4 Column</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog Left Sidebar</Link>
+													<Link to={BlogLeftSidebar}>Blog Left Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog Right Sidebar</Link>
+													<Link to={BlogRightSidebar}>Blog Right Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog No Sidebar</Link>
+													<Link to={BlogNoSidebar}>Blog No Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog Details Left Sidebar</Link>
+													<Link to={BlogDetailsLeftSidebar}>Blog Details Left Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog Details Right Sidebar</Link>
+													<Link to={BlogDetailsRightSidebar}>Blog Details Right Sidebar</Link>
 												</li>
 												<li>
-													<Link to={''}>Blog Details No Sidebar</Link>
+													<Link to={BlogDetailsNoSidebar}>Blog Details No Sidebar</Link>
 												</li>
 											</ul>
 										</li>

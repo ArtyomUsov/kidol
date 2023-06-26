@@ -12,12 +12,7 @@ import ten from '../img/shop/10.webp';
 import eleven from '../img/shop/11.webp';
 import twelve from '../img/shop/12.webp';
 
-const homeOne = '/homeOne';
-const homeTwo = '/homeTwo';
-const About = '/About';
-const NotFound = '/NotFound';
-const ComingSoon = '/ComingSoon';
-const Contact = '/Contact';
+const ProductDetails = '/ProductDetails';
 
 export const Products: IProduct[] = [
 	{
@@ -26,7 +21,7 @@ export const Products: IProduct[] = [
 		image: `${shop1}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: homeOne,
+		link: ProductDetails,
 		price: 102.12,
 		rating: 'star',
 	},
@@ -36,7 +31,7 @@ export const Products: IProduct[] = [
 		image: `${shop2}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: homeTwo,
+		link: ProductDetails,
 		price: 112.12,
 		rating: 'star',
 	},
@@ -46,7 +41,7 @@ export const Products: IProduct[] = [
 		image: `${shop3}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: About,
+		link: ProductDetails,
 		price: 122.12,
 		rating: 'star',
 	},
@@ -56,7 +51,7 @@ export const Products: IProduct[] = [
 		image: `${shop4}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: NotFound,
+		link: ProductDetails,
 		price: 132.12,
 		rating: 'star',
 	},
@@ -66,7 +61,7 @@ export const Products: IProduct[] = [
 		image: `${shop5}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: ComingSoon,
+		link: ProductDetails,
 		price: 142.12,
 		rating: 'star',
 	},
@@ -76,7 +71,7 @@ export const Products: IProduct[] = [
 		image: `${shop6}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 152.12,
 		rating: 'star',
 	},
@@ -86,7 +81,7 @@ export const Products: IProduct[] = [
 		image: `${shop7}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 162.12,
 		rating: 'star',
 	},
@@ -96,7 +91,7 @@ export const Products: IProduct[] = [
 		image: `${shop8}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 172.12,
 		rating: 'star',
 	},
@@ -106,7 +101,7 @@ export const Products: IProduct[] = [
 		image: `${nine}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 182.12,
 		rating: 'star',
 	},
@@ -116,7 +111,7 @@ export const Products: IProduct[] = [
 		image: `${ten}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 192.12,
 		rating: 'star',
 	},
@@ -126,7 +121,7 @@ export const Products: IProduct[] = [
 		image: `${eleven}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 202.12,
 		rating: 'star',
 	},
@@ -136,7 +131,7 @@ export const Products: IProduct[] = [
 		image: `${twelve}`,
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla quis ipsum enim viverra. Enim in morbi tincidunt ante luctus tincidunt integer. Sed adipiscing vehicula.',
-		link: Contact,
+		link: ProductDetails,
 		price: 212.12,
 		rating: 'star',
 	},

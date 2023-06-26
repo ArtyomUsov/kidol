@@ -220,7 +220,7 @@ const HeaderMain = () => {
 											</ul>
 										</li>
 										<li className='has-submenu'>
-											<Link to={HomeOne}>Blog</Link>
+											<Link to={BlogNoSidebar}>Blog</Link>
 											<ul className='submenu-nav'>
 												<li>
 													<Link to={Blog3Column}>Blog 3 Column</Link>

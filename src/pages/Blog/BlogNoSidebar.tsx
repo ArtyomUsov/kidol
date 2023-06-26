@@ -5,13 +5,13 @@ import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/FooterMain';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../../date/Items';
+import { HomeOne, BlogLeftSidebar } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import { Products } from '../../date/Products';
-import Product from '../../Components/Product';
+import blog1 from '../../img/blog/1.webp';
+import blog2 from '../../img/blog/2.webp';
+import blog3 from '../../img/blog/3.webp';
 
 export function BlogNoSidebar() {
-	const [activeTab, setActiveTab] = useState(1);
 	return (
 		<>
 			<HeaderMain />
@@ -24,7 +24,7 @@ export function BlogNoSidebar() {
 						<div className='col-lg-12 m-auto' style={{}}>
 							<div className='page-title-content text-center' style={{}}>
 								<h2 className='title h2' style={{}}>
-									Product
+									Blog
 								</h2>
 								<div className='bread-crumbs' style={{}}>
 									<Link to={HomeOne}>Home</Link>
@@ -34,7 +34,7 @@ export function BlogNoSidebar() {
 									</span>
 									<span className='active' style={{}}>
 										{' '}
-										Product
+										Blog
 									</span>
 								</div>
 							</div>
@@ -42,147 +42,284 @@ export function BlogNoSidebar() {
 					</div>
 				</div>
 			</section>
-			<section className='product-area product-grid-area'>
+			<section className='blog-area blog-grid-area'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-12'>
-							<div className='shop-toolbar-wrap'>
-								<div className='product-showing-status'>
-									<p className='count-result'>
-										<span>12 </span> Product Found of <span> 30</span>
-									</p>
-								</div>
-								<div className='product-view-mode'>
-									<nav>
-										<div className='nav nav-tabs active' id='nav-tab' role='tablist'>
-											<button
-												className={`nav-link ${activeTab === 1 ? 'active' : ''}`}
-												onClick={() => setActiveTab(1)}
-												type='button'
-											>
-												<i className='fa fa-th'></i>
-											</button>
-
-											<button
-												className={`nav-link ${activeTab === 2 ? 'active' : ''}`}
-												onClick={() => setActiveTab(2)}
-												type='button'
-											>
-												<i className='fa fa-list'></i>
-											</button>
-
-											<button
-												className={`nav-link ${activeTab === 3 ? 'active' : ''}`}
-												onClick={() => setActiveTab(3)}
-												type='button'
-											>
-												<i className='fa fa-th-large'></i>
-											</button>
-										</div>
-									</nav>
-								</div>
-								<div className='product-sorting-menu product-sorting'>
-									<span className='current'>
-										Sort By :{' '}
-										<span>
-											{' '}
-											Default <i className='fa fa-angle-down'></i>
-										</span>
-									</span>
-									<ul>
-										<li className='active'>
-											<a href='' className='active'>
-												Sort by Default
-											</a>
-										</li>
-										<li>
-											<a href=''>Sort by Popularity</a>
-										</li>
-										<li>
-											<a href=''>Sort by Rated</a>
-										</li>
-										<li>
-											<a href=''>Sort by Latest</a>
-										</li>
-										<li>
-											<a href=''>
-												Sort by Price: <i className='lastudioicon-arrow-up'></i>
-											</a>
-										</li>
-										<li>
-											<a href=''>
-												Sort by Price: <i className='lastudioicon-arrow-down'></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div className='tab-content' id='nav-tabContent'>
-								{activeTab === 1 && (
-									<div className='tab-pane fade show active'>
-										<div className='row'>
-											{Products.map(product => (
-												<div className='col-lg-3 col-md-4 col-sm-6'>
-													<Product product={product} key={product.id} className='' />
+							<div className='blog-content-area'>
+								<div className='row'>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog1} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
+													</a>
+													<span className='dots'></span>
+													<span className='post-date'>25 May, 2121</span>
 												</div>
-											))}
+												<h4 className='title'>
+													<a href='blog-details.html'>Baby Planet's toys makes learning so easy</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
 										</div>
+										{/* <!--== End Blog Post Item ==--> */}
 									</div>
-								)}
-							</div>
-							<div className='tab-content' id='nav-tabContent'>
-								{activeTab === 2 && (
-									<div className='tab-pane fade show active'>
-										<div className='row'>
-											{Products.map(product => (
-												<div className='col-12 product-items-list'>
-													<Product product={product} key={product.id} className='d-block' />
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-xs-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog2} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
+													</a>
+													<span className='dots'></span>
+													<span className='post-date'>July 24, 2022</span>
 												</div>
-											))}
+												<h4 className='title'>
+													<a href='blog-details.html'>Mother revolves around her children</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
 										</div>
+										{/* <!--== End Blog Post Item ==--> */}
 									</div>
-								)}
-							</div>
-							<div className='tab-content' id='nav-tabContent'>
-								{activeTab === 3 && (
-									<div className='tab-pane fade show active'>
-										<div className='row'>
-											{Products.map(product => (
-												<div className='col-sm-6'>
-													<Product product={product} key={product.id} className='' />
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-md-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog3} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
+													</a>
+													<span className='dots'></span>
+													<span className='post-date'>January 28, 2022</span>
 												</div>
-											))}
+												<h4 className='title'>
+													<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
 										</div>
+										{/* <!--== End Blog Post Item ==--> */}
 									</div>
-								)}
-							</div>
-							<div className='row'>
-								<div className='col-lg-12'>
-									<div className='pagination-area'>
-										<nav>
-											<ul className='page-numbers'>
-												<li>
-													<a className='page-number active' href=''>
-														1
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog1} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
 													</a>
-												</li>
-												<li>
-													<a className='page-number' href=''>
-														2
+													<span className='dots'></span>
+													<span className='post-date'>25 May, 2121</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Baby Planet's toys makes learning so easy</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-xs-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog2} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
 													</a>
-												</li>
-												<li>
-													<a className='page-number' href=''>
-														3
+													<span className='dots'></span>
+													<span className='post-date'>July 24, 2022</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Mother revolves around her children</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-md-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog3} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
 													</a>
-												</li>
-												<li>
-													<a className='page-number next' href=''>
-														<i className='fa fa-angle-right'></i>
+													<span className='dots'></span>
+													<span className='post-date'>January 28, 2022</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog1} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
 													</a>
-												</li>
-											</ul>
-										</nav>
+													<span className='dots'></span>
+													<span className='post-date'>25 May, 2121</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Baby Planet's toys makes learning so easy</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-xs-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog2} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
+													</a>
+													<span className='dots'></span>
+													<span className='post-date'>July 24, 2022</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Mother revolves around her children</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+									<div className='col-sm-6 col-md-4'>
+										{/* <!--== Start Blog Post Item ==--> */}
+										<div className='post-item mt-md-30'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={blog3} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<div className='meta'>
+													By,{' '}
+													<a className='author' href='#'>
+														June Cha{' '}
+													</a>
+													<span className='dots'></span>
+													<span className='post-date'>January 28, 2022</span>
+												</div>
+												<h4 className='title'>
+													<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
+												</h4>
+												<Link to={BlogLeftSidebar}>
+													<a className='btn-theme'>Read More</a>
+												</Link>
+											</div>
+										</div>
+										{/* <!--== End Blog Post Item ==--> */}
+									</div>
+								</div>
+								<div className='row'>
+									<div className='col-lg-12'>
+										<div className='pagination-area'>
+											<nav>
+												<ul className='page-numbers'>
+													<li>
+														<a className='page-number active' href='#'>
+															1
+														</a>
+													</li>
+													<li>
+														<a className='page-number' href='#'>
+															2
+														</a>
+													</li>
+													<li>
+														<a className='page-number' href='#'>
+															3
+														</a>
+													</li>
+													<li>
+														<a className='page-number next' href='#'>
+															<i className='fa fa-angle-right'></i>
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
 									</div>
 								</div>
 							</div>

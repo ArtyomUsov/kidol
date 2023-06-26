@@ -7,10 +7,20 @@ import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import { Slider } from '../../Components/Slider';
+import '../../Components/Sidebar.css';
+import mini1 from '../../img/blog/mini1.webp';
+import mini2 from '../../img/blog/mini2.webp';
+import mini3 from '../../img/blog/mini3.webp';
+import mini4 from '../../img/blog/mini4.webp';
+import photo8 from '../../img/blog/max8.webp';
+import photo4 from '../../img/blog/4.webp';
+import photo6 from '../../img/blog/6.webp';
+import photo7 from '../../img/blog/7.webp';
+import photo1 from '../../img/blog/photo1.webp';
+import photo2 from '../../img/blog/photo2.webp';
+import photo3 from '../../img/blog/photo3.webp';
 
-export function BlogDetailsRightSidebar() {
-	const [count, setCount] = useState(0);
+export const BlogDetailsRightSidebar = () => {
 	return (
 		<>
 			<HeaderMain />
@@ -23,7 +33,7 @@ export function BlogDetailsRightSidebar() {
 						<div className='col-lg-12 m-auto' style={{}}>
 							<div className='page-title-content text-center' style={{}}>
 								<h2 className='title h2' style={{}}>
-									Product
+									Blog
 								</h2>
 								<div className='bread-crumbs' style={{}}>
 									<Link to={HomeOne}>Home</Link>
@@ -33,7 +43,7 @@ export function BlogDetailsRightSidebar() {
 									</span>
 									<span className='active' style={{}}>
 										{' '}
-										Product
+										Blog
 									</span>
 								</div>
 							</div>
@@ -41,505 +51,372 @@ export function BlogDetailsRightSidebar() {
 					</div>
 				</div>
 			</section>
-			<section className='product-single-area'>
+			<section className='blog-area blog-grid-area'>
 				<div className='container'>
 					<div className='row'>
-						<div className='col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-0'>
-							<div className='single-product-slider'>
-								<div className='single-product-thumb'>
-									<div className='swiper-container single-product-thumb-slider swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-free-mode'>
-										<div
-											className='swiper-wrapper'
-											// style="transition-duration: 0ms;"
-										>
-											<div
-												className='swiper-slide zoom zoom-hover'
-												// style="width: 570px; opacity: 0; transform: translate3d(0px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/1.jpg'>
-														<img src='assets/img/shop/details/1.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/1.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-prev'
-												// style="width: 570px; opacity: 0; transform: translate3d(-570px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/2.jpg'>
-														<img src='assets/img/shop/details/2.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/2.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-active'
-												// style="width: 570px; opacity: 1; transform: translate3d(-1140px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/3.jpg'>
-														<img src='assets/img/shop/details/3.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/3.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
+						<div className='col-lg-8 order-1 order-lg-0'>
+							<div className='post-details-content'>
+								<div className='post-details-body'>
+									<div className='thumb'>
+										<img className='w-100' src={photo8} alt='Image' />
 									</div>
-								</div>
-								<div className='single-product-nav'>
-									<div className='swiper-container single-product-nav-slider swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs'>
-										<div
-											className='swiper-wrapper'
-											// style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
-										>
-											<div
-												className='swiper-slide swiper-slide-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav1.jpg' alt='Image-HasTech' />
+									<div className='content'>
+										<div className='meta'>
+											By,{' '}
+											<a className='author' href='blog.html'>
+												June Cha{' '}
+											</a>
+											<span className='dots'></span>
+											<span className='post-date'>25 May, 2021</span>
+										</div>
+										<h4 className='title'>Lorem ipsum dolor sit amet, consecte adipisicing elit sed doeiusm</h4>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun ut
+											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolol
+											laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volu
+											velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide
+											sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+											natus error sit voluptatem accusantium
+										</p>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun ut
+											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita ullamco labori nisi
+											ut aliquip ex ea commodo conseq Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur.{' '}
+										</p>
+										<div className='blockquote-area'>
+											<blockquote className='blockquote-style'>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit eiusmod tempor incididunt</p>
+												<div className='icon'>
+													<img src={photo4} alt='Icon' />
+												</div>
+											</blockquote>
+										</div>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun ut
+											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolol
+											laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volu
+											velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proide
+											sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+											natus error sit voluptatem accusantium
+										</p>
+										<div className='row'>
+											<div className='col-md-6'>
+												<div className='thumb-inner'>
+													<img className='w-100' src={photo6} alt='Image' />
 												</div>
 											</div>
-											<div
-												className='swiper-slide swiper-slide-next'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav2.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-											<div
-												className='swiper-slide swiper-slide-thumb-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav3.jpg' alt='Image-HasTech' />
+											<div className='col-md-6'>
+												<div className='thumb-inner mb-sm-30'>
+													<img className='w-100' src={photo7} alt='Image' />
 												</div>
 											</div>
 										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididun ut
+											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita ullamco labori nisi
+											ut aliquip ex ea commodo conseq Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur.
+										</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div className='col-lg-6'>
-							<div className='single-product-info'>
-								<h4 className='title'>Product Variable</h4>
-								<div className='prices'>
-									<span className='price'>$80.59</span>
-									<span> – </span>
-									<span className='price-old'>$120.59</span>
-								</div>
-								<div className='product-rating'>
-									<div className='rating'>
-										<span className='fa fa-star'></span>
-										<span className='fa fa-star'></span>
-										<span className='fa fa-star'></span>
-										<span className='fa fa-star'></span>
-										<span className='fa fa-star'></span>
-									</div>
-									<div className='review'>
-										<a href='#/'>( 5 Customer Review )</a>
-									</div>
-								</div>
-								<div className='single-product-featured'>
-									<ul>
-										<li>
-											<i className='fa fa-check'></i> Free Shipping
-										</li>
-										<li>
-											<i className='fa fa-check'></i> Support 24/7
-										</li>
-										<li>
-											<i className='fa fa-check'></i> Money Return
-										</li>
-									</ul>
-								</div>
-								<table className='table'>
-									<tbody>
-										<tr>
-											<th scope='row'>Flaver:</th>
-											<td>
-												Orange Flaver <i className='fa fa-angle-down'></i>
-											</td>
-										</tr>
-										<tr>
-											<th scope='row'>Size:</th>
-											<td>
-												Medium Size With Tube <i className='fa fa-angle-down'></i>
-											</td>
-										</tr>
-										<tr>
-											<th scope='row'>Color:</th>
-											<td>
-												Red &amp; Black <i className='fa fa-angle-down'></i>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<p className='product-desc'>
-									Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quisll exercitation ullamco laboris nisi ut aliquip ex
-									ea commodo consequat. Duisol aute irure dolor in reprehenderit.
-								</p>
-								<div className='quick-product-action'>
-									<div className='action-top'>
-										<div className='pro-qty'>
-											<input type='text' id='quantity' title='Quantity' value={count} />
-											<a className='inc qty-btn' onClick={() => setCount(count + 1)}>
-												<i className='fa fa-plus'></i>
-											</a>
-											<a className='dec qty-btn' onClick={() => count > 0 && setCount(count - 1)}>
-												<i className='fa fa-minus'></i>
-											</a>
-										</div>
-										<button className='btn btn-theme'>Add to Cart</button>
-										<a className='btn-wishlist' href='shop-wishlist.html'>
-											Add to Wishlist
-										</a>
-									</div>
-								</div>
-								<div className='widget'>
-									<h3 className='title' style={{ marginRight: '5px' }}>
-										SKU:
-									</h3>
-									<div className='widget-tags'>
-										<span>Ch-256xl</span>
-									</div>
-								</div>
-								<div className='widget'>
-									<h3 className='title' style={{ marginRight: '5px' }}>
-										Categories:
-									</h3>
-									<div className='widget-tags'>
-										<a href='blog.html'>Toys.</a>
-										<a href='blog.html'>Dresss</a>
-									</div>
-								</div>
-								<div className='widget'>
-									<h3 className='title' style={{ marginRight: '5px' }}>
-										Tag:
-									</h3>
-									<div className='widget-tags'>
-										<a href='blog.html'>Toys,</a>
-										<a href='blog.html'>Dress</a>
-									</div>
-								</div>
-								<div className='widget'>
-									<h3 className='title'>Share:</h3>
-									<div className='widget-tags widget-share'>
-										<span className='fa fa-facebook'></span>
-										<span className='fa fa-dribbble'></span>
-										<span className='fa fa-pinterest-p'></span>
-										<span className='fa fa-twitter'></span>
-										<span className='fa fa-linkedin'></span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className='row'>
-							<div className='col-lg-12'>
-								<div className='product-description-review'>
-									<ul className='nav nav-tabs product-description-tab-menu' id='myTab' role='tablist'>
-										<li className='nav-item' role='presentation'>
-											<button
-												className='nav-link'
-												id='product-aditional-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#commentProduct'
-												type='button'
-												role='tab'
-												aria-selected='false'
-											>
-												Information
-											</button>
-										</li>
-										<li className='nav-item' role='presentation'>
-											<button
-												className='nav-link'
-												id='product-desc-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#productDesc'
-												type='button'
-												role='tab'
-												aria-controls='productDesc'
-												aria-selected='false'
-											>
-												Description
-											</button>
-										</li>
-										<li className='nav-item' role='presentation'>
-											<button
-												className='nav-link active'
-												id='product-review-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#productReview'
-												type='button'
-												role='tab'
-												aria-controls='productReview'
-												aria-selected='true'
-											>
-												Reviews (03)
-											</button>
-										</li>
-									</ul>
-									<div className='tab-content product-description-tab-content' id='myTabContent'>
-										<div
-											className='tab-pane fade'
-											id='commentProduct'
-											role='tabpanel'
-											aria-labelledby='product-aditional-tab'
-										>
-											<div className='product-desc'>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut
-													labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
-													laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-													voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-													non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed utlo
-													perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-													totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-													vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-													aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-												</p>
-											</div>
-										</div>
-										<div className='tab-pane fade' id='productDesc' role='tabpanel' aria-labelledby='product-desc-tab'>
-											<div className='product-desc'>
-												<p>
-													Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do eiusmod tempor incididunt ut
-													labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco
-													laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-													voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-													non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed utlo
-													perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-													totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-													vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-													aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-												</p>
-											</div>
-										</div>
-										<div
-											className='tab-pane fade active show'
-											id='productReview'
-											role='tabpanel'
-											aria-labelledby='product-review-tab'
-										>
-											<div className='product-review'>
-												<div className='review-header'>
-													<h4 className='title'>Customer Reviews</h4>
-													<div className='review-info'>
-														<ul className='review-rating'>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star-o'></i>
-															</li>
-														</ul>
-														<span className='review-caption'>Based on 1 review</span>
-														<span className='review-write-btn'>Write a review</span>
+							<div className='comment-area'>
+								<div className='row'>
+									<div className='col-lg-12'>
+										<div className='comment-view-area'>
+											<h2 className='title h2'>3 Comments</h2>
+											<div className='comment-content'>
+												<div className='single-comment'>
+													<div className='author-info'>
+														<div className='thumb'>
+															<img src={photo1} alt='Image' />
+														</div>
+														<div className='author-details border-bottom'>
+															<ul>
+																<li>
+																	Aidyn Cody <span> - 25 May, 2121</span>
+																</li>
+															</ul>
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+																incididun ut labore et dolore magna aliqua.
+															</p>
+															<a className='btn-theme' href='#/'>
+																Reply
+															</a>
+														</div>
 													</div>
 												</div>
-												<div className='product-review-form'>
-													<h4 className='title'>Write a review</h4>
-													<form action='#' method='post'>
-														<div className='review-form-content'>
-															<div className='row'>
-																<div className='col-md-12'>
-																	<div className='form-group'>
-																		<label htmlFor='reviewFormName'>Name</label>
-																		<input
-																			className='form-control'
-																			id='reviewFormName'
-																			type='text'
-																			placeholder='Enter your name'
-																			// required=""
-																		/>
-																	</div>
-																</div>
-																<div className='col-md-12'>
-																	<div className='form-group'>
-																		<label htmlFor='reviewFormEmail'>Email</label>
-																		<input
-																			className='form-control'
-																			id='reviewFormEmail'
-																			type='email'
-																			placeholder='john.smith@example.com'
-																			// required=""
-																		/>
-																	</div>
-																</div>
-																<div className='col-md-12'>
-																	<div className='rating'>
-																		<span className='rating-title'>Rating</span>
-																		<span>
-																			<a className='fa fa-star-o' href='#/'></a>
-																			<a className='fa fa-star-o' href='#/'></a>
-																			<a className='fa fa-star-o' href='#/'></a>
-																			<a className='fa fa-star-o' href='#/'></a>
-																			<a className='fa fa-star-o' href='#/'></a>
-																		</span>
-																	</div>
-																</div>
-																<div className='col-md-12'>
-																	<div className='form-group'>
-																		<label htmlFor='reviewReviewTitle'>Review Title</label>
-																		<input
-																			className='form-control'
-																			id='reviewReviewTitle'
-																			type='text'
-																			placeholder='Give your review a title'
-																			// required=""
-																		/>
-																	</div>
-																</div>
-																<div className='col-md-12'>
-																	<div className='form-group'>
-																		<label htmlFor='reviewFormTextarea'>
-																			Body of Review <span>(1500)</span>
-																		</label>
-																		<textarea
-																			className='form-control textarea'
-																			id='reviewFormTextarea'
-																			name='comment'
-																			// rows="7"
-																			placeholder='Write your comments here'
-																			// required=""
-																		></textarea>
-																	</div>
+											</div>
+											<div className='comment-content comment-content-style2'>
+												<div className='single-comment'>
+													<div className='author-info'>
+														<div className='thumb'>
+															<img src={photo2} alt='Image' />
+														</div>
+														<div className='author-details'>
+															<ul>
+																<li>
+																	Jivan Cody <span> - 25 May, 2121</span>
+																</li>
+															</ul>
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+																incididun ut labore et dolore magna aliqua.
+															</p>
+															<a className='btn-theme' href='#/'>
+																Reply
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div className='comment-content'>
+												<div className='single-comment'>
+													<div className='author-info'>
+														<div className='thumb pt-38'>
+															<img src={photo3} alt='Image' />
+														</div>
+														<div className='author-details border-top pt-37'>
+															<ul>
+																<li>
+																	Rose Cody <span> - 25 May, 2121</span>
+																</li>
+															</ul>
+															<p>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+																incididun ut labore et dolore magna aliqua.
+															</p>
+															<a className='btn-theme' href='#/'>
+																Reply
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div className='comment-form-wrap mb-lg-0'>
+											<form
+												className='comment-form-wrapper'
+												id='comment-form'
+												action='https://whizthemes.com/mail-php/raju/arden/mail.php'
+												method='post'
+											>
+												<div className='row'>
+													<div className='col-lg-12'>
+														<div className='section-title m-0'>
+															<h2 className='title'>Leave a Comment</h2>
+														</div>
+													</div>
+												</div>
+												<div className='row'>
+													<div className='col-lg-12'>
+														<div className='row'>
+															<div className='col-md-6'>
+																<div className='form-group'>
+																	<input className='form-control' type='text' placeholder='Name *' />
 																</div>
 															</div>
-															<div className='row'>
-																<div className='col-md-12'>
-																	<div className='form-group pull-right'>
-																		<button className='btn btn-theme' type='submit'>
-																			Submit Review
-																		</button>
-																	</div>
+															<div className='col-md-6'>
+																<div className='form-group'>
+																	<input className='form-control' type='email' placeholder='Email *' />
+																</div>
+															</div>
+															<div className='col-md-12'>
+																<div className='form-group'>
+																	<input className='form-control' type='text' placeholder='Subject (Optinal)' />
+																</div>
+															</div>
+															<div className='col-md-12'>
+																<div className='form-group'>
+																	<textarea className='form-control' placeholder='Message'></textarea>
+																</div>
+															</div>
+															<div className='col-md-12'>
+																<div className='form-group'>
+																	<button className='btn btn-theme' type='submit'>
+																		Send a Comment
+																	</button>
 																</div>
 															</div>
 														</div>
-													</form>
-												</div>
-												<div className='review-content'>
-													<div className='review-item'>
-														<ul className='review-rating'>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star-o'></i>
-															</li>
-														</ul>
-														<h4 className='title'>Cobus Bester</h4>
-														<h5 className='review-date'>
-															<span>Cobus Bester</span> on <span>Mar 03, 2021</span>
-														</h5>
-														<p>Can’t wait to start mixin’ with this one! Irba-irr-Up-up-up-up-date your theme!</p>
-														<a className='review-report' href='#/'>
-															Report as Inappropriate
-														</a>
 													</div>
 												</div>
-												<div className='review-content'>
-													<div className='review-item'>
-														<ul className='review-rating'>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star-o'></i>
-															</li>
-														</ul>
-														<h4 className='title'>Cobus Bester</h4>
-														<h5 className='review-date'>
-															<span>Cobus Bester</span> on <span>Mar 05, 2021</span>
-														</h5>
-														<p>Can’t wait to start mixin’ with this one! Irba-irr-Up-up-up-up-date your theme!</p>
-														<a className='review-report' href='#/'>
-															Report as Inappropriate
-														</a>
-													</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='col-lg-4 order-0 order-lg-1'>
+							<div className='sidebar-area blog-sidebar-area'>
+								<div className='widget-item'>
+									<div className='widget-body'>
+										<div className='widget-search-box'>
+											<form action='#' method='post'>
+												<div className='form-input-item'>
+													<label
+														// for="search2"
+														className='sr-only'
+													>
+														Search
+													</label>
+													<input type='text' id='search2' placeholder='Search' />
+													<button type='submit' className='btn-src'>
+														<i className='fa fa-search'></i>
+													</button>
 												</div>
-												<div className='review-content'>
-													<div className='review-item'>
-														<ul className='review-rating'>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star'></i>
-															</li>
-															<li>
-																<i className='fa fa-star-o'></i>
-															</li>
-														</ul>
-														<h4 className='title'>Cobus Bester</h4>
-														<h5 className='review-date'>
-															<span>Cobus Bester</span> on <span>Mar 07, 2021</span>
-														</h5>
-														<p>Can’t wait to start mixin’ with this one! Irba-irr-Up-up-up-up-date your theme!</p>
-														<a className='review-report' href='#/'>
-															Report as Inappropriate
-														</a>
-													</div>
-												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div className='widget-item widget-item2'>
+									<div className='widget-title blog-post-title'>
+										<h3 className='title h3'>Archives</h3>
+									</div>
+									<div className='widget-body'>
+										<div className='widget-archives'>
+											<ul>
+												<li>
+													<a href='blog.html'>January 2018</a>
+												</li>
+												<li>
+													<a href='blog.html'>February 2019</a>
+												</li>
+												<li>
+													<a href='blog.html'>March 2020</a>
+												</li>
+												<li>
+													<a href='blog.html'>April 2021</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div className='widget-item'>
+									<div className='widget-title blog-post-title'>
+										<h3 className='title h3'>Recent Post</h3>
+									</div>
+									<div className='widget-body'>
+										<div className='widget-blog-post'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={mini1} alt='Image' />
+												</a>
 											</div>
+											<div className='content'>
+												<span>25 May, 2121</span>
+												<h4>
+													<a href='blog-details.html'>Baby Planet's toys to makes learning easy</a>
+												</h4>
+											</div>
+										</div>
+										<div className='widget-blog-post'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={mini2} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<span>25 May, 2121</span>
+												<h4>
+													<a href='blog-details.html'>Lorem ipsum dolor sit conse tetur adipis.</a>
+												</h4>
+											</div>
+										</div>
+										<div className='widget-blog-post'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={mini3} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<span>25 May, 2121</span>
+												<h4>
+													<a href='blog-details.html'>Mother revolves around her children</a>
+												</h4>
+											</div>
+										</div>
+										<div className='widget-blog-post'>
+											<div className='thumb'>
+												<a href='blog-details.html'>
+													<img src={mini4} alt='Image' />
+												</a>
+											</div>
+											<div className='content'>
+												<span>25 May, 2121</span>
+												<h4>
+													<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
+												</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className='widget-item widget-item2'>
+									<div className='widget-title blog-post-title'>
+										<h3 className='title h3'>Categories</h3>
+									</div>
+									<div className='widget-body'>
+										<div className='widget-categories'>
+											<ul>
+												<li>
+													<a href='blog.html'>Baby Toys</a>
+												</li>
+												<li>
+													<a href='blog.html'>Baby Dress</a>
+												</li>
+												<li>
+													<a href='blog.html'>Baby Dayper</a>
+												</li>
+												<li>
+													<a href='blog.html'>Baby Book</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div className='widget-item'>
+									<div className='widget-title blog-post-title'>
+										<h3 className='title h3'>Subscribe</h3>
+									</div>
+									<div className='widget-body'>
+										<div className='widget-newsletter'>
+											<div className='newsletter-form'>
+												<form action='#'>
+													<input className='form-control' type='email' placeholder='Enter Your Email' />
+													<button className='btn btn-theme' type='submit'>
+														Subscribe Now
+													</button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className='widget-item widget-item2 mb-md-0'>
+									<div className='widget-title blog-post-title'>
+										<h3 className='title h3'>Tags</h3>
+									</div>
+									<div className='widget-body'>
+										<div className='widget-tags'>
+											<ul>
+												<li>
+													<a href='blog.html'>Baby</a>
+												</li>
+												<li>
+													<a className='babyfashion' href='blog.html'>
+														BabyFashion
+													</a>
+												</li>
+												<li>
+													<a className='toy' href='blog.html'>
+														Toy
+													</a>
+												</li>
+												<li>
+													<a href='blog.html'>Baby Toy</a>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
@@ -548,9 +425,8 @@ export function BlogDetailsRightSidebar() {
 					</div>
 				</div>
 			</section>
-			<Slider />
 			<FooterMain />
 			<ButtonScrollTop />
 		</>
 	);
-}
+};

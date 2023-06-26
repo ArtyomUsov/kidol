@@ -1629,7 +1629,7 @@ img {
 	font-weight: 400;
 	margin-bottom: 13px;
 	position: relative;
-	font-family: "Fredoka One Regular", cursive;
+	font-family: 'Fredoka One Regular', cursive;
 	line-height: 1.2;
 }
 .sidebar-area.shop-sidebar-area .widget-item .widget-title .title:before {
@@ -4687,7 +4687,7 @@ img {
 		margin-bottom: 50px;
 	}
 }
-.blog-area.blog-grid-area.blog-grid-4column .post-item .content .title {
+.blog-area.blog-grid-area.blog-grid-4column .post-item .content .title a {
 	font-size: 24px;
 	margin-bottom: 18px;
 }
@@ -4719,6 +4719,7 @@ img {
 	margin-bottom: 9px;
 }
 .post-item .content .meta .author {
+	font-family: 'Rubik', sans-serif;
 	color: #f379a7;
 	font-weight: 400;
 	margin-right: 5px;
@@ -4832,6 +4833,7 @@ img {
 	color: #f379a7;
 	font-weight: 400;
 	margin-right: 9px;
+	font-family: 'Rubik', sans-serif;
 }
 .post-details-content .post-details-body .content .meta .author:hover {
 	color: #95b3e0;
@@ -5049,6 +5051,7 @@ img {
 	padding: 10px 86px 10px 28px;
 	font-style: italic;
 	width: 100%;
+	font-family: 'Rubik', sans-serif;
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-search-box form .form-input-item input:focus {
 	border-color: #f379a7;
@@ -5088,6 +5091,7 @@ img {
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-archives ul li a {
 	color: #545454;
+	font-family: 'Rubik', sans-serif;
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-archives ul li a:hover {
 	color: #f379a7;
@@ -5136,6 +5140,7 @@ img {
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-blog-post .content a {
 	color: #383838;
+	font-family: 'Rubik', sans-serif;
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-blog-post .content a:hover {
 	color: #f379a7;
@@ -5156,6 +5161,7 @@ img {
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-categories ul li a {
 	color: #545454;
+	font-family: 'Rubik', sans-serif;
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-categories ul li a:hover {
 	color: #f379a7;
@@ -5230,6 +5236,7 @@ img {
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
+	font-family: 'Rubik', sans-serif;
 }
 .sidebar-area.blog-sidebar-area .widget-body .widget-tags ul li a.babyfashion {
 	padding: 2px 25px;

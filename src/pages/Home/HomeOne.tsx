@@ -26,6 +26,10 @@ import { Products } from '../../date/Products';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { ProductSlide } from '../../Components/ProductSlide';
 import { Slider } from '../../Components/Slider';
+import { Link } from 'react-router-dom';
+import { BlogLeftSidebar, ShopNoSidebar } from '../../date/Items';
+import BgShape1 from '../../img/divider/shape1.webp';
+import BgShape2 from '../../img/divider/shape2.webp';
 
 export function HomeOne() {
 	return (
@@ -59,9 +63,9 @@ export function HomeOne() {
 														<div className='inner-content'>
 															<h2 className='h2'>Best Kids Store &amp; Online Shop</h2>
 															<p>Give The Gift Of Your Children Everyday</p>
-															<a href='shop.html' className='btn-theme'>
-																Shop This Now
-															</a>
+															<Link to={ShopNoSidebar}>
+																<a className='btn-theme'>Shop This Now</a>
+															</Link>
 														</div>
 													</div>
 												</div>
@@ -322,24 +326,28 @@ export function HomeOne() {
 										</li>
 									</ul>
 								</div>
-								<a className='btn-theme' href='shop.html'>
-									Shop Now
-								</a>
+								<Link to={ShopNoSidebar}>
+									<a className='btn-theme'>Shop Now</a>
+								</Link>
 							</div>
 						</div>
 					</div>
 					<div className='shape-group'>
 						<div className='shape-style3'>
-							<img src={divider1} alt='#' />
+							<img src={divider1} />
 						</div>
 						<div className='shape-style4'>
-							<img src={divider2} alt='#' />
+							<img src={divider2} />
 						</div>
 					</div>
 				</div>
 				<div className='shape-group'>
-					<div className='shape-style1' data-bg-img='../../img/divider/shape1.webp'></div>
-					<div className='shape-style2' data-bg-img='../../img/divider/shape2.webp'></div>
+					<div className='shape-style1'>
+						<img src={BgShape1} />
+					</div>
+					<div className='shape-style2'>
+						<img src={BgShape2} />
+					</div>
 				</div>
 			</section>
 			<section
@@ -360,9 +368,9 @@ export function HomeOne() {
 												Flat <span>20%</span> Off
 											</h4>
 										</div>
-										<a className='btn-theme' href='shop.html'>
-											Shop Now
-										</a>
+										<Link to={ShopNoSidebar}>
+											<a className='btn-theme'>Shop Now</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -378,9 +386,9 @@ export function HomeOne() {
 												Flat <span>30%</span> Off
 											</h4>
 										</div>
-										<a className='btn-theme' href='shop.html'>
-											Shop Now
-										</a>
+										<Link to={ShopNoSidebar}>
+											<a className='btn-theme'>Shop Now</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -420,7 +428,7 @@ export function HomeOne() {
 								<div className='content'>
 									<div className='meta'>
 										By,{' '}
-										<a className='author' href='blog.html'>
+										<a className='author' href='#'>
 											June Cha{' '}
 										</a>
 										<span className='dots'></span>
@@ -429,9 +437,9 @@ export function HomeOne() {
 									<h4 className='title'>
 										<a href='blog-details.html'>Baby Planet's toys makes learning so easy</a>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}
@@ -447,7 +455,7 @@ export function HomeOne() {
 								<div className='content'>
 									<div className='meta'>
 										By,{' '}
-										<a className='author' href='blog.html'>
+										<a className='author' href='#'>
 											June Cha{' '}
 										</a>
 										<span className='dots'></span>
@@ -456,9 +464,9 @@ export function HomeOne() {
 									<h4 className='title'>
 										<a href='blog-details.html'>Mother revolves around her children</a>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}
@@ -474,7 +482,7 @@ export function HomeOne() {
 								<div className='content'>
 									<div className='meta'>
 										By,{' '}
-										<a className='author' href='blog.html'>
+										<a className='author' href='#'>
 											June Cha{' '}
 										</a>
 										<span className='dots'></span>
@@ -483,9 +491,9 @@ export function HomeOne() {
 									<h4 className='title'>
 										<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}

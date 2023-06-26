@@ -41,6 +41,10 @@ import blog1 from '../../img/blog/1.webp';
 import blog2 from '../../img/blog/2.webp';
 import blog3 from '../../img/blog/3.webp';
 import { Slider } from '../../Components/Slider';
+import BgShape1 from '../../img/divider/shape1.webp';
+import BgShape2 from '../../img/divider/shape2.webp';
+import { Link } from 'react-router-dom';
+import { BlogLeftSidebar, BlogNoSidebar, ShopNoSidebar } from '../../date/Items';
 
 export function HomeTwo() {
 	return (
@@ -68,9 +72,9 @@ export function HomeTwo() {
 														<div className='inner-content'>
 															<h4 className='h4 subtitle'>New Arrivals</h4>
 															<h2 className='h2'>Best Kids Store &amp; Online Shop</h2>
-															<a href='shop.html' className='btn-theme'>
-																Discover Now
-															</a>
+															<Link to={ShopNoSidebar}>
+																<a className='btn-theme'>Discover Now</a>
+															</Link>
 														</div>
 													</div>
 												</div>
@@ -365,24 +369,28 @@ export function HomeTwo() {
 										</li>
 									</ul>
 								</div>
-								<a className='btn-theme' href='shop.html'>
-									Shop Now
-								</a>
+								<Link to={ShopNoSidebar}>
+									<a className='btn-theme'>Shop Now</a>
+								</Link>
 							</div>
 						</div>
 					</div>
 					<div className='shape-group'>
 						<div className='shape-style3'>
-							<img src={divider1} alt='#' />
+							<img src={divider1} />
 						</div>
 						<div className='shape-style4'>
-							<img src={divider2} alt='#' />
+							<img src={divider2} />
 						</div>
 					</div>
 				</div>
 				<div className='shape-group'>
-					<div className='shape-style1' data-bg-img='../../img/divider/shape1.webp'></div>
-					<div className='shape-style2' data-bg-img='../../img/divider/shape2.webp'></div>
+					<div className='shape-style1'>
+						<img src={BgShape1} />
+					</div>
+					<div className='shape-style2'>
+						<img src={BgShape2} />
+					</div>
 				</div>
 			</section>
 			<section
@@ -403,9 +411,9 @@ export function HomeTwo() {
 												Flat <span>20%</span> Off
 											</h4>
 										</div>
-										<a className='btn-theme' href='shop.html'>
-											Shop Now
-										</a>
+										<Link to={ShopNoSidebar}>
+											<a className='btn-theme'>Shop Now</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -421,9 +429,9 @@ export function HomeTwo() {
 												Flat <span>30%</span> Off
 											</h4>
 										</div>
-										<a className='btn-theme' href='shop.html'>
-											Shop Now
-										</a>
+										<Link to={ShopNoSidebar}>
+											<a className='btn-theme'>Shop Now</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -754,9 +762,9 @@ export function HomeTwo() {
 									<h4 className='title'>
 										<a href='blog-details.html'>Baby Planet's toys makes learning so easy</a>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}
@@ -781,9 +789,9 @@ export function HomeTwo() {
 									<h4 className='title'>
 										<a href='blog-details.html'>Mother revolves around her children</a>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}
@@ -792,25 +800,27 @@ export function HomeTwo() {
 							{/* <!--== Start Blog Post Item ==--> */}
 							<div className='post-item mt-md-30'>
 								<div className='thumb'>
-									<a href='blog-details.html'>
-										<img src={blog3} alt='#' />
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<img src={blog3} />
+									</Link>
 								</div>
 								<div className='content'>
 									<div className='meta'>
 										By,{' '}
-										<a className='author' href='blog.html'>
-											June Cha{' '}
-										</a>
+										<Link to={BlogLeftSidebar}>
+											<a className='author'>June Cha </a>
+										</Link>
 										<span className='dots'></span>
 										<span className='post-date'>January 28, 2022</span>
 									</div>
 									<h4 className='title'>
-										<a href='blog-details.html'>Learn while you grow toys Baby Planet</a>
+										<Link to={BlogLeftSidebar}>
+											<a>Learn while you grow toys Baby Planet</a>
+										</Link>
 									</h4>
-									<a className='btn-theme' href='blog-details.html'>
-										Read More
-									</a>
+									<Link to={BlogLeftSidebar}>
+										<a className='btn-theme'>Read More</a>
+									</Link>
 								</div>
 							</div>
 							{/* <!--== End Blog Post Item ==--> */}

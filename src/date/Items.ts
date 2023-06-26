@@ -32,6 +32,14 @@ export const ShopRightSidebar = '/ShopRightSidebar';
 export const ProductDetails = '/ProductDetails';
 export const ProductVariable = '/ProductVariable';
 export const ProductGrouped = '/ProductGrouped';
+export const BlogNoSidebar = '/BlogNoSidebar';
+export const Blog3Column = '/Blog3Column';
+export const Blog4Column = '/Blog4Column';
+export const BlogLeftSidebar = '/BlogLeftSidebar';
+export const BlogRightSidebar = '/BlogRightSidebar';
+export const BlogDetailsLeftSidebar = '/BlogDetailsLeftSidebar';
+export const BlogDetailsRightSidebar = '/BlogDetailsRightSidebar';
+export const BlogDetailsNoSidebar = '/BlogDetailsNoSidebar';
 
 export const Items: IItem[] = [
 	{
@@ -110,36 +118,36 @@ export const Items: IItem[] = [
 		id: 13,
 		title: 'Blog',
 		image: `${Blog}`,
-		link: '',
+		link: BlogNoSidebar,
 	},
 	{
 		id: 14,
 		title: 'Blog Left Sidebar',
 		image: `${BlogLeft}`,
-		link: '',
+		link: BlogLeftSidebar,
 	},
 	{
 		id: 15,
 		title: 'Blog Right Sidebar',
 		image: `${BlogRight}`,
-		link: '',
+		link: BlogRightSidebar,
 	},
 	{
 		id: 16,
 		title: 'Blog Details Left Sidebar',
 		image: `${BlogLeftDetails}`,
-		link: '',
+		link: BlogDetailsLeftSidebar,
 	},
 	{
 		id: 17,
 		title: 'Blog Details Right Sidebar',
 		image: `${BlogRightDetails}`,
-		link: '',
+		link: BlogDetailsRightSidebar,
 	},
 	{
 		id: 18,
 		title: 'Blog Details No Sidebar',
 		image: `${BlogNoDetails}`,
-		link: '',
+		link: BlogDetailsNoSidebar,
 	},
 ];

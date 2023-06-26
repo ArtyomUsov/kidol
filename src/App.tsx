@@ -15,6 +15,15 @@ import { ShopRightSidebar } from './Pages/Shop/ShopRightSidebar';
 import { ProductDetails } from './Pages/Shop/ProductDetails';
 import { ProductVariable } from './Pages/Shop/ProductVariable';
 import { ProductGrouped } from './Pages/Shop/ProductGrouped';
+import { BlogNoSidebar } from './Pages/Blog/BlogNoSidebar';
+import { Blog3Column } from './Pages/Blog/Blog3Column';
+import { Blog4Column } from './Pages/Blog/Blog4Column';
+import { BlogLeftSidebar } from './Pages/Blog/BlogLeftSidebar';
+import { BlogRightSidebar } from './Pages/Blog/BlogRightSidebar';
+import { BlogDetailsLeftSidebar } from './Pages/Blog/BlogDetailsLeftSidebar';
+import { BlogDetailsRightSidebar } from './Pages/Blog/BlogDetailsRightSidebar';
+import { BlogDetailsNoSidebar } from './Pages/Blog/BlogDetailsNoSidebar';
+
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from '../src/Components/ScrollToTop';
 
@@ -39,6 +48,14 @@ function App() {
 				<Route path='/ProductDetails' element={<ProductDetails />} />
 				<Route path='/ProductVariable' element={<ProductVariable />} />
 				<Route path='/ProductGrouped' element={<ProductGrouped />} />
+				<Route path='/BlogNoSidebar' element={<BlogNoSidebar />} />
+				<Route path='/Blog3Column' element={<Blog3Column />} />
+				<Route path='/Blog4Column' element={<Blog4Column />} />
+				<Route path='/BlogLeftSidebar' element={<BlogLeftSidebar />} />
+				<Route path='/BlogRightSidebar' element={<BlogRightSidebar />} />
+				<Route path='/BlogDetailsLeftSidebar' element={<BlogDetailsLeftSidebar />} />
+				<Route path='/BlogDetailsRightSidebar' element={<BlogDetailsRightSidebar />} />
+				<Route path='/BlogDetailsNoSidebar' element={<BlogDetailsNoSidebar />} />
 			</Routes>
 			{/* </Router> */}
 		</>

@@ -4,9 +4,9 @@ import { HomeOne } from './Pages/Home/HomeOne';
 import { HomeTwo } from './Pages/Home/HomeTwo';
 import { Demo } from './Pages/Demo';
 import { About } from './Pages/About';
-import { ComingSoon } from './Pages/ComingSoon';
+import { ComingSoon } from './Pages/Pages/ComingSoon';
 import { Contact } from './Pages/Contacts';
-import { NotFound } from './Pages/NotFound';
+import { NotFound } from './Pages/Pages/NotFound';
 import { ShopNoSidebar } from './Pages/Shop/ShopNoSidebar';
 import { Shop3Column } from './Pages/Shop/Shop3Column';
 import { Shop4Column } from './Pages/Shop/Shop4Column';
@@ -23,9 +23,15 @@ import { BlogRightSidebar } from './Pages/Blog/BlogRightSidebar';
 import { BlogDetailsLeftSidebar } from './Pages/Blog/BlogDetailsLeftSidebar';
 import { BlogDetailsRightSidebar } from './Pages/Blog/BlogDetailsRightSidebar';
 import { BlogDetailsNoSidebar } from './Pages/Blog/BlogDetailsNoSidebar';
+import ScrollToTop from '../src/Components/ScrollToTop';
+import { CartPage } from './Pages/Pages/CartPage';
+import { Checkout } from './Pages/Pages/Checkout';
+import { MyAccount } from './Pages/Pages/MyAccount';
+import { Wishlist } from './Pages/Pages/Wishlist';
+import { Compare } from './Pages/Pages/Compare';
+import { LoginRegister } from './Pages/Pages/LoginRegister';
 
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ScrollToTop from '../src/Components/ScrollToTop';
 
 function App() {
 	return (
@@ -37,6 +43,12 @@ function App() {
 				<Route path='/HomeOne' element={<HomeOne />} />
 				<Route path='/HomeTwo' element={<HomeTwo />} />
 				<Route path='/About' element={<About />} />
+				<Route path='/CartPage' element={<CartPage />} />
+				<Route path='/Checkout' element={<Checkout />} />
+				<Route path='/MyAccount' element={<MyAccount />} />
+				<Route path='/Wishlist' element={<Wishlist />} />
+				<Route path='/Compare' element={<Compare />} />
+				<Route path='/LoginRegister' element={<LoginRegister />} />
 				<Route path='/NotFound' element={<NotFound />} />
 				<Route path='/ComingSoon' element={<ComingSoon />} />
 				<Route path='/Contact' element={<Contact />} />

@@ -28,6 +28,12 @@ import {
 	BlogDetailsLeftSidebar,
 	BlogDetailsRightSidebar,
 	BlogDetailsNoSidebar,
+	CartPage,
+	Checkout,
+	Compare,
+	LoginRegister,
+	MyAccount,
+	Wishlist,
 } from '../date/Items';
 
 const HeaderMain = () => {
@@ -165,22 +171,22 @@ const HeaderMain = () => {
 											<Link to={HomeOne}>Pages</Link>
 											<ul className='submenu-nav'>
 												<li>
-													<Link to={''}>Cart page</Link>
+													<Link to={CartPage}>Cart page</Link>
 												</li>
 												<li>
-													<Link to={''}>Checkout</Link>
+													<Link to={Checkout}>Checkout</Link>
 												</li>
 												<li>
-													<Link to={''}>My Account</Link>
+													<Link to={MyAccount}>My Account</Link>
 												</li>
 												<li>
-													<Link to={''}>Wishlist</Link>
+													<Link to={Wishlist}>Wishlist</Link>
 												</li>
 												<li>
-													<Link to={''}>Compare</Link>
+													<Link to={Compare}>Compare</Link>
 												</li>
 												<li>
-													<Link to={''}>Login / Register</Link>
+													<Link to={LoginRegister}>Login / Register</Link>
 												</li>
 												<li>
 													<Link to={ComingSoon}>Coming soon</Link>

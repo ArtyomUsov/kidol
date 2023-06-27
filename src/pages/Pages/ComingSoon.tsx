@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
-import logo from '../img/logo.webp';
-import ButtonScrollTop from '../Components/ButtonScrollTop';
+import logo from '../../img/logo.webp';
+import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../date/Items';
+import { HomeOne } from '../../date/Items';
 
 export function ComingSoon() {
 	return (

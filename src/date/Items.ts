@@ -40,6 +40,12 @@ export const BlogRightSidebar = '/BlogRightSidebar';
 export const BlogDetailsLeftSidebar = '/BlogDetailsLeftSidebar';
 export const BlogDetailsRightSidebar = '/BlogDetailsRightSidebar';
 export const BlogDetailsNoSidebar = '/BlogDetailsNoSidebar';
+export const CartPage = '/CartPage';
+export const Checkout = '/Checkout';
+export const MyAccount = '/MyAccount';
+export const Wishlist = '/Wishlist';
+export const Compare = '/Compare';
+export const LoginRegister = '/LoginRegister';
 
 export const Items: IItem[] = [
 	{

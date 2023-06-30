@@ -7,6 +7,9 @@ import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
+import nav1 from '../../img/shop/nav1.webp';
+import nav2 from '../../img/shop/nav2.webp';
+import nav3 from '../../img/shop/nav3.webp';
 
 export function CartPage() {
 	return (
@@ -67,7 +70,7 @@ export function CartPage() {
 											<tr>
 												<td className='product-thumbnail'>
 													<a href='shop-single-product.html'>
-														<img src='assets/img/shop/details/nav1.jpg' alt='Image' />
+														<img src={nav1} />
 													</a>
 												</td>
 												<td className='product-name'>
@@ -98,14 +101,14 @@ export function CartPage() {
 												</td>
 												<td className='product-remove'>
 													<a href='#'>
-														<i className='ion-ios-trash-outline'></i>
+														<i className='ion-ios-trash'></i>
 													</a>
 												</td>
 											</tr>
 											<tr>
 												<td className='product-thumbnail'>
 													<a href='shop-single-product.html'>
-														<img src='assets/img/shop/details/nav2.jpg' alt='Image' />
+														<img src={nav2} />
 													</a>
 												</td>
 												<td className='product-name'>
@@ -136,14 +139,14 @@ export function CartPage() {
 												</td>
 												<td className='product-remove'>
 													<a href='#'>
-														<i className='ion-ios-trash-outline'></i>
+														<i className='ion-ios-trash'></i>
 													</a>
 												</td>
 											</tr>
 											<tr>
 												<td className='product-thumbnail'>
 													<a href='shop-single-product.html'>
-														<img src='assets/img/shop/details/nav3.jpg' alt='Image' />
+														<img src={nav3} />
 													</a>
 												</td>
 												<td className='product-name'>
@@ -174,7 +177,7 @@ export function CartPage() {
 												</td>
 												<td className='product-remove'>
 													<a href='#'>
-														<i className='ion-ios-trash-outline'></i>
+														<i className='ion-ios-trash'></i>
 													</a>
 												</td>
 											</tr>
@@ -185,12 +188,12 @@ export function CartPage() {
 							<div className='cart-shiping-update-wrapper'>
 								<div className='cart-shiping-btn continure-btn'>
 									<a className='btn btn-link' href='shop.html'>
-										<i className='ion-ios-arrow-left'></i> Back To Shop
+										<i className='ion-ios-arrow-back'></i> Back To Shop
 									</a>
 								</div>
 								<div className='cart-shiping-btn update-btn'>
 									<a className='btn btn-link' href='shop.html'>
-										<i className='ion-ios-reload'></i> Back To Shop
+										<i className='ion-ios-refresh'></i> Back To Shop
 									</a>
 								</div>
 							</div>

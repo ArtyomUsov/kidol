@@ -2551,7 +2551,7 @@ img {
 	font-size: 22px;
 	margin-right: 2px;
 	position: relative;
-	top: 4px;
+	top: 2px;
 }
 .cart-shiping-update-wrapper .cart-shiping-btn.continure-btn a {
 	background-color: #f379a7;
@@ -3099,7 +3099,7 @@ img {
 
 .checkout-coupon-content,
 .different-address {
-	display: none;
+	/* display: none; */
 }
 
 .your-order-area h3 {
@@ -3111,6 +3111,9 @@ img {
 .your-order-area .your-order-wrap {
 	background-color: #f6f6f6;
 	padding: 36px;
+}
+.your-order-area .your-order-wrap p {
+	color: #777;
 }
 @media only screen and (max-width: 575px) {
 	.your-order-area .your-order-wrap {
@@ -3225,10 +3228,10 @@ img {
 .your-order-area .your-order-wrap .payment-method {
 	padding: 40px 0 10px;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment {
+.your-order-area .your-order-wrap .sin-payment {
 	margin-bottom: 25px;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment input {
+.your-order-area .your-order-wrap .sin-payment input {
 	cursor: pointer;
 	width: auto;
 	display: inline-block;
@@ -3236,7 +3239,7 @@ img {
 	height: auto;
 	margin-top: 7px;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment label {
+.your-order-area .your-order-wrap .sin-payment label {
 	cursor: pointer;
 	font-family: 'Rubik', sans-serif;
 	font-size: 15px;
@@ -3244,23 +3247,23 @@ img {
 	display: flex;
 	align-items: center;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment label img {
+.your-order-area .your-order-wrap .sin-payment label img {
 	max-width: 140px;
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 5px 2px;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment label a {
+.your-order-area .your-order-wrap .sin-payment label a {
 	color: #000;
 	text-decoration: underline;
+	font-family: 'Rubik', sans-serif;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment label a:hover {
+.your-order-area .your-order-wrap .sin-payment label a:hover {
 	color: #f379a7;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment .payment-box {
+.your-order-area .your-order-wrap .sin-payment .payment-box {
 	margin: 6px 0 0 21px;
-	display: none;
 }
-.your-order-area .your-order-wrap .payment-method .sin-payment .payment-box p {
+.your-order-area .your-order-wrap .sin-payment .payment-box p {
 	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -3280,6 +3283,7 @@ img {
 .your-order-area .your-order-wrap .payment-condition p a {
 	color: #f379a7;
 	font-size: 14px;
+	font-family: 'Rubik', sans-serif;
 }
 .your-order-area .your-order-wrap .payment-condition p a:hover {
 	text-decoration: underline;

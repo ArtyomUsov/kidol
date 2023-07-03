@@ -8,6 +8,10 @@ import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Items';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Slider } from '../../Components/Slider';
+import { SingleSlider } from '../../Components/SingleSlider';
+import nav1 from '../../img/shop/nav1.webp';
+import nav2 from '../../img/shop/nav2.webp';
+import nav3 from '../../img/shop/nav3.webp';
 
 export function ProductVariable() {
 	const [count, setCount] = useState(0);
@@ -44,105 +48,7 @@ export function ProductVariable() {
 			<section className='product-single-area'>
 				<div className='container'>
 					<div className='row'>
-						<div className='col-sm-12 col-md-8 offset-md-2 col-lg-6 offset-lg-0'>
-							<div className='single-product-slider'>
-								<div className='single-product-thumb'>
-									<div className='swiper-container single-product-thumb-slider swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-free-mode'>
-										<div
-											className='swiper-wrapper'
-											// style="transition-duration: 0ms;"
-										>
-											<div
-												className='swiper-slide zoom zoom-hover'
-												// style="width: 570px; opacity: 0; transform: translate3d(0px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/1.jpg'>
-														<img src='assets/img/shop/details/1.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/1.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-prev'
-												// style="width: 570px; opacity: 0; transform: translate3d(-570px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/2.jpg'>
-														<img src='assets/img/shop/details/2.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/2.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-											<div
-												className='swiper-slide zoom zoom-hover swiper-slide-active'
-												// style="width: 570px; opacity: 1; transform: translate3d(-1140px, 0px, 0px); position: relative; overflow: hidden; transition-duration: 0ms;"
-											>
-												<div className='thumb-item'>
-													<a className='lightbox-image' data-fancybox='gallery' href='assets/img/shop/details/3.jpg'>
-														<img src='assets/img/shop/details/3.jpg' alt='Image-HasTech' />
-													</a>
-												</div>
-												<img
-													role='presentation'
-													alt=''
-													src='https://template.hasthemes.com/kidol/kidol/assets/img/shop/details/3.jpg'
-													className='zoomImg'
-													// style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 570px; height: 648px; border: none; max-width: none; max-height: none;"
-												/>
-											</div>
-										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
-									</div>
-								</div>
-								<div className='single-product-nav'>
-									<div className='swiper-container single-product-nav-slider swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs'>
-										<div
-											className='swiper-wrapper'
-											// style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"
-										>
-											<div
-												className='swiper-slide swiper-slide-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav1.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-											<div
-												className='swiper-slide swiper-slide-next'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav2.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-											<div
-												className='swiper-slide swiper-slide-thumb-active'
-												// style="width: 126.667px; margin-right: 11px;"
-											>
-												<div className='nav-item'>
-													<img src='assets/img/shop/details/nav3.jpg' alt='Image-HasTech' />
-												</div>
-											</div>
-										</div>
-										<span className='swiper-notification' aria-live='assertive' aria-atomic='true'></span>
-									</div>
-								</div>
-							</div>
-						</div>
+						<SingleSlider />
 						<div className='col-lg-6'>
 							<div className='single-product-info'>
 								<h4 className='title'>Product Variable</h4>

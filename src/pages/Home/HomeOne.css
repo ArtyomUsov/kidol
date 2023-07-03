@@ -2937,7 +2937,7 @@ img {
 .compare-table .table tbody tr td a.check-btn {
 	color: #95b3e0;
 	font-size: 15px;
-	font-family: "Rubik", sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 .compare-table .table tbody tr td a.check-btn:hover {
 	color: #f379a7;
@@ -6693,6 +6693,7 @@ img {
 .login-register-content .login-register-style form .login-register-paragraph p a {
 	font-size: 14px;
 	color: #f379a7;
+	font-family: "Rubik", sans-serif;
 }
 .login-register-content .login-register-style form .login-register-paragraph p a:hover {
 	color: #95b3e0;

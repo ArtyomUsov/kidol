@@ -6815,9 +6815,11 @@ img {
 	padding: 10px 15px;
 	text-align: left;
 	text-transform: capitalize;
+	line-height: inherit;
 }
 .myaccount-tab-menu.nav-tabs .nav-link:last-child {
 	border-bottom: 1px solid #e5e5e5;
+	width: 100%;
 }
 .myaccount-tab-menu.nav-tabs .nav-link.active {
 	background-color: #f379a7;
@@ -6841,6 +6843,16 @@ img {
 .myaccount-content form {
 	margin-top: -20px;
 }
+.myaccount-content .check-btn {
+	color: #f379a7;
+	font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
 .myaccount-content .check-btn:hover {
 	color: #95b3e0;
 }
@@ -6854,6 +6866,7 @@ img {
 }
 .myaccount-content .welcome a {
 	font-family: 'Fredoka One Regular', cursive;
+	color: #f379a7;
 }
 .myaccount-content .welcome a:hover {
 	color: #95b3e0;
@@ -6913,6 +6926,7 @@ img {
 	padding: 9px 25px;
 	color: #fff;
 	font-size: 13px;
+	line-height: inherit;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;

@@ -150,10 +150,7 @@ export function MyAccount() {
 														<p>
 															Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong>
 															<Link to={LoginRegister}>
-																<a href='login-register.html' className='logout'>
-																	{' '}
-																	Logout
-																</a>
+																<a className='logout'> Logout</a>
 															</Link>
 															)
 														</p>

@@ -24,14 +24,14 @@ export function MyAccount() {
 									My Account
 								</h2>
 								<div className='bread-crumbs' style={{}}>
-									<Link to={HomeOne}>My Account</Link>
+									<Link to={HomeOne}>Home</Link>
 									<span className='breadcrumb-sep' style={{}}>
 										{' '}
 										//{' '}
 									</span>
 									<span className='active' style={{}}>
 										{' '}
-										Product
+										My Account
 									</span>
 								</div>
 							</div>

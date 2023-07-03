@@ -2832,6 +2832,7 @@ img {
 }
 .wishlist-table-content .table-content table tbody > tr td.product-name h5 a {
 	color: #000;
+	font-family: 'Rubik', sans-serif;
 }
 .wishlist-table-content .table-content table tbody > tr td.product-name h5 a:hover {
 	color: #f379a7;
@@ -2936,6 +2937,7 @@ img {
 .compare-table .table tbody tr td a.check-btn {
 	color: #95b3e0;
 	font-size: 15px;
+	font-family: "Rubik", sans-serif;
 }
 .compare-table .table tbody tr td a.check-btn:hover {
 	color: #f379a7;
@@ -6845,13 +6847,13 @@ img {
 }
 .myaccount-content .check-btn {
 	color: #f379a7;
-	font-family: "Rubik", sans-serif;
-    text-decoration: none;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+	font-family: 'Rubik', sans-serif;
+	text-decoration: none;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
 }
 .myaccount-content .check-btn:hover {
 	color: #95b3e0;

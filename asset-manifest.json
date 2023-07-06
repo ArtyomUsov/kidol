@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kidol_react/static/css/main.0692be9a.css",
-    "main.js": "/kidol_react/static/js/main.b024ae61.js",
+    "main.css": "/kidol_react/static/css/main.8ee5ff1c.css",
+    "main.js": "/kidol_react/static/js/main.db528161.js",
     "static/media/fa-solid-900.ttf": "/kidol_react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/ionicons.svg?v=4.5.10-1": "/kidol_react/static/media/ionicons.bb0605ccfbc8cbabadc5.svg",
     "static/media/fa-brands-400.ttf": "/kidol_react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -94,11 +94,14 @@
     "static/media/15.webp": "/kidol_react/static/media/15.7d32437df69fe888f372.webp",
     "static/media/13.webp": "/kidol_react/static/media/13.18d2f94883c20bd7e79d.webp",
     "static/media/quotes.webp": "/kidol_react/static/media/quotes.5fef3ea9d47505e27d11.webp",
+    "static/media/290x290-3.webp": "/kidol_react/static/media/290x290-3.2bf3972b2ba468bf6006.webp",
+    "static/media/290x290-1.webp": "/kidol_react/static/media/290x290-1.e800603eeecc89b90b65.webp",
     "static/media/fa-v4compatibility.woff2": "/kidol_react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "static/media/photo2.webp": "/kidol_react/static/media/photo2.7569f42431ad02322054.webp",
     "static/media/11.webp": "/kidol_react/static/media/11.b24e9563cdfae3360368.webp",
     "static/media/photo1.webp": "/kidol_react/static/media/photo1.b4773a0222d3cc968224.webp",
     "static/media/payment1.webp": "/kidol_react/static/media/payment1.fc821e2a43778a6420b8.webp",
+    "static/media/290x290-2.webp": "/kidol_react/static/media/290x290-2.d3332cd7ebd424825760.webp",
     "static/media/photo3.webp": "/kidol_react/static/media/photo3.bbc3f448aec10ca230a5.webp",
     "static/media/mini4.webp": "/kidol_react/static/media/mini4.9f87731ea614d9c0c43a.webp",
     "static/media/logo.webp": "/kidol_react/static/media/logo.aae4087fd9d04a6c1673.webp",
@@ -120,11 +123,11 @@
     "static/media/shape2.webp": "/kidol_react/static/media/shape2.cd50c5c986185c94a35b.webp",
     "index.html": "/kidol_react/index.html",
     "static/media/payment-3.webp": "/kidol_react/static/media/payment-3.6599bb3495b0b710fd99.webp",
-    "main.0692be9a.css.map": "/kidol_react/static/css/main.0692be9a.css.map",
-    "main.b024ae61.js.map": "/kidol_react/static/js/main.b024ae61.js.map"
+    "main.8ee5ff1c.css.map": "/kidol_react/static/css/main.8ee5ff1c.css.map",
+    "main.db528161.js.map": "/kidol_react/static/js/main.db528161.js.map"
   },
   "entrypoints": [
-    "static/css/main.0692be9a.css",
-    "static/js/main.b024ae61.js"
+    "static/css/main.8ee5ff1c.css",
+    "static/js/main.db528161.js"
   ]
 }

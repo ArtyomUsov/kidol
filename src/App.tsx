@@ -33,40 +33,38 @@ import { LoginRegister } from './Pages/Pages/LoginRegister';
 function App() {
 	return (
 		<>
-			{/* <Router> */}
 			<ScrollToTop />
 			<Routes>
-				<Route path='/kidol_react' element={<HomeOne />} />
-				<Route path='/HomeOne' element={<HomeOne />} />
-				<Route path='/HomeTwo' element={<HomeTwo />} />
-				<Route path='/About' element={<About />} />
-				<Route path='/CartPage' element={<CartPage />} />
-				<Route path='/Checkout' element={<Checkout />} />
-				<Route path='/MyAccount' element={<MyAccount />} />
-				<Route path='/Wishlist' element={<Wishlist />} />
-				<Route path='/Compare' element={<Compare />} />
-				<Route path='/LoginRegister' element={<LoginRegister />} />
-				<Route path='/NotFound' element={<NotFound />} />
-				<Route path='/ComingSoon' element={<ComingSoon />} />
-				<Route path='/Contact' element={<Contact />} />
-				<Route path='/ShopNoSidebar' element={<ShopNoSidebar />} />
-				<Route path='/Shop3Column' element={<Shop3Column />} />
-				<Route path='/Shop4Column' element={<Shop4Column />} />
-				<Route path='/ShopLeftSidebar' element={<ShopLeftSidebar />} />
-				<Route path='/ShopRightSidebar' element={<ShopRightSidebar />} />
-				<Route path='/ProductDetails' element={<ProductDetails />} />
-				<Route path='/ProductVariable' element={<ProductVariable />} />
-				<Route path='/ProductGrouped' element={<ProductGrouped />} />
-				<Route path='/BlogNoSidebar' element={<BlogNoSidebar />} />
-				<Route path='/Blog3Column' element={<Blog3Column />} />
-				<Route path='/Blog4Column' element={<Blog4Column />} />
-				<Route path='/BlogLeftSidebar' element={<BlogLeftSidebar />} />
-				<Route path='/BlogRightSidebar' element={<BlogRightSidebar />} />
-				<Route path='/BlogDetailsLeftSidebar' element={<BlogDetailsLeftSidebar />} />
-				<Route path='/BlogDetailsRightSidebar' element={<BlogDetailsRightSidebar />} />
-				<Route path='/BlogDetailsNoSidebar' element={<BlogDetailsNoSidebar />} />
+				<Route path='/kidol-react' element={<HomeOne />} />
+				<Route path='/home-one' element={<HomeOne />} />
+				<Route path='/home-two' element={<HomeTwo />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/cart-page' element={<CartPage />} />
+				<Route path='/checkout' element={<Checkout />} />
+				<Route path='/my-account' element={<MyAccount />} />
+				<Route path='/wishlist' element={<Wishlist />} />
+				<Route path='/compare' element={<Compare />} />
+				<Route path='/login-register' element={<LoginRegister />} />
+				<Route path='/not-found' element={<NotFound />} />
+				<Route path='/coming-soon' element={<ComingSoon />} />
+				<Route path='/shop-no-sidebar' element={<ShopNoSidebar />} />
+				<Route path='/shop-3-column' element={<Shop3Column />} />
+				<Route path='/shop-4-column' element={<Shop4Column />} />
+				<Route path='/shop-left-sidebar' element={<ShopLeftSidebar />} />
+				<Route path='/shop-right-sidebar' element={<ShopRightSidebar />} />
+				<Route path='/product-details' element={<ProductDetails />} />
+				<Route path='/product-variable' element={<ProductVariable />} />
+				<Route path='/product-grouped' element={<ProductGrouped />} />
+				<Route path='/blog-no-sidebar' element={<BlogNoSidebar />} />
+				<Route path='/blog-3-column' element={<Blog3Column />} />
+				<Route path='/blog-4-column' element={<Blog4Column />} />
+				<Route path='/blog-left-sidebar' element={<BlogLeftSidebar />} />
+				<Route path='/blog-right-sidebar' element={<BlogRightSidebar />} />
+				<Route path='/blog-details-left-sidebar' element={<BlogDetailsLeftSidebar />} />
+				<Route path='/blog-details-right-sidebar' element={<BlogDetailsRightSidebar />} />
+				<Route path='/blog-details-no-sidebar' element={<BlogDetailsNoSidebar />} />
+				<Route path='/contact' element={<Contact />} />
 			</Routes>
-			{/* </Router> */}
 		</>
 	);
 }

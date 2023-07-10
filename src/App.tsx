@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HomeOne } from './Pages/Home/HomeOne';
 import { HomeTwo } from './Pages/Home/HomeTwo';
-import { Demo } from './Pages/Demo';
 import { About } from './Pages/About';
 import { ComingSoon } from './Pages/Pages/ComingSoon';
 import { Contact } from './Pages/Contacts';
@@ -31,15 +30,13 @@ import { Wishlist } from './Pages/Pages/Wishlist';
 import { Compare } from './Pages/Pages/Compare';
 import { LoginRegister } from './Pages/Pages/LoginRegister';
 
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 function App() {
 	return (
 		<>
 			{/* <Router> */}
 			<ScrollToTop />
 			<Routes>
-				<Route path='/kidol_react' element={<Demo />} />
+				<Route path='/kidol_react' element={<HomeOne />} />
 				<Route path='/HomeOne' element={<HomeOne />} />
 				<Route path='/HomeTwo' element={<HomeTwo />} />
 				<Route path='/About' element={<About />} />

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useContext, useEffect, useState } from 'react';
 import '../Components/HeaderMain.css';
 import logo from '../img/logo.webp';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -34,12 +33,17 @@ import {
 	LoginRegister,
 	MyAccount,
 	Wishlist,
-} from '../date/Items';
+} from '../date/Path';
+import { CartModal } from './CartModal';
 
 const HeaderMain = () => {
 	const [sticky, setSticky] = useState('');
+	const [ActiveTab, setActiveTab] = useState(false);
 
-	// on render, set listener
+	const handleClick = () => {
+		setActiveTab(prev => !prev);
+	};
+
 	useEffect(() => {
 		window.addEventListener('scroll', isSticky);
 		return () => {
@@ -52,7 +56,6 @@ const HeaderMain = () => {
 		const stickyClass = scrollTop >= 100 ? 'sticky' : '';
 		setSticky(stickyClass);
 	};
-
 	const classes = ['header-area header-default sticky-header', sticky];
 
 	return (
@@ -91,7 +94,6 @@ const HeaderMain = () => {
 										<div className='header-logo-area'>
 											<a href='/homeOne'>
 												<img className='logo-main' src={logo} alt='Logo' />
-												{/* <img className="logo-light" src={logo} alt="Logo"/> */}
 											</a>
 										</div>
 									</div>
@@ -105,7 +107,6 @@ const HeaderMain = () => {
 													<input type='text' id='search' placeholder='Search Everything' />
 													<button type='submit' className='btn-src'>
 														<i className='pe-7s-search'></i>
-														{/* <FontAwesomeIcon icon={icon({name: 'search'})} className="pe-7s-" /> */}
 													</button>
 												</div>
 											</form>
@@ -119,18 +120,16 @@ const HeaderMain = () => {
 													// onclick="window.location.href='shop-wishlist.html'"
 												>
 													<i className='pe-7s-like'></i>
-													{/* <FontAwesomeIcon icon={icon({name: 'heart'})} className="pe-7s-" /> */}
 												</button>
 											</div>
 											<div className='header-action-cart'>
-												<button className='btn-cart cart-icon'>
+												<button className='btn-cart cart-icon' onClick={handleClick}>
 													<span className='cart-count'>01</span>
 													<i className='pe-7s-shopbag'></i>
-													{/* <FontAwesomeIcon icon={icon({name: 'bars'})}/> */}
 												</button>
 											</div>
 											<button className='btn-menu d-md-none'>
-												<FontAwesomeIcon icon={icon({ name: 'bars' })} />
+												<i className='fa fa-bars'></i>
 											</button>
 										</div>
 									</div>
@@ -144,10 +143,10 @@ const HeaderMain = () => {
 						<div className='row row-gutter-0 align-items-center'>
 							<div className='col-4 col-sm-6 col-lg-2'>
 								<div className='header-logo-area'>
-									<a href='/homeOne'>
+									<Link to={HomeOne}>
 										<img className='logo-main' src={logo} alt='Logo' />
 										<img className='logo-light' src={logo} alt='Logo' />
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className='col-lg-8 sticky-md-none'>
@@ -284,7 +283,7 @@ const HeaderMain = () => {
 										</button>
 									</div>
 									<div className='header-action-cart'>
-										<button className='btn-cart cart-icon'>
+										<button className='btn-cart cart-icon' onClick={handleClick}>
 											<span className='cart-count'>01</span>
 											<i className='pe-7s-shopbag'></i>
 										</button>
@@ -298,6 +297,7 @@ const HeaderMain = () => {
 					</div>
 				</div>
 			</div>
+			<div>{ActiveTab && <CartModal setActive={setActiveTab} />}</div>
 		</>
 	);
 };

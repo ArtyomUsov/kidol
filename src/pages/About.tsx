@@ -1,8 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import HeaderMain from '../Components/HeaderMain';
-import { FooterMain } from '../Components/FooterMain';
+import { FooterMain } from '../Components/Footer';
 import brand1 from '../img/brand-logo/1.webp';
 import brand2 from '../img/brand-logo/2.webp';
 import brand3 from '../img/brand-logo/3.webp';
@@ -24,7 +22,7 @@ import team1 from '../img/about/1.webp';
 import team2 from '../img/about/2.webp';
 import team3 from '../img/about/3.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../date/Items';
+import { HomeOne } from '../date/Path';
 
 export function About() {
 	return (

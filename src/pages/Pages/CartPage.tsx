@@ -2,10 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
-import { FooterMain } from '../../Components/FooterMain';
+import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../../date/Items';
+import { HomeOne, ProductDetails } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import nav1 from '../../img/shop/nav1.webp';
 import nav2 from '../../img/shop/nav2.webp';
@@ -69,9 +69,9 @@ export function CartPage() {
 										<tbody>
 											<tr>
 												<td className='product-thumbnail'>
-													<a href='shop-single-product.html'>
+													<Link to={ProductDetails}>
 														<img src={nav1} />
-													</a>
+													</Link>
 												</td>
 												<td className='product-name'>
 													<h5>
@@ -107,9 +107,9 @@ export function CartPage() {
 											</tr>
 											<tr>
 												<td className='product-thumbnail'>
-													<a href='shop-single-product.html'>
+													<Link to={ProductDetails}>
 														<img src={nav2} />
-													</a>
+													</Link>
 												</td>
 												<td className='product-name'>
 													<h5>
@@ -145,9 +145,9 @@ export function CartPage() {
 											</tr>
 											<tr>
 												<td className='product-thumbnail'>
-													<a href='shop-single-product.html'>
+													<Link to={ProductDetails}>
 														<img src={nav3} />
-													</a>
+													</Link>
 												</td>
 												<td className='product-name'>
 													<h5>

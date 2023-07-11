@@ -20,14 +20,14 @@ import blog1 from '../../img/blog/1.webp';
 import blog2 from '../../img/blog/2.webp';
 import blog3 from '../../img/blog/3.webp';
 import HeaderMain from '../../Components/HeaderMain';
-import { FooterMain } from '../../Components/FooterMain';
+import { FooterMain } from '../../Components/Footer';
 import { Product, ProductArea } from '../../Components/Product';
 import { Products } from '../../date/Products';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { ProductSlide } from '../../Components/ProductSlide';
 import { Slider } from '../../Components/Slider';
 import { Link } from 'react-router-dom';
-import { BlogLeftSidebar, ShopNoSidebar } from '../../date/Items';
+import { BlogLeftSidebar, ShopNoSidebar } from '../../date/Path';
 import BgShape1 from '../../img/divider/shape1.webp';
 import BgShape2 from '../../img/divider/shape2.webp';
 

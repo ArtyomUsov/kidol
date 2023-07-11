@@ -3,11 +3,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { Collapse } from 'react-bootstrap';
 import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
-import { FooterMain } from '../../Components/FooterMain';
+import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import payment3 from '../../img/payment-3.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../../date/Items';
+import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 
 export function Checkout() {

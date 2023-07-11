@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
-import { FooterMain } from '../../Components/FooterMain';
+import { FooterMain } from '../../Components/Footer';
 import { Product, ProductArea } from '../../Components/Product';
 import { Products } from '../../date/Products';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
@@ -44,7 +44,7 @@ import { Slider } from '../../Components/Slider';
 import BgShape1 from '../../img/divider/shape1.webp';
 import BgShape2 from '../../img/divider/shape2.webp';
 import { Link } from 'react-router-dom';
-import { BlogLeftSidebar, BlogNoSidebar, ShopNoSidebar } from '../../date/Items';
+import { BlogLeftSidebar, BlogNoSidebar, ShopNoSidebar } from '../../date/Path';
 
 export function HomeTwo() {
 	return (

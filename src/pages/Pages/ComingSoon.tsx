@@ -4,7 +4,7 @@ import React from 'react';
 import logo from '../../img/logo.webp';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../../date/Items';
+import { HomeOne } from '../../date/Path';
 
 export function ComingSoon() {
 	return (

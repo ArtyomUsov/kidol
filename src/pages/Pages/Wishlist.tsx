@@ -2,10 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
-import { FooterMain } from '../../Components/FooterMain';
+import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
-import { CartPage, HomeOne, ProductDetails } from '../../date/Items';
+import { CartPage, HomeOne, ProductDetails } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import nav1 from '../../img/shop/nav1.webp';
 import nav2 from '../../img/shop/nav2.webp';
@@ -79,9 +79,7 @@ export function Wishlist() {
 													</td>
 													<td className='product-name'>
 														<h5>
-															<Link to={ProductDetails}>
-																<a>Jigsaw Puzzles For Kids</a>
-															</Link>
+															<Link to={ProductDetails}>Jigsaw Puzzles For Kids</Link>
 														</h5>
 													</td>
 													<td className='product-price'>
@@ -93,9 +91,7 @@ export function Wishlist() {
 														</span>
 													</td>
 													<td className='wishlist-cart'>
-														<Link to={CartPage}>
-															<a>Add to Cart</a>
-														</Link>
+														<Link to={CartPage}>Add to Cart</Link>
 													</td>
 												</tr>
 												<tr>
@@ -109,9 +105,7 @@ export function Wishlist() {
 													</td>
 													<td className='product-name'>
 														<h5>
-															<Link to={ProductDetails}>
-																<a>Bruder Toys Mini Ships</a>
-															</Link>
+															<Link to={ProductDetails}>Bruder Toys Mini Ships</Link>
 														</h5>
 													</td>
 													<td className='product-price'>
@@ -123,9 +117,7 @@ export function Wishlist() {
 														</span>
 													</td>
 													<td className='wishlist-cart'>
-														<Link to={CartPage}>
-															<a>Add to Cart</a>
-														</Link>
+														<Link to={CartPage}>Add to Cart</Link>
 													</td>
 												</tr>
 												<tr>
@@ -139,9 +131,7 @@ export function Wishlist() {
 													</td>
 													<td className='product-name'>
 														<h5>
-															<Link to={ProductDetails}>
-																<a>Sassy Crib and Floor Mirror</a>
-															</Link>
+															<Link to={ProductDetails}>Sassy Crib and Floor Mirror</Link>
 														</h5>
 													</td>
 													<td className='product-price'>
@@ -153,9 +143,7 @@ export function Wishlist() {
 														</span>
 													</td>
 													<td className='wishlist-cart'>
-														<Link to={CartPage}>
-															<a>Add to Cart</a>
-														</Link>
+														<Link to={CartPage}>Add to Cart</Link>
 													</td>
 												</tr>
 											</tbody>

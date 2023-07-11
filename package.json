@@ -2,7 +2,7 @@
   "name": "kidoltwo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ArtyomUsov.github.io/kidol-react",
+  "homepage": "https://ArtyomUsov.github.io/kidol_react",
   "dependencies": {
     "@babel/helper-module-imports": "^7.21.4",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -39,7 +39,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages"
   },
   "eslintConfig": {
     "extends": [

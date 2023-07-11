@@ -3948,6 +3948,7 @@ img {
 	height: 34px;
 	z-index: 3;
 	pointer-events: none;
+	overflow: hidden;
 }
 .page-title-area .shape-top img {
 	position: absolute;
@@ -3956,6 +3957,7 @@ img {
 	height: 34px;
 	z-index: 3;
 	pointer-events: none;
+	object-fit: cover;
 }
 .home-slider-area.slider-default .home-slider-item .shape-bottom {
 	position: absolute;
@@ -5345,8 +5347,11 @@ img {
 	position: absolute;
 	min-height: 155px;
 	width: 100%;
+	overflow: hidden;
 }
-
+.testimonial-area.testimonial-default-area .thumb-style.bg-img {
+	object-fit: cover;
+}
 .testimonial-slider {
 	margin: 0 -15px;
 }
@@ -5598,6 +5603,7 @@ img {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	overflow: hidden;
 }
 .divider-area.divider-style1-area .shape-group .shape-style2 {
 	background-repeat: no-repeat;
@@ -5607,6 +5613,17 @@ img {
 	left: 0;
 	position: absolute;
 	width: 100%;
+	overflow: hidden;
+}
+.divider-area.divider-style1-area .shape-group .shape-style1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.divider-area.divider-style1-area .shape-group .shape-style2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .divider-area.divider-style1-area .shape-group .shape-style3 {
 	bottom: 0;
@@ -6693,7 +6710,7 @@ img {
 .login-register-content .login-register-style form .login-register-paragraph p a {
 	font-size: 14px;
 	color: #f379a7;
-	font-family: "Rubik", sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 .login-register-content .login-register-style form .login-register-paragraph p a:hover {
 	color: #95b3e0;

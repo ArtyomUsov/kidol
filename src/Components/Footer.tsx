@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Components/HeaderMain.css';
-import '../css/style.css';
 import logoLight from '../img/logo-light.webp';
 import payment from '../img/payment1.webp';
 import { Link } from 'react-router-dom';

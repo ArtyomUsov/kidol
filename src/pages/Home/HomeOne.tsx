@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Pages/Home/HomeOne.css';
+// import '../../Pages/Home/HomeOne.css';
 // import styles from "../../pages/Home/Blog.module.scss"
 // import "../../pages/Home/Shop.css"
 import { Image } from 'react-bootstrap';

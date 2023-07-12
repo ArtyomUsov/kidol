@@ -1,59 +1,60 @@
 @import '_footer';
-// @keyframes "fadeInUp" {
-// 	0% {
-// 		opacity: 0;
-// 		margin-top: +100%;
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 		margin-top: 0px;
-// 	}
-// }
-// @keyframes "fadeInRight" {
-// 	0% {
-// 		left: 100%;
-// 	}
-// 	100% {
-// 		left: calc(50% + 12px);
-// 	}
-// }
-// @keyframes "fadeInLeft" {
-// 	0% {
-// 		left: 0px;
-// 	}
-// 	100% {
-// 		left: 129px;
-// 	}
-// }
-// @keyframes "InUp" {
-// 	0% {
-// 		opacity: 0;
-// 		margin-top: +100%;
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 		margin-top: 0px;
-// 	}
-// }
+@import '_header';
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		margin-top: +100%;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+@keyframes fadeInRight {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: calc(50% + 12px);
+	}
+}
+@keyframes fadeInLeft {
+	0% {
+		left: 0px;
+	}
+	100% {
+		left: 129px;
+	}
+}
+@keyframes InUp {
+	0% {
+		opacity: 0;
+		margin-top: +100%;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
 // @charset 'UTF-8';
-// @keyframes "next" {
-// 	0% {
-// 		margin: 0 0 0 + 250px;
-// 	}
-// 	100% {
-// 		margin: 0 0 0 + 250px;
-// 	}
-// }
-// @keyframes "prev" {
-// 	0% {
-// 		opacity: 0;
-// 		left: 0px;
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 		left: 129px;
-// 	}
-// }
+@keyframes next {
+	0% {
+		margin: 0 0 0 + 250px;
+	}
+	100% {
+		margin: 0 0 0 + 250px;
+	}
+}
+@keyframes prev {
+	0% {
+		opacity: 0;
+		left: 0px;
+	}
+	100% {
+		opacity: 1;
+		left: 129px;
+	}
+}
 .h1 {
 	color: #000;
 	font-family: 'Fredoka One Regular', cursive;
@@ -1963,7 +1964,7 @@ img {
 			width: 100%;
 			thead {
 				background-color: #f3f3f3;
-				>tr {
+				> tr {
 					th {
 						color: #000;
 						font-family: 'Fredoka One Regular', cursive;
@@ -1993,7 +1994,7 @@ img {
 				}
 			}
 			tbody {
-				>tr {
+				> tr {
 					border-bottom: 1px solid #e5e5e5;
 					td {
 						padding: 23px;
@@ -2229,7 +2230,7 @@ img {
 		}
 		.grand-shipping {
 			padding: 38px 0 32px;
-			>span {
+			> span {
 				font-family: 'Rubik', sans-serif;
 				font-size: 16px;
 			}
@@ -2319,7 +2320,7 @@ img {
 			width: 100%;
 			thead {
 				background-color: #f3f3f3;
-				>tr {
+				> tr {
 					th {
 						color: #000;
 						font-family: 'Fredoka One Regular', cursive;
@@ -2349,7 +2350,7 @@ img {
 				}
 			}
 			tbody {
-				>tr {
+				> tr {
 					border-bottom: 1px solid #e5e5e5;
 					td {
 						padding: 23px 12px;
@@ -2538,7 +2539,7 @@ img {
 	}
 }
 .checkout-coupon-wrap {
-	>p {
+	> p {
 		font-family: 'Rubik', sans-serif;
 		background-color: #f3f3f3;
 		padding: 1.188rem 1.25rem;
@@ -2551,7 +2552,7 @@ img {
 			font-size: 14px;
 		}
 	}
-	>p.cart-page-title {
+	> p.cart-page-title {
 		font-size: 14px;
 		color: #000;
 	}
@@ -2752,7 +2753,7 @@ img {
 		}
 		.your-order-shipping {
 			padding: 21px 0 22px;
-			>span {
+			> span {
 				font-family: 'Rubik', sans-serif;
 				font-size: 15px;
 				font-weight: 500;
@@ -3087,7 +3088,7 @@ img {
 			height: 100%;
 			position: absolute;
 			width: 100%;
-            object-fit: cover;
+			object-fit: cover;
 		}
 		.shape-top {
 			position: absolute;

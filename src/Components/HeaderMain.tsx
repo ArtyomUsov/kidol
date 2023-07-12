@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import '../Components/HeaderMain.css';
+// import '../Components/HeaderMain.css';
 import logo from '../img/logo.webp';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -35,13 +35,18 @@ import {
 	Wishlist,
 } from '../date/Path';
 import { CartModal } from './CartModal';
+import { SideMenu } from './SideMenu';
 
 const HeaderMain = () => {
 	const [sticky, setSticky] = useState('');
 	const [ActiveTab, setActiveTab] = useState(false);
+	const [ActiveTab1, setActiveTab1] = useState(false);
 
 	const handleClick = () => {
 		setActiveTab(prev => !prev);
+	};
+	const handleClick1 = () => {
+		setActiveTab1(prev => !prev);
 	};
 
 	useEffect(() => {
@@ -129,7 +134,7 @@ const HeaderMain = () => {
 												</button>
 											</div>
 											<button className='btn-menu d-md-none'>
-												<i className='fa fa-bars'></i>
+												<i className='fa fa-bars' onClick={handleClick1}></i>
 											</button>
 										</div>
 									</div>
@@ -289,7 +294,7 @@ const HeaderMain = () => {
 										</button>
 									</div>
 									<button className='btn-menu d-lg-none'>
-										<i className='fa fa-bars'></i>
+										<i className='fa fa-bars' onClick={handleClick1}></i>
 									</button>
 								</div>
 							</div>
@@ -298,6 +303,7 @@ const HeaderMain = () => {
 				</div>
 			</div>
 			<div>{ActiveTab && <CartModal setActive={setActiveTab} />}</div>
+			<div>{ActiveTab1 && <SideMenu setActive1={setActiveTab1} />}</div>
 		</>
 	);
 };

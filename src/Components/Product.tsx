@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import '../Components/Item.css';
+// import '../Components/Item.css';
 import React from 'react';
 import { IProduct } from '../date/models';
 import { Products } from '../date/Products';

@@ -1,8 +1,3 @@
-import Popper from 'popper.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import $ from 'jquery';
-import '../Components/Item.css';
 import React from 'react';
 import { IProduct } from '../date/models';
 import { Products } from '../date/Products';

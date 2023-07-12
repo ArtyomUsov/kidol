@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import '../../src/Swiper/swiper.min.js';
+// import '../../src/Swiper/swiper.min.js';
 import React, { useState } from 'react';
 import thirteen from '../img/shop/13.webp';
 import fourteen from '../img/shop/14.webp';

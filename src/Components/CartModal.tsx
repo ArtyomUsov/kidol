@@ -95,7 +95,7 @@ export function CartModal({ setActive }: CartModalProps) {
 					</div>
 				</div>
 			</aside>
-			<div className={`sidebar-cart-overlay ${active ? 'show' : ''}`}></div>
+			<div className='sidebar-cart-overlay show'></div>
 		</>
 	);
 }

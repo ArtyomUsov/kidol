@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './css/style.css';
+import './scss/style.scss';
 import '../src/css/iconStyle.css';
 import '../src/css/iconStyleFontAwesome.css';
 import '../src/css/iconStylePeIcon7Stroke.css';

@@ -3,19 +3,15 @@
 	padding-right: 15px;
 	/* max-width: 1140px; */
 }
-/* меняет ширину столбца на 1 и 2 странице */
-@media only screen and (min-width: 1200px) .container {
-	/* max-width: 1200px; */
-	min-width: 1200px;
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		/* min-width: 1200px; */
+	}
 }
 .container {
 	max-width: 1200px;
 }
-/* @media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-} */
 @media only screen and (max-width: 1199px) {
 	.container {
 		max-width: 100%;
@@ -83,9 +79,6 @@
 /* Large Mobile :480px. */
 
 @media only screen and (max-width: 767px) {
-	.container {
-		width: 450px;
-	}
 	.hero-section {
 		padding: 150px 0 100px;
 	}

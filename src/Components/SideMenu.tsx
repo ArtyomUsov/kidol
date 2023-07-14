@@ -49,10 +49,10 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 		setIsOpen1(!isOpen1);
 	};
 	const handleToggle2 = () => {
-		setIsOpen(!isOpen2);
+		setIsOpen2(!isOpen2);
 	};
 	const handleToggle3 = () => {
-		setIsOpen1(!isOpen3);
+		setIsOpen3(!isOpen3);
 	};
 	const handleClick = () => {
 		setActive1((prev: boolean) => !prev);
@@ -62,9 +62,7 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 			<aside className={` ${active1 ? 'off-canvas-wrapper active' : 'off-canvas-wrapper'}`}>
 				<div className='off-canvas-inner'>
 					<div className='off-canvas-overlay d-none'></div>
-					{/* <!-- Start Off Canvas Content Wrapper --> */}
 					<div className='off-canvas-content'>
-						{/* <!-- Off Canvas Header --> */}
 						<div className='off-canvas-header'>
 							<div className='close-action'>
 								<button className='btn-close'>
@@ -72,11 +70,8 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 								</button>
 							</div>
 						</div>
-
 						<div className='off-canvas-item'>
-							{/* <!-- Start Mobile Menu Wrapper --> */}
 							<div className='res-mobile-menu'>
-								{/* <!-- Note Content Auto Generate By Jquery From Main Menu --> */}
 								<div className='slicknav_menu'>
 									<a
 										href='#'
@@ -109,11 +104,14 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 												className='slicknav_item slicknav_row'
 												style={{ outline: 'none' }}
 											>
-												<a href='index.html' tabIndex={-1}>
+												<Link to={HomeOne} className={`${isOpen ? 'hover' : ''}`}>
 													Home
-												</a>
-												<span className='slicknav_arrow'>
-													<i className={`fa ${isOpen ? 'fa-angle-up' : 'fa-angle-down'}`} onClick={handleToggle}></i>
+												</Link>
+												<span className='slicknav-arrow'>
+													<i
+														className={`fa ${isOpen ? 'fa-angle-up hover' : 'fa-angle-down'}`}
+														onClick={handleToggle}
+													></i>
 												</span>
 											</a>
 											<Collapse in={isOpen}>
@@ -128,9 +126,7 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 											</Collapse>
 										</li>
 										<li>
-											<a href='about.html' role='menuitem' tabIndex={-1}>
-												About
-											</a>
+											<Link to={About}>About</Link>
 										</li>
 										<li className='slicknav_collapsed slicknav_parent'>
 											<a
@@ -141,55 +137,44 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 												className='slicknav_item slicknav_row'
 												style={{ outline: 'none' }}
 											>
-												<a href='index.html' tabIndex={-1}>
+												<Link to={HomeOne} className={`${isOpen1 ? 'hover' : ''}`}>
 													Pages
-												</a>
-												<span className='slicknav_arrow'>
-													<i className='fa fa-angle-down'></i>
+												</Link>
+												<span className='slicknav-arrow'>
+													<i
+														className={`fa ${isOpen1 ? 'fa-angle-up hover' : 'fa-angle-down'}`}
+														onClick={handleToggle1}
+													></i>
 												</span>
 											</a>
-											<ul role='menu' className='slicknav_hidden' style={{ display: 'none' }} aria-hidden='true'>
-												<li>
-													<a href='shop-cart.html' role='menuitem' tabIndex={-1}>
-														Cart page
-													</a>
-												</li>
-												<li>
-													<a href='shop-checkout.html' role='menuitem' tabIndex={-1}>
-														Checkout
-													</a>
-												</li>
-												<li>
-													<a href='my-account.html' role='menuitem' tabIndex={-1}>
-														My Account
-													</a>
-												</li>
-												<li>
-													<a href='shop-wishlist.html' role='menuitem' tabIndex={-1}>
-														Wishlist
-													</a>
-												</li>
-												<li>
-													<a href='shop-compare.html' role='menuitem' tabIndex={-1}>
-														Compare
-													</a>
-												</li>
-												<li>
-													<a href='login-register.html' role='menuitem' tabIndex={-1}>
-														Login / Register
-													</a>
-												</li>
-												<li>
-													<a href='coming-soon.html' role='menuitem' tabIndex={-1}>
-														Coming soon
-													</a>
-												</li>
-												<li>
-													<a href='page-not-found.html' role='menuitem' tabIndex={-1}>
-														404
-													</a>
-												</li>
-											</ul>
+											<Collapse in={isOpen1}>
+												<ul>
+													<li>
+														<Link to={CartPage}>Cart page</Link>
+													</li>
+													<li>
+														<Link to={Checkout}>Checkout</Link>
+													</li>
+													<li>
+														<Link to={MyAccount}>My Account</Link>
+													</li>
+													<li>
+														<Link to={Wishlist}>Wishlist</Link>
+													</li>
+													<li>
+														<Link to={Compare}>Compare</Link>
+													</li>
+													<li>
+														<Link to={LoginRegister}>Login / Register</Link>
+													</li>
+													<li>
+														<Link to={ComingSoon}>Coming soon</Link>
+													</li>
+													<li>
+														<Link to={NotFound}>404</Link>
+													</li>
+												</ul>
+											</Collapse>
 										</li>
 										<li className='slicknav_collapsed slicknav_parent'>
 											<a
@@ -200,55 +185,44 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 												className='slicknav_item slicknav_row'
 												style={{ outline: 'none' }}
 											>
-												<a href='shop.html' tabIndex={-1}>
+												<Link to={ShopNoSidebar} className={`${isOpen2 ? 'hover' : ''}`}>
 													Shop
-												</a>
-												<span className='slicknav_arrow'>
-													<i className='fa fa-angle-down'></i>
+												</Link>
+												<span className='slicknav-arrow'>
+													<i
+														className={`fa ${isOpen2 ? 'fa-angle-up hover' : 'fa-angle-down'}`}
+														onClick={handleToggle2}
+													></i>
 												</span>
 											</a>
-											<ul role='menu' className='slicknav_hidden' style={{ display: 'none' }} aria-hidden='true'>
-												<li>
-													<a href='shop-3-column.html' role='menuitem' tabIndex={-1}>
-														Shop 3 Column
-													</a>
-												</li>
-												<li>
-													<a href='shop.html' role='menuitem' tabIndex={-1}>
-														Shop 4 Column
-													</a>
-												</li>
-												<li>
-													<a href='shop-left-sidebar.html' role='menuitem' tabIndex={-1}>
-														Shop Left Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='shop-right-sidebar.html' role='menuitem' tabIndex={-1}>
-														Shop Right Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='shop.html' role='menuitem' tabIndex={-1}>
-														Shop No Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='shop-single-product.html' role='menuitem' tabIndex={-1}>
-														Product Details
-													</a>
-												</li>
-												<li>
-													<a href='shop-single-product-variable.html' role='menuitem' tabIndex={-1}>
-														Product Variable
-													</a>
-												</li>
-												<li>
-													<a href='shop-single-product-grouped.html' role='menuitem' tabIndex={-1}>
-														Product Grouped
-													</a>
-												</li>
-											</ul>
+											<Collapse in={isOpen2}>
+												<ul>
+													<li>
+														<Link to={Shop3Column}>Shop 3 Column</Link>
+													</li>
+													<li>
+														<Link to={Shop4Column}>Shop 4 Column</Link>
+													</li>
+													<li>
+														<Link to={ShopLeftSidebar}>Shop Left Sidebar</Link>
+													</li>
+													<li>
+														<Link to={ShopRightSidebar}>Shop Right Sidebar</Link>
+													</li>
+													<li>
+														<Link to={ShopNoSidebar}>Shop No Sidebar</Link>
+													</li>
+													<li>
+														<Link to={ProductDetails}>Product Details</Link>
+													</li>
+													<li>
+														<Link to={ProductVariable}>Product Variable</Link>
+													</li>
+													<li>
+														<Link to={ProductGrouped}>Product Grouped</Link>
+													</li>
+												</ul>
+											</Collapse>
 										</li>
 										<li className='slicknav_collapsed slicknav_parent'>
 											<a
@@ -259,70 +233,53 @@ export function SideMenu({ setActive1 }: SideMenuProps) {
 												className='slicknav_item slicknav_row'
 												style={{ outline: 'none' }}
 											>
-												<a href='blog.html' tabIndex={-1}>
+												<Link to={BlogNoSidebar} className={`${isOpen3 ? 'hover' : ''}`}>
 													Blog
-												</a>
-												<span className='slicknav_arrow'>
-													<i className='fa fa-angle-down'></i>
+												</Link>
+												<span className='slicknav-arrow'>
+													<i
+														className={`fa ${isOpen3 ? 'fa-angle-up hover' : 'fa-angle-down'}`}
+														onClick={handleToggle3}
+													></i>
 												</span>
 											</a>
-											<ul role='menu' className='slicknav_hidden' style={{ display: 'none' }} aria-hidden='true'>
-												<li>
-													<a href='blog.html' role='menuitem' tabIndex={-1}>
-														Blog 3 Column
-													</a>
-												</li>
-												<li>
-													<a href='blog-4-column.html' role='menuitem' tabIndex={-1}>
-														Blog 4 Column
-													</a>
-												</li>
-												<li>
-													<a href='blog-left-sidebar.html' role='menuitem' tabIndex={-1}>
-														Blog Left Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='blog-right-sidebar.html' role='menuitem' tabIndex={-1}>
-														Blog Right Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='blog.html' role='menuitem' tabIndex={-1}>
-														Blog No Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='blog-details.html' role='menuitem' tabIndex={-1}>
-														Blog Details Left Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='blog-details-right-sidebar.html' role='menuitem' tabIndex={-1}>
-														Blog Details Right Sidebar
-													</a>
-												</li>
-												<li>
-													<a href='blog-details-no-sidebar.html' role='menuitem' tabIndex={-1}>
-														Blog Details No Sidebar
-													</a>
-												</li>
-											</ul>
+											<Collapse in={isOpen3}>
+												<ul>
+													<li>
+														<Link to={Blog3Column}>Blog 3 Column</Link>
+													</li>
+													<li>
+														<Link to={Blog4Column}>Blog 4 Column</Link>
+													</li>
+													<li>
+														<Link to={BlogLeftSidebar}>Blog Left Sidebar</Link>
+													</li>
+													<li>
+														<Link to={BlogRightSidebar}>Blog Right Sidebar</Link>
+													</li>
+													<li>
+														<Link to={BlogNoSidebar}>Blog No Sidebar</Link>
+													</li>
+													<li>
+														<Link to={BlogDetailsLeftSidebar}>Blog Details Left Sidebar</Link>
+													</li>
+													<li>
+														<Link to={BlogDetailsRightSidebar}>Blog Details Right Sidebar</Link>
+													</li>
+													<li>
+														<Link to={BlogDetailsNoSidebar}>Blog Details No Sidebar</Link>
+													</li>
+												</ul>
+											</Collapse>
 										</li>
 										<li>
-											<a href='contact.html' role='menuitem' tabIndex={-1}>
-												Contact
-											</a>
+											<Link to={Contact}>Contact</Link>
 										</li>
 									</ul>
 								</div>
 							</div>
-							{/* <!-- End Mobile Menu Wrapper --> */}
 						</div>
-						{/* <!-- Off Canvas Footer --> */}
-						<div className='off-canvas-footer'></div>
 					</div>
-					{/* <!-- End Off Canvas Content Wrapper --> */}
 				</div>
 			</aside>
 		</>

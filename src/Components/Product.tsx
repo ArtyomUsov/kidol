@@ -1,8 +1,9 @@
-// import '../Components/Item.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { IProduct } from '../date/models';
 import { Products } from '../date/Products';
 import { Link } from 'react-router-dom';
+import { CartPage, Compare, Wishlist } from '../date/Path';
+import { ProductQuickView } from './ProductQuickView';
 
 interface ProductProps {
 	product: IProduct;
@@ -11,24 +12,29 @@ interface ProductProps {
 export const ProductArea: IProduct[] = Products.filter(product => product.id < 9);
 
 export function Product({ product, className }: ProductProps) {
+	const [ActiveTab, setActiveTab] = useState(false);
+
+	const handleClick = () => {
+		setActiveTab(prev => !prev);
+	};
 	return (
 		<>
 			<div className='product-item'>
 				<div className='product-thumb'>
 					<img src={product.image} />
 					<div className='product-action'>
-						<a className='action-quick-view' href='shop-cart.html'>
+						<Link to={CartPage} className='action-quick-view'>
 							<i className='ion-ios-cart'></i>
-						</a>
-						<a className='action-quick-view' href='javascript:void(0)'>
+						</Link>
+						<Link to={''} className='action-quick-view' onClick={handleClick}>
 							<i className='ion-ios-expand'></i>
-						</a>
-						<a className='action-quick-view' href='shop-wishlist.html'>
+						</Link>
+						<Link to={Wishlist} className='action-quick-view'>
 							<i className='ion-ios-heart'></i>
-						</a>
-						<a className='action-quick-view' href='shop-compare.html'>
+						</Link>
+						<Link to={Compare} className='action-quick-view'>
 							<i className='ion-ios-shuffle'></i>
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className='product-info'>
@@ -50,6 +56,7 @@ export function Product({ product, className }: ProductProps) {
 					<p className={`product-item-description ${className}`}>{product.description}</p>
 				</div>
 			</div>
+			<div>{ActiveTab && <ProductQuickView setActive={setActiveTab} />}</div>
 		</>
 	);
 }

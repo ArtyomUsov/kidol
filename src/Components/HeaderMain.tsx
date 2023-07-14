@@ -1,8 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-// import '../Components/HeaderMain.css';
+import React, { useEffect, useState } from 'react';
 import logo from '../img/logo.webp';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import {
 	About,
@@ -36,17 +33,22 @@ import {
 } from '../date/Path';
 import { CartModal } from './CartModal';
 import { SideMenu } from './SideMenu';
+import { SearchBox } from './SearchBox';
 
 const HeaderMain = () => {
 	const [sticky, setSticky] = useState('');
 	const [ActiveTab, setActiveTab] = useState(false);
 	const [ActiveTab1, setActiveTab1] = useState(false);
+	const [ActiveTab2, setActiveTab2] = useState(false);
 
 	const handleClick = () => {
 		setActiveTab(prev => !prev);
 	};
 	const handleClick1 = () => {
 		setActiveTab1(prev => !prev);
+	};
+	const searchClick = () => {
+		setActiveTab2(prev => !prev);
 	};
 
 	useEffect(() => {
@@ -76,15 +78,15 @@ const HeaderMain = () => {
 							</div>
 							<div className='col-xs-12 col-sm-7 col-md-8 col-lg-6 sm-pl-0 xs-pl-15 header-top-main-right'>
 								<div className='header-info'>
-									<a href='tel://+00123456789'>
+									<Link to='tel:+00123456789'>
 										<i className='fa fa-phone'></i>+00 123 456 789
-									</a>
-									<a href='mailto://demo@example.com'>
+									</Link>
+									<Link to='mailto:demo@example.com'>
 										<i className='fa fa-envelope'></i>demo@example.com
-									</a>
-									<a href='login-register.html'>
+									</Link>
+									<Link to={LoginRegister}>
 										<i className='fa fa-user'></i>Account
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -97,9 +99,9 @@ const HeaderMain = () => {
 								<div className='header-align'>
 									<div className='header-align-left'>
 										<div className='header-logo-area'>
-											<a href='/homeOne'>
+											<Link to={HomeOne}>
 												<img className='logo-main' src={logo} alt='Logo' />
-											</a>
+											</Link>
 										</div>
 									</div>
 									<div className='header-align-center'>
@@ -120,12 +122,11 @@ const HeaderMain = () => {
 									<div className='header-align-right'>
 										<div className='header-action-area'>
 											<div className='header-action-wishlist'>
-												<button
-													className='btn-wishlist'
-													// onclick="window.location.href='shop-wishlist.html'"
-												>
-													<i className='pe-7s-like'></i>
-												</button>
+												<Link to={Wishlist}>
+													<button className='btn-wishlist'>
+														<i className='pe-7s-like'></i>
+													</button>
+												</Link>
 											</div>
 											<div className='header-action-cart'>
 												<button className='btn-cart cart-icon' onClick={handleClick}>
@@ -134,7 +135,7 @@ const HeaderMain = () => {
 												</button>
 											</div>
 											<button className='btn-menu d-md-none'>
-												<i className='fa fa-bars' onClick={handleClick1}></i>
+												<i className='pe-7s-menu' onClick={handleClick1}></i>
 											</button>
 										</div>
 									</div>
@@ -155,7 +156,7 @@ const HeaderMain = () => {
 								</div>
 							</div>
 							<div className='col-lg-8 sticky-md-none'>
-								<div className='header-navigation-area d-md-block'>
+								<div className='header-navigation-area'>
 									<ul className='main-menu nav position-relative'>
 										<li className='has-submenu'>
 											<Link to={HomeOne}>Home</Link>
@@ -267,25 +268,23 @@ const HeaderMain = () => {
 							<div className='col-8 col-sm-6 col-lg-2'>
 								<div className='header-action-area'>
 									<div className='header-action-search'>
-										<button className='btn-search btn-search-menu'>
+										<button className='btn-search btn-search-menu' onClick={searchClick}>
 											<i className='pe-7s-search'></i>
 										</button>
 									</div>
 									<div className='header-action-login'>
-										<button
-											className='btn-login'
-											// onclick="window.location.href='login-register.html'"
-										>
-											<i className='pe-7s-users'></i>
-										</button>
+										<Link to={LoginRegister}>
+											<button className='btn-login'>
+												<i className='pe-7s-users'></i>
+											</button>
+										</Link>
 									</div>
 									<div className='header-action-wishlist'>
-										<button
-											className='btn-wishlist'
-											// onclick="window.location.href='shop-wishlist.html'"
-										>
-											<i className='pe-7s-like'></i>
-										</button>
+										<Link to={Wishlist}>
+											<button className='btn-wishlist'>
+												<i className='pe-7s-like'></i>
+											</button>
+										</Link>
 									</div>
 									<div className='header-action-cart'>
 										<button className='btn-cart cart-icon' onClick={handleClick}>
@@ -294,7 +293,7 @@ const HeaderMain = () => {
 										</button>
 									</div>
 									<button className='btn-menu d-lg-none'>
-										<i className='fa fa-bars' onClick={handleClick1}></i>
+										<i className='pe-7s-menu' onClick={handleClick1}></i>
 									</button>
 								</div>
 							</div>
@@ -304,6 +303,7 @@ const HeaderMain = () => {
 			</div>
 			<div>{ActiveTab && <CartModal setActive={setActiveTab} />}</div>
 			<div>{ActiveTab1 && <SideMenu setActive1={setActiveTab1} />}</div>
+			<div>{ActiveTab2 && <SearchBox setSearchActive={setActiveTab2} />}</div>
 		</>
 	);
 };

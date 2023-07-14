@@ -42,13 +42,6 @@ a {
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
-	color: #f379a7;
-	text-decoration: none;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
 	&:hover {
 		box-shadow: none;
 		color: #ed3379;
@@ -307,19 +300,6 @@ form {
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	border: 0;
-}
-[class*='pe-7s-'],
-[class^='pe-7s-'] {
-	display: inline-block;
-	font-family: Pe-icon-7-stroke;
-	speak: none;
-	font-style: normal;
-	font-weight: 400;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 .logo {
 	max-width: 148px;
@@ -1894,7 +1874,10 @@ fieldset {
 								display: block;
 								padding: 0;
 								text-transform: capitalize;
-								.slicknav_arrow {
+								.hover {
+									color: #f379a7;
+								}
+								.slicknav-arrow {
 									color: #0a1039;
 									font-size: 14px;
 									right: 10px;
@@ -1926,9 +1909,8 @@ fieldset {
 										}
 									}
 									a.slicknav_row {
-										.slicknav_arrow {
+										.slicknav-arrow {
 											top: 5px;
-											// content: "\f107";
 										}
 									}
 								}
@@ -1937,7 +1919,7 @@ fieldset {
 						li.slicknav_open {
 							a {
 								color: #f379a7;
-								.slicknav_arrow {
+								.slicknav-arrow {
 									color: #f379a7;
 								}
 							}
@@ -1945,7 +1927,7 @@ fieldset {
 								li {
 									a {
 										color: #0a1039;
-										.slicknav_arrow {
+										.slicknav-arrow {
 											color: #0a1039;
 										}
 										&:hover {
@@ -2015,7 +1997,7 @@ fieldset {
 				margin: 0;
 				text-transform: capitalize;
 				position: relative;
-				.slicknav_arrow {
+				.slicknav-arrow {
 					background-color: transparent;
 					color: #878b93;
 					font-size: 17px;
@@ -2028,6 +2010,9 @@ fieldset {
 					transform: translateY(-50%);
 					height: 35px;
 					line-height: 35px;
+					.hover {
+						color: #f379a7;
+					}
 				}
 				a {
 					padding: 0;
@@ -2069,7 +2054,7 @@ fieldset {
 		.slicknav_open {
 			> .slicknav_item {
 				position: relative;
-				.slicknav_arrow {
+				.slicknav-arrow {
 					color: #f379a7;
 				}
 			}
@@ -2135,8 +2120,13 @@ fieldset {
 	.header-area.header-default {
 		padding: 0;
 	}
-	.header-area.header-default.sticky-header {
-		display: none;
+	.header-area.sticky-header {
+		.header-navigation-area {
+			display: none;
+		}
+		.sticky-md-none {
+			display: none;
+		}
 	}
 	.header-top-main {
 		.header-info-left {
@@ -2191,7 +2181,7 @@ fieldset {
 		.slicknav_nav {
 			li {
 				a {
-					.slicknav_arrow {
+					.slicknav-arrow {
 						font-size: 10px;
 					}
 				}

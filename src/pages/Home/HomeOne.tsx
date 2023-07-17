@@ -63,8 +63,8 @@ export function HomeOne() {
 														<div className='inner-content'>
 															<h2 className='h2'>Best Kids Store &amp; Online Shop</h2>
 															<p>Give The Gift Of Your Children Everyday</p>
-															<Link to={ShopNoSidebar}>
-																<a className='btn-theme'>Shop This Now</a>
+															<Link to={ShopNoSidebar} className='btn-theme'>
+																Shop This Now
 															</Link>
 														</div>
 													</div>

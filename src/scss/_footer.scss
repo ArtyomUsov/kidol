@@ -210,15 +210,8 @@
 		}
 	}
 }
-.home-slider-area.slider-default .home-slider-item .bg-img {
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
 .bg-img {
-	background: no-repeat center center;
-	background-size: cover;
-	&.bg-img-top {
+	.bg-img-top {
 		background-position: top center;
 	}
 	&-cover {

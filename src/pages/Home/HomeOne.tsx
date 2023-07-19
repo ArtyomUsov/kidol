@@ -206,12 +206,12 @@ export function HomeOne() {
 									<li className='nav-item' role='presentation'>
 										<button
 											className='nav-link'
-											id='best-sellers-tab'
+											id='Baby-Dress-tab'
 											data-bs-toggle='tab'
-											data-bs-target='#best-sellers'
+											data-bs-target='#Baby-Dress'
 											type='button'
 											role='tab'
-											aria-controls='best-sellers'
+											aria-controls='Baby-Dress'
 											aria-selected='false'
 										>
 											Baby Dress
@@ -220,12 +220,12 @@ export function HomeOne() {
 									<li className='nav-item' role='presentation'>
 										<button
 											className='nav-link mr-0'
-											id='new-items-tab'
+											id='Baby-Toys-tab'
 											data-bs-toggle='tab'
-											data-bs-target='#new-items'
+											data-bs-target='#Baby-Toys'
 											type='button'
 											role='tab'
-											aria-controls='new-items'
+											aria-controls='Baby-Toys'
 											aria-selected='false'
 										>
 											Baby Toys
@@ -259,7 +259,7 @@ export function HomeOne() {
 											</div>
 										</div>
 									</div>
-									<div className='tab-pane fade' id='best-sellers' role='tabpanel' aria-labelledby='best-sellers-tab'>
+									<div className='tab-pane fade' id='Baby-Dress' role='tabpanel' aria-labelledby='Baby-Dress-tab'>
 										<div className='row'>
 											<div className='col-lg-12'>
 												<div className='row'>
@@ -272,7 +272,7 @@ export function HomeOne() {
 											</div>
 										</div>
 									</div>
-									<div className='tab-pane fade' id='new-items' role='tabpanel' aria-labelledby='new-items-tab'>
+									<div className='tab-pane fade' id='Baby-Toys' role='tabpanel' aria-labelledby='Baby-Toys-tab'>
 										<div className='row'>
 											<div className='col-lg-12'>
 												<div className='row'>

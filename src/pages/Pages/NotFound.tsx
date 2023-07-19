@@ -1,11 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { FooterMain } from '../../Components/Footer';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Path';
+import { Carouse } from '../../Components/Carouse';
 
 export function NotFound() {
 	return (
@@ -35,6 +34,7 @@ export function NotFound() {
 					</div>
 				</div>
 			</section>
+			<Carouse />
 			<ButtonScrollTop />
 			<FooterMain />
 		</>

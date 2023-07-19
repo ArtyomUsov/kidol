@@ -1,13 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React, { useState } from 'react';
+import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import '../../Components/Sidebar.css';
 import blog1 from '../../img/blog/1.webp';
 import blog2 from '../../img/blog/2.webp';
 import blog3 from '../../img/blog/3.webp';

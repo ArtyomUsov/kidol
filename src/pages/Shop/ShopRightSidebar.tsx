@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
@@ -9,7 +7,6 @@ import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { Products } from '../../date/Products';
 import Product from '../../Components/Product';
-import '../../Components/Sidebar.css';
 import Nouislider from 'nouislider-react';
 
 export const ShopRightSidebar = () => {

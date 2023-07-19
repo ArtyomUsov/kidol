@@ -1,7 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
-import { Product, ProductArea } from '../Components/Product';
 import { Products } from '../date/Products';
 import { ProductSlide } from '../Components/ProductSlide';
 

@@ -1,7 +1,4 @@
 import React from 'react';
-// import '../../Pages/Home/HomeOne.css';
-// import styles from "../../pages/Home/Blog.module.scss"
-// import "../../pages/Home/Shop.css"
 import { Image } from 'react-bootstrap';
 import three from '../../img/homeOne/3.webp';
 import five from '../../img/homeOne/5.webp';
@@ -32,6 +29,8 @@ import BgShape1 from '../../img/divider/shape1.webp';
 import BgShape2 from '../../img/divider/shape2.webp';
 
 export function HomeOne() {
+	const filteredDress = Products.filter(product => product.category === 'Baby Dress');
+	const filteredToys = Products.filter(product => product.category === 'Baby Toys');
 	return (
 		<>
 			<HeaderMain />
@@ -250,7 +249,7 @@ export function HomeOne() {
 											<div className='col-lg-12'>
 												<div className='product'>
 													<div className='row'>
-														{ProductArea.map(product => (
+														{Products.map(product => (
 															<div className='col-lg-3 col-md-4 col-sm-6'>
 																<Product product={product} key={product.id} className='' />
 															</div>
@@ -264,7 +263,7 @@ export function HomeOne() {
 										<div className='row'>
 											<div className='col-lg-12'>
 												<div className='row'>
-													{ProductArea.map(product => (
+													{filteredDress.map(product => (
 														<div className='col-lg-3 col-md-4 col-sm-6'>
 															<Product product={product} key={product.id} className='' />
 														</div>
@@ -277,7 +276,7 @@ export function HomeOne() {
 										<div className='row'>
 											<div className='col-lg-12'>
 												<div className='row'>
-													{ProductArea.map(product => (
+													{filteredToys.map(product => (
 														<div className='col-lg-3 col-md-4 col-sm-6'>
 															<Product product={product} key={product.id} className='' />
 														</div>

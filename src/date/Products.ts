@@ -24,6 +24,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 102.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 2,
@@ -34,6 +35,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 112.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 3,
@@ -44,6 +46,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 122.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 4,
@@ -54,6 +57,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 132.12,
 		rating: 'star',
+		category: 'Baby Dress',
 	},
 	{
 		id: 5,
@@ -64,6 +68,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 142.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 6,
@@ -74,6 +79,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 152.12,
 		rating: 'star',
+		category: 'Baby Dress',
 	},
 	{
 		id: 7,
@@ -84,6 +90,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 162.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 8,
@@ -94,6 +101,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 172.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 9,
@@ -104,6 +112,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 182.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 10,
@@ -114,6 +123,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 192.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 11,
@@ -124,6 +134,7 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 202.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 	{
 		id: 12,
@@ -134,5 +145,6 @@ export const Products: IProduct[] = [
 		link: ProductDetails,
 		price: 212.12,
 		rating: 'star',
+		category: 'Baby Toys',
 	},
 ];

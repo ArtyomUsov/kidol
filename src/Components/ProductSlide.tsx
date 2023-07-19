@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IProduct } from '../date/models';
 import { Products } from '../date/Products';
+import { CartPage, Compare, Wishlist } from '../date/Path';
 import { Link } from 'react-router-dom';
 
 interface ProductProps {
@@ -9,10 +10,15 @@ interface ProductProps {
 }
 
 export function ProductSlide({ product, className }: ProductProps) {
+	const [ActiveTab, setActiveTab] = useState(false);
+
+	const handleClick = () => {
+		setActiveTab(prev => !prev);
+	};
 	return (
 		<>
 			<div
-				className=''
+				className='slide'
 				// "active"
 			>
 				{/* Start Product Item  */}
@@ -23,18 +29,18 @@ export function ProductSlide({ product, className }: ProductProps) {
 					<div className='product-thumb'>
 						<img src={product.image} alt='Image' />
 						<div className='product-action'>
-							<a className='action-quick-view' href='shop-cart.html'>
+							<Link to={CartPage} className='action-quick-view'>
 								<i className='ion-ios-cart'></i>
-							</a>
-							<a className='action-quick-view' href='javascript:void(0)'>
+							</Link>
+							<Link to={''} className='action-quick-view' onClick={handleClick}>
 								<i className='ion-ios-expand'></i>
-							</a>
-							<a className='action-quick-view' href='shop-wishlist.html'>
+							</Link>
+							<Link to={Wishlist} className='action-quick-view'>
 								<i className='ion-ios-heart'></i>
-							</a>
-							<a className='action-quick-view' href='shop-compare.html'>
+							</Link>
+							<Link to={Compare} className='action-quick-view'>
 								<i className='ion-ios-shuffle'></i>
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className='product-info'>

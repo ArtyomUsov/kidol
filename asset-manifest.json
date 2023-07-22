@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kidol-react/static/css/main.cd57a2e8.css",
-    "main.js": "/kidol-react/static/js/main.1ce97bb8.js",
+    "main.css": "/kidol-react/static/css/main.b732925d.css",
+    "main.js": "/kidol-react/static/js/main.ed9d7bde.js",
     "static/media/fa-solid-900.ttf": "/kidol-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/ionicons.svg?v=4.5.10-1": "/kidol-react/static/media/ionicons.bb0605ccfbc8cbabadc5.svg",
     "static/media/fa-brands-400.ttf": "/kidol-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -104,11 +104,11 @@
     "static/media/shape2.webp": "/kidol-react/static/media/shape2.cd50c5c986185c94a35b.webp",
     "index.html": "/kidol-react/index.html",
     "static/media/payment-3.webp": "/kidol-react/static/media/payment-3.6599bb3495b0b710fd99.webp",
-    "main.cd57a2e8.css.map": "/kidol-react/static/css/main.cd57a2e8.css.map",
-    "main.1ce97bb8.js.map": "/kidol-react/static/js/main.1ce97bb8.js.map"
+    "main.b732925d.css.map": "/kidol-react/static/css/main.b732925d.css.map",
+    "main.ed9d7bde.js.map": "/kidol-react/static/js/main.ed9d7bde.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd57a2e8.css",
-    "static/js/main.1ce97bb8.js"
+    "static/css/main.b732925d.css",
+    "static/js/main.ed9d7bde.js"
   ]
 }

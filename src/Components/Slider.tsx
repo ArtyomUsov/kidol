@@ -1,19 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Products } from '../date/Products';
 import { ProductSlide } from '../Components/ProductSlide';
 
 export function Slider() {
 	const [index, setIndex] = useState(0);
-
+	const [addIndex, setAddIndex] = useState(4);
 	const handleNext = () => {
-		// Увеличить индекс на +1, начать массив сначала при достижении конца
 		setIndex((index + 1) % Products.length);
 	};
-
 	const handlePrev = () => {
-		// Уменьшить индекс на -1, продолжить массив с конца при достижении начала
 		setIndex((index - 1 + Products.length) % Products.length);
 	};
+	useEffect(() => {
+		const updateAddIndex = () => {
+			const windowWidth = window.innerWidth;
+			let newIndex = 4;
+			if (windowWidth <= 768) {
+				newIndex = 1;
+			} else if (windowWidth <= 991) {
+				newIndex = 2;
+			} else if (windowWidth <= 1200) {
+				newIndex = 3;
+			}
+			setAddIndex(newIndex);
+		};
+
+		window.addEventListener('resize', updateAddIndex);
+		updateAddIndex();
+
+		return () => window.removeEventListener('resize', updateAddIndex);
+	}, []);
+
 	return (
 		<>
 			<section className='product-area product-style2-area'>
@@ -51,9 +68,7 @@ export function Slider() {
 										style={{
 											opacity: '1',
 											minWidth: '300px',
-											// maxWidth: "1100px",
 											alignItems: 'center',
-											// transform: "translate3d(-1200px, 0px, 0px)"
 										}}
 									>
 										<div
@@ -62,7 +77,7 @@ export function Slider() {
 											id=''
 											aria-hidden='true'
 										>
-											{Products.slice(index, index + 4).map(product => (
+											{Products.slice(index, index + addIndex).map(product => (
 												<ProductSlide product={product} key={product.id} className='' />
 											))}
 										</div>
@@ -72,7 +87,6 @@ export function Slider() {
 									Next
 								</button>
 							</div>
-							{/* {moveToTheEnd} */}
 						</div>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kidol-react/static/css/main.b732925d.css",
+    "main.css": "/kidol-react/static/css/main.47ae9d66.css",
     "main.js": "/kidol-react/static/js/main.9146759a.js",
     "static/media/fa-solid-900.ttf": "/kidol-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/ionicons.svg?v=4.5.10-1": "/kidol-react/static/media/ionicons.bb0605ccfbc8cbabadc5.svg",
@@ -104,11 +104,11 @@
     "static/media/shape2.webp": "/kidol-react/static/media/shape2.cd50c5c986185c94a35b.webp",
     "index.html": "/kidol-react/index.html",
     "static/media/payment-3.webp": "/kidol-react/static/media/payment-3.6599bb3495b0b710fd99.webp",
-    "main.b732925d.css.map": "/kidol-react/static/css/main.b732925d.css.map",
+    "main.47ae9d66.css.map": "/kidol-react/static/css/main.47ae9d66.css.map",
     "main.9146759a.js.map": "/kidol-react/static/js/main.9146759a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b732925d.css",
+    "static/css/main.47ae9d66.css",
     "static/js/main.9146759a.js"
   ]
 }

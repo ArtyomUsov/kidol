@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { Products } from '../date/Products';
 import { ProductSlide } from '../Components/ProductSlide';
+import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { CartPage, Compare, Wishlist } from '../date/Path';
+import { ProductQuickView } from './ProductQuickView';
 
 export function Slider() {
 	const [index, setIndex] = useState(0);
+	const [ActiveTab, setActiveTab] = useState(false);
+	const [activeIndex, setActiveIndex] = useState(0);
 	const [addIndex, setAddIndex] = useState(4);
 	const handleNext = () => {
 		setIndex((index + 1) % Products.length);
 	};
 	const handlePrev = () => {
 		setIndex((index - 1 + Products.length) % Products.length);
+	};
+	const handleClick = () => {
+		setActiveTab(prev => !prev);
 	};
 	useEffect(() => {
 		const updateAddIndex = () => {
@@ -71,16 +80,51 @@ export function Slider() {
 											alignItems: 'center',
 										}}
 									>
-										<div
-											className='slick-cloned flex slide-item slick-slide align-items-center'
-											data-slick-index='-4'
-											id=''
-											aria-hidden='true'
-										>
-											{Products.slice(index, index + addIndex).map(product => (
-												<ProductSlide product={product} key={product.id} className='' />
-											))}
-										</div>
+										<Carousel activeIndex={activeIndex} onSelect={() => {}}>
+											<Carousel.Item>
+												{Products.slice(index, index + addIndex).map(product => (
+													<>
+														<div key={product.id} className='product-item col-12 col-lg-3 col-md-4 col-sm-6 slide-item'>
+															<div className='product-thumb'>
+																<img src={product.image} alt='Image' />
+																<div className='product-action'>
+																	<Link to={CartPage} className='action-quick-view'>
+																		<i className='ion-ios-cart'></i>
+																	</Link>
+																	<Link to={''} className='action-quick-view' onClick={handleClick}>
+																		<i className='ion-ios-expand'></i>
+																	</Link>
+																	<Link to={Wishlist} className='action-quick-view'>
+																		<i className='ion-ios-heart'></i>
+																	</Link>
+																	<Link to={Compare} className='action-quick-view'>
+																		<i className='ion-ios-shuffle'></i>
+																	</Link>
+																</div>
+															</div>
+															<div className='product-info'>
+																<div className='rating'>
+																	<span className='fa fa-star'></span>
+																	<span className='fa fa-star'></span>
+																	<span className='fa fa-star'></span>
+																	<span className='fa fa-star'></span>
+																	<span className='fa fa-star'></span>
+																</div>
+																<h4 className='title'>
+																	<Link to={product.link}>
+																		<a>{product.title}</a>
+																	</Link>
+																</h4>
+																<div className='prices'>
+																	<span className='price'>{product.price}</span>
+																</div>
+															</div>
+														</div>
+														<div>{ActiveTab && <ProductQuickView setActive={setActiveTab} />}</div>
+													</>
+												))}
+											</Carousel.Item>
+										</Carousel>
 									</div>
 								</div>
 								<button className='slick-next slick-arrow' aria-label='Next' type='button' onClick={handleNext}>

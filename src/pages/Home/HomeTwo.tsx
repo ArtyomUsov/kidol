@@ -1,15 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
-import { Product, ProductArea } from '../../Components/Product';
-import { Products } from '../../date/Products';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import { ProductSlide } from '../../Components/ProductSlide';
-import three from '../../img/homeOne/3.webp';
-import five from '../../img/homeOne/5.webp';
-import four from '../../img/homeOne/4.webp';
 import one from '../../img/homeOne/1.webp';
 import two from '../../img/homeOne/2.webp';
 import itemOne from '../../img/1.webp';
@@ -40,11 +32,12 @@ import collection2 from '../../img/category/5.webp';
 import blog1 from '../../img/blog/1.webp';
 import blog2 from '../../img/blog/2.webp';
 import blog3 from '../../img/blog/3.webp';
-import { Slider } from '../../Components/Slider';
 import BgShape1 from '../../img/divider/shape1.webp';
 import BgShape2 from '../../img/divider/shape2.webp';
 import { Link } from 'react-router-dom';
-import { BlogLeftSidebar, BlogNoSidebar, ShopNoSidebar } from '../../date/Path';
+import { BlogLeftSidebar, ShopNoSidebar } from '../../date/Path';
+import { ProductFilter } from '../../Components/ProductFilter';
+import { Carouse } from '../../Components/Carouse';
 
 export function HomeTwo() {
 	return (
@@ -334,7 +327,7 @@ export function HomeTwo() {
 					</div>
 				</div>
 			</section>
-			<Slider />
+			<Carouse />
 			<section
 				className='divider-area divider-style1-area bg-img aos-init aos-animate'
 				// data-bg-img={bg1}
@@ -439,141 +432,7 @@ export function HomeTwo() {
 					</div>
 				</div>
 			</section>
-			<section className='product-area product-style1-area'>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-md-6 m-auto'>
-							<div
-								className='section-title text-center aos-init aos-animate'
-								data-aos='fade-up'
-								data-aos-duration='1000'
-							>
-								<h2 className='h2 title'>New Products</h2>
-								<div className='desc'>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et
-										dolore magna aliqua
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className='row'>
-						<div className='col-md-12'>
-							<div className='product-tab-content'>
-								<ul
-									className='nav nav-tabs aos-init aos-animate'
-									id='myTab'
-									role='tablist'
-									data-aos='fade-up'
-									data-aos-duration='1000'
-								>
-									<li className='nav-item' role='presentation'>
-										<button
-											className='nav-link active'
-											id='our-features-tab'
-											data-bs-toggle='tab'
-											data-bs-target='#our-features'
-											type='button'
-											role='tab'
-											aria-controls='our-features'
-											aria-selected='true'
-										>
-											All Items
-										</button>
-									</li>
-									<li className='nav-item' role='presentation'>
-										<button
-											className='nav-link'
-											id='best-sellers-tab'
-											data-bs-toggle='tab'
-											data-bs-target='#best-sellers'
-											type='button'
-											role='tab'
-											aria-controls='best-sellers'
-											aria-selected='false'
-										>
-											Baby Dress
-										</button>
-									</li>
-									<li className='nav-item' role='presentation'>
-										<button
-											className='nav-link mr-0'
-											id='new-items-tab'
-											data-bs-toggle='tab'
-											data-bs-target='#new-items'
-											type='button'
-											role='tab'
-											aria-controls='new-items'
-											aria-selected='false'
-										>
-											Baby Toys
-										</button>
-									</li>
-								</ul>
-
-								<div
-									className='tab-content aos-init aos-animate'
-									id='myTabContent'
-									data-aos='fade-up'
-									data-aos-duration='1300'
-								>
-									<div
-										className='tab-pane fade show active'
-										id='our-features'
-										role='tabpanel'
-										aria-labelledby='our-features-tab'
-									>
-										<div className='row'>
-											<div className='col-lg-12'>
-												<div className='product'>
-													<div className='row'>
-														{ProductArea.map(product => (
-															<div className='col-lg-3 col-md-4 col-sm-6'>
-																<Product product={product} key={product.id} className='' />
-															</div>
-														))}
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className='tab-pane fade' id='best-sellers' role='tabpanel' aria-labelledby='best-sellers-tab'>
-										<div className='row'>
-											<div className='col-lg-12'>
-												<div className='product'>
-													<div className='row'>
-														{ProductArea.map(product => (
-															<div className='col-lg-3 col-md-4 col-sm-6'>
-																<Product product={product} key={product.id} className='' />
-															</div>
-														))}
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className='tab-pane fade' id='new-items' role='tabpanel' aria-labelledby='new-items-tab'>
-										<div className='row'>
-											<div className='col-lg-12'>
-												<div className='product'>
-													<div className='row'>
-														{ProductArea.map(product => (
-															<div className='col-lg-3 col-md-4 col-sm-6'>
-																<Product product={product} key={product.id} className='' />
-															</div>
-														))}
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<ProductFilter />
 			<section className='testimonial-area testimonial-default-area'>
 				<div className='container'>
 					<div className='row'>

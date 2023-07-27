@@ -4,7 +4,6 @@ import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { FooterMain } from '../../Components/Footer';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Path';
-import { Carouse } from '../../Components/Carouse';
 
 export function NotFound() {
 	return (
@@ -34,7 +33,6 @@ export function NotFound() {
 					</div>
 				</div>
 			</section>
-			<Carouse />
 			<ButtonScrollTop />
 			<FooterMain />
 		</>

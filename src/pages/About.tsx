@@ -28,71 +28,49 @@ export function About() {
 	return (
 		<>
 			<HeaderMain />
-			<section className='page-title-area' style={{}}>
+			<section className='page-title-area'>
 				<div className='shape-top'>
 					<img className='bg-img' src={one} />
 				</div>
-				<div className='container' style={{}}>
-					<div className='row align-items-center' style={{}}>
-						<div className='col-lg-12 m-auto' style={{}}>
-							<div className='page-title-content text-center' style={{}}>
-								<h2 className='title h2' style={{}}>
-									About Us
-								</h2>
-								<div className='bread-crumbs' style={{}}>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-12 m-auto'>
+							<div className='page-title-content text-center'>
+								<h2 className='title h2'>About Us</h2>
+								<div className='bread-crumbs'>
 									<Link to={HomeOne}>Home</Link>
-									<span className='breadcrumb-sep' style={{}}>
-										{' '}
-										//{' '}
-									</span>
-									<span className='active' style={{}}>
-										{' '}
-										About Us
-									</span>
+									<span className='breadcrumb-sep'> // </span>
+									<span className='active'>About Us</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section className='divider-area divider-style3-area' style={{}}>
-				<div className='container' style={{}}>
-					<div className='row' style={{}}>
-						<div
-							className='col-md-6 col-lg-6 aos-init aos-animate'
-							data-aos='fade-right'
-							data-aos-duration='1000'
-							style={{}}
-						>
-							<div className='thumb' style={{}}>
-								<img src={kids4} alt='Image' style={{}} />
-								<div className='shape-group' style={{}}>
-									<div className='shape-style1' style={{}}>
-										<img src={four} alt='Image' style={{}} />
+			<section className='divider-area divider-style3-area'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-6 col-lg-6 aos-init aos-animate' data-aos='fade-right' data-aos-duration='1000'>
+							<div className='thumb'>
+								<img src={kids4} alt='Image' />
+								<div className='shape-group'>
+									<div className='shape-style1'>
+										<img src={four} alt='Image' />
 									</div>
 								</div>
 							</div>
 						</div>
-						<div
-							className='col-md-6 col-lg-6 aos-init aos-animate'
-							data-aos='fade-up'
-							data-aos-duration='1000'
-							style={{}}
-						>
-							<div className='divider-content' style={{}}>
-								<h4 className='subtitle h4' style={{}}>
-									Hello there!
-								</h4>
-								<h2 className='title' style={{}}>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit sed dolo
-								</h2>
-								<p style={{}}>
+						<div className='col-md-6 col-lg-6 aos-init aos-animate' data-aos='fade-up' data-aos-duration='1000'>
+							<div className='divider-content'>
+								<h4 className='subtitle h4'>Hello there!</h4>
+								<h2 className='title'>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed dolo</h2>
+								<p>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo temp incidi ut labore et
 									dolore magna aliqua. Ut enim ad minim veniam quis nostru exercitation ullamco laboris nisi ut aliquip
 									ex ea commodo consequat. Duislpl aute irure dolor in reprehenderit in voluptate velit esse cillum
 									dolore eu fugial nulla pariatur. Excepteur sint occaecat.
 								</p>
-								<a className='btn-theme' href='contact.html' style={{}}>
+								<a className='btn-theme' href='contact.html'>
 									Contact Us
 								</a>
 							</div>

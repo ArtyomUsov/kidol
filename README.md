@@ -1,12 +1,14 @@
-# Getting Started with Online store for children's goods
+<div align="center">
+  <h1>Kidol</h1>
+  <strong>Online store for children's goods</strong>
+  <h1 align="center">Meet this <a href='https://artyomusov.github.io/kidol/' target="_blank">Kidol</a>
+  <img align="center" src="https://github.com/ArtyomUsov/Kidol/raw/master/public/logo-192.svg" height="50"></h1>
+<strong>This project was assembled from a ready-made design using the React library</strong>
+<h2>Getting Started</h2>
+<h3>This section provides a quick start guide.</h3>
+<h2>Available Scripts</h2>
 
-[Hi there](https://artyomusov.github.io/kidol/)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+<h3>In the project directory, you can run:</h3>
 
 ### `npm start`
 
@@ -28,11 +30,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+</div>
 
-### `npm run ' '`
-
-
-- адаптивная вёрстка
-- использование библиотеки bootstrap
-- практика использования react компонентов
-- практика использования typescript

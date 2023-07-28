@@ -35,7 +35,7 @@ function App() {
 		<>
 			<ScrollToTop />
 			<Routes>
-				<Route path='/kidol-react' element={<HomeOne />} />
+				<Route path='/kidol' element={<HomeOne />} />
 				<Route path='/home-one' element={<HomeOne />} />
 				<Route path='/home-two' element={<HomeTwo />} />
 				<Route path='/about' element={<About />} />

@@ -1,6 +1,6 @@
 # Getting Started with Online store for children's goods
 
-                    [Hi there](https://artyomusov.github.io/kidol-react/)
+[Hi there](https://artyomusov.github.io/kidol-react/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

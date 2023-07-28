@@ -13,7 +13,6 @@ import '../src/css/ionicons.min.css';
 import '../src/css/styleRubik.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-// import 'swiper/css/bundle';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

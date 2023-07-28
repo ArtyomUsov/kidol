@@ -100,7 +100,7 @@ const HeaderMain = () => {
 									<div className='header-align-left'>
 										<div className='header-logo-area'>
 											<Link to={HomeOne}>
-												<img className='logo-main' src={logo} alt='Logo' />
+												<img className='logo-main' src={logo} alt='site logo: baby in a stroller' />
 											</Link>
 										</div>
 									</div>
@@ -150,8 +150,8 @@ const HeaderMain = () => {
 							<div className='col-4 col-sm-6 col-lg-2'>
 								<div className='header-logo-area'>
 									<Link to={HomeOne}>
-										<img className='logo-main' src={logo} alt='Logo' />
-										<img className='logo-light' src={logo} alt='Logo' />
+										<img className='logo-main' src={logo} alt='site logo: baby in a stroller' />
+										<img className='logo-light' src={logo} alt='site logo: baby in a stroller' />
 									</Link>
 								</div>
 							</div>

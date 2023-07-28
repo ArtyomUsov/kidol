@@ -19,9 +19,7 @@ export function ProductSlide({ product, className }: ProductProps) {
 		<>
 			<div
 				className='slide'
-				// "active"
 			>
-				{/* Start Product Item  */}
 				<div
 					className='product-item '
 					style={{ opacity: '1', minWidth: '250px', maxWidth: '250px', minHeight: '450px', height: '450px' }}
@@ -61,7 +59,6 @@ export function ProductSlide({ product, className }: ProductProps) {
 						</div>
 					</div>
 				</div>
-				{/*End Product Item*/}
 			</div>
 		</>
 	);

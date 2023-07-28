@@ -15,7 +15,7 @@ export function FooterMain() {
 								<div className='widget-item item-style3'>
 									<div className='about-widget'>
 										<Link to={HomeOne} className='footer-logo'>
-											<img src={logoLight} alt='Logo' />
+											<img src={logoLight} alt='site logo: baby in a stroller' />
 										</Link>
 										<p>
 											Lorem ipsum dolor sit amet, consecl adipisicing elit, sed do eiusmod teml incididunt ut labore et
@@ -163,7 +163,7 @@ export function FooterMain() {
 										<div className='widget-payment-info'>
 											<div className='thumb'>
 												<Link to={NotFound}>
-													<img src={payment} alt='Image' />
+													<img src={payment} alt='payment systems suitable for payment' />
 												</Link>
 											</div>
 										</div>

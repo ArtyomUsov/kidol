@@ -50,7 +50,7 @@ export function HomeOne() {
 										className='thumb-one'
 										// data-bg-img={background}
 									>
-										<Image className='bg-img' src={background} />
+										<Image className='bg-img' src={background} alt='turquoise color background' />
 									</div>
 									<div className='slider-content-area'>
 										<div className='container'>
@@ -68,21 +68,21 @@ export function HomeOne() {
 												</div>
 											</div>
 										</div>
-										<Image className='thumb-two' src={four} alt='#' />
-										<Image className='thumb-three' src={three} alt='#' />
-										<Image className='thumb-four' src={five} alt='#' />
+										<Image className='thumb-two' src={four} alt='boy in a helmet with wings' />
+										<Image className='thumb-three' src={three} alt='cloud' />
+										<Image className='thumb-four' src={five} alt='toy car' />
 									</div>
 									<div
 										className='shape-top'
 										// data-bg-img={one}
 									>
-										<Image className='bg-img' src={one} />
+										<Image className='bg-img' src={one} alt='White semicircles in a row' />
 									</div>
 									<div
 										className='shape-bottom'
 										// data-bg-img={two}
 									>
-										<Image className='shape-bottom bg-img' src={two} />
+										<Image className='shape-bottom bg-img' src={two} alt='white waves' />
 									</div>
 								</div>
 							</div>
@@ -110,7 +110,7 @@ export function HomeOne() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='category-item'>
 								<div className='thumb thumb-style1'>
-									<img src={itemOne} alt='#' />
+									<img src={itemOne} alt='baby drees' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='h2 title'>Baby Dress</h2>
@@ -126,7 +126,7 @@ export function HomeOne() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='category-item mt-xs-25'>
 								<div className='thumb thumb-style2'>
-									<img src={itemTwo} alt='#' />
+									<img src={itemTwo} alt='baby toy' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='h2 title'>Baby Toys</h2>
@@ -142,7 +142,7 @@ export function HomeOne() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='category-item mt-sm-25'>
 								<div className='thumb thumb-style3'>
-									<img src={itemThree} alt='#' />
+									<img src={itemThree} alt='teddy bear' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='h2 title'>Teddy Bear</h2>
@@ -201,19 +201,19 @@ export function HomeOne() {
 					</div>
 					<div className='shape-group'>
 						<div className='shape-style3'>
-							<img src={divider1} />
+							<img src={divider1} alt='boy with apple and selfie stick' />
 						</div>
 						<div className='shape-style4'>
-							<img src={divider2} />
+							<img src={divider2} alt='girl standing on one leg' />
 						</div>
 					</div>
 				</div>
 				<div className='shape-group'>
 					<div className='shape-style1'>
-						<img src={BgShape1} />
+						<img src={BgShape1} alt='White semicircles in a row' />
 					</div>
 					<div className='shape-style2'>
-						<img src={BgShape2} />
+						<img src={BgShape2} alt='White semicircles in a row' />
 					</div>
 				</div>
 			</section>
@@ -227,7 +227,7 @@ export function HomeOne() {
 						<div className='col-md-6'>
 							<div className='category-item'>
 								<div className='thumb'>
-									<img className='w-100' src={collection1} alt='#' />
+									<img className='w-100' src={collection1} alt='baby with rattles' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='title text-white'>Collection</h2>
@@ -245,7 +245,7 @@ export function HomeOne() {
 						<div className='col-md-6'>
 							<div className='category-item mt-sm-50'>
 								<div className='thumb'>
-									<img className='w-100' src={collection2} alt='#' />
+									<img className='w-100' src={collection2} alt='boy with wooden construction set' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='title'>Collection</h2>
@@ -291,7 +291,7 @@ export function HomeOne() {
 							<div className='post-item'>
 								<div className='thumb'>
 									<a href='blog-details.html'>
-										<img src={blog1} alt='#' />
+										<img src={blog1} alt='kids with plastic construction set' />
 									</a>
 								</div>
 								<div className='content'>
@@ -318,7 +318,7 @@ export function HomeOne() {
 							<div className='post-item mt-xs-30'>
 								<div className='thumb'>
 									<a href='blog-details.html'>
-										<img src={blog2} alt='#' />
+										<img src={blog2} alt='boy with wooden construction set' />
 									</a>
 								</div>
 								<div className='content'>
@@ -345,7 +345,7 @@ export function HomeOne() {
 							<div className='post-item mt-md-30'>
 								<div className='thumb'>
 									<a href='blog-details.html'>
-										<img src={blog3} alt='#' />
+										<img src={blog3} alt='girl with a wooden constructor' />
 									</a>
 								</div>
 								<div className='content'>

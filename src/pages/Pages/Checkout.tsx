@@ -31,7 +31,7 @@ export function Checkout() {
 			<HeaderMain />
 			<section className='page-title-area'>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
 				<div className='container'>
 					<div className='row align-items-center'>
@@ -494,7 +494,7 @@ export function Checkout() {
 												onClick={() => setActiveTab(4)}
 											/>
 											<label>
-												PayPal <img src={payment3} />
+												PayPal <img src={payment3} alt='PayPal' />
 												<a href='#'>What is PayPal?</a>
 											</label>
 											<Collapse in={activeTab === 4}>

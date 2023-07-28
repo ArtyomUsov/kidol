@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
@@ -12,27 +10,19 @@ export function LoginRegister() {
 	return (
 		<>
 			<HeaderMain />
-			<section className='page-title-area' style={{}}>
+			<section className='page-title-area'>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
-				<div className='container' style={{}}>
-					<div className='row align-items-center' style={{}}>
-						<div className='col-lg-12 m-auto' style={{}}>
-							<div className='page-title-content text-center' style={{}}>
-								<h2 className='title h2' style={{}}>
-									My Account
-								</h2>
-								<div className='bread-crumbs' style={{}}>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-12 m-auto'>
+							<div className='page-title-content text-center'>
+								<h2 className='title h2'>My Account</h2>
+								<div className='bread-crumbs'>
 									<Link to={HomeOne}>Home</Link>
-									<span className='breadcrumb-sep' style={{}}>
-										{' '}
-										//{' '}
-									</span>
-									<span className='active' style={{}}>
-										{' '}
-										My Account
-									</span>
+									<span className='breadcrumb-sep'> // </span>
+									<span className='active'> My Account</span>
 								</div>
 							</div>
 						</div>

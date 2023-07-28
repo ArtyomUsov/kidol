@@ -1,4 +1,3 @@
-// import '../../src/Swiper/swiper.min.js';
 import React, { useState } from 'react';
 import thirteen from '../img/shop/13.webp';
 import fourteen from '../img/shop/14.webp';

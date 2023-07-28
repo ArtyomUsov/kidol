@@ -4,9 +4,6 @@ import { FooterMain } from '../../Components/Footer';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import one from '../../img/homeOne/1.webp';
 import two from '../../img/homeOne/2.webp';
-import itemOne from '../../img/1.webp';
-import itemTwo from '../../img/2.webp';
-import itemThree from '../../img/3.webp';
 import brand1 from '../../img/brand-logo/1.webp';
 import brand2 from '../../img/brand-logo/2.webp';
 import brand3 from '../../img/brand-logo/3.webp';
@@ -56,7 +53,7 @@ export function HomeTwo() {
 								// style='width: 1903px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);'
 							>
 								<div className='home-slider-item item-two'>
-									<img className='bg-img' src={background2} />
+									<img className='bg-img' src={background2} alt='fashionista girl on a pink background' />
 									<div className='slider-content-area'>
 										<div className='container'>
 											<div className='row'>
@@ -75,7 +72,7 @@ export function HomeTwo() {
 										</div>
 									</div>
 									<div className='shape-top'>
-										<img className='bg-img' src={one} />
+										<img className='bg-img' src={one} alt='White semicircles in a row' />
 									</div>
 								</div>
 							</div>
@@ -279,7 +276,7 @@ export function HomeTwo() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='featured-item'>
 								<div className='icon'>
-									<img src={f1} alt='Image' />
+									<img src={f1} alt='delivery car' />
 								</div>
 								<div className='featured-info'>
 									<h4 className='title h4'>Free Shipping</h4>
@@ -287,7 +284,7 @@ export function HomeTwo() {
 								</div>
 								<div className='shape-group'>
 									<div className='shape-style1'>
-										<img src={f4} alt='Image' />
+										<img src={f4} alt='delivery car' />
 									</div>
 								</div>
 							</div>
@@ -295,7 +292,7 @@ export function HomeTwo() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='featured-item mt-xs-30'>
 								<div className='icon'>
-									<img src={f2} alt='Image' />
+									<img src={f2} alt='support 24 hours' />
 								</div>
 								<div className='featured-info'>
 									<h4 className='title h4'>Support 24/7</h4>
@@ -303,7 +300,7 @@ export function HomeTwo() {
 								</div>
 								<div className='shape-group'>
 									<div className='shape-style1'>
-										<img src={f5} alt='Image' />
+										<img src={f5} alt='support 24 hours' />
 									</div>
 								</div>
 							</div>
@@ -311,7 +308,7 @@ export function HomeTwo() {
 						<div className='col-sm-6 col-md-4'>
 							<div className='featured-item mt-sm-30'>
 								<div className='icon'>
-									<img src={f3} alt='Image' />
+									<img src={f3} alt='Money Return' />
 								</div>
 								<div className='featured-info'>
 									<h4 className='title h4'>Money Return</h4>
@@ -319,7 +316,7 @@ export function HomeTwo() {
 								</div>
 								<div className='shape-group'>
 									<div className='shape-style1'>
-										<img src={f6} alt='Image' />
+										<img src={f6} alt='Money Return' />
 									</div>
 								</div>
 							</div>
@@ -370,19 +367,19 @@ export function HomeTwo() {
 					</div>
 					<div className='shape-group'>
 						<div className='shape-style3'>
-							<img src={divider1} />
+							<img src={divider1} alt='boy with apple and selfie stick' />
 						</div>
 						<div className='shape-style4'>
-							<img src={divider2} />
+							<img src={divider2} alt='girl standing on one leg' />
 						</div>
 					</div>
 				</div>
 				<div className='shape-group'>
 					<div className='shape-style1'>
-						<img src={BgShape1} />
+						<img src={BgShape1} alt='White semicircles in a row' />
 					</div>
 					<div className='shape-style2'>
-						<img src={BgShape2} />
+						<img src={BgShape2} alt='White semicircles in a row' />
 					</div>
 				</div>
 			</section>
@@ -396,7 +393,7 @@ export function HomeTwo() {
 						<div className='col-md-6'>
 							<div className='category-item'>
 								<div className='thumb'>
-									<img className='w-100' src={collection1} alt='#' />
+									<img className='w-100' src={collection1} alt='baby with rattles' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='title text-white'>Collection</h2>
@@ -414,7 +411,7 @@ export function HomeTwo() {
 						<div className='col-md-6'>
 							<div className='category-item mt-sm-50'>
 								<div className='thumb'>
-									<img className='w-100' src={collection2} alt='#' />
+									<img className='w-100' src={collection2} alt='boy with wooden construction set' />
 									<div className='content'>
 										<div className='contact-info'>
 											<h2 className='title'>Collection</h2>
@@ -468,7 +465,7 @@ export function HomeTwo() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														Lorem ipsum dolor sit amet, consect adipisi elit sed do eiusmod temporlo incidid ut labore
@@ -477,18 +474,18 @@ export function HomeTwo() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo1} alt='Image' />
+													<img src={photo1} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Dasia Lovell</h4>
@@ -506,7 +503,7 @@ export function HomeTwo() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														There are many variations of passage of Lorem Ipsum available, but the on majority have
@@ -515,18 +512,18 @@ export function HomeTwo() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo2} alt='Image' />
+													<img src={photo2} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Dasia Lovell</h4>
@@ -544,7 +541,7 @@ export function HomeTwo() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														Lorem ipsum dolor sit amet, consect adipisi elit sed do eiusmod temporlo incidid ut labore
@@ -553,18 +550,18 @@ export function HomeTwo() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo3} alt='Image' />
+													<img src={photo3} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Akhil Newman</h4>
@@ -579,7 +576,7 @@ export function HomeTwo() {
 						</div>
 					</div>
 				</div>
-				<img className='thumb-style bg-img' src={two}></img>
+				<img className='thumb-style bg-img' src={two} alt='white waves' />
 			</section>
 			<section className='blog-area blog-default-area'>
 				<div className='container'>
@@ -606,7 +603,7 @@ export function HomeTwo() {
 							<div className='post-item'>
 								<div className='thumb'>
 									<a href='blog-details.html'>
-										<img src={blog1} alt='#' />
+										<img src={blog1} alt='kids with plastic construction set' />
 									</a>
 								</div>
 								<div className='content'>
@@ -633,7 +630,7 @@ export function HomeTwo() {
 							<div className='post-item mt-xs-30'>
 								<div className='thumb'>
 									<a href='blog-details.html'>
-										<img src={blog2} alt='#' />
+										<img src={blog2} alt='boy with wooden construction set' />
 									</a>
 								</div>
 								<div className='content'>
@@ -660,7 +657,7 @@ export function HomeTwo() {
 							<div className='post-item mt-md-30'>
 								<div className='thumb'>
 									<Link to={BlogLeftSidebar}>
-										<img src={blog3} />
+										<img src={blog3} alt='girl with a wooden constructor' />
 									</Link>
 								</div>
 								<div className='content'>

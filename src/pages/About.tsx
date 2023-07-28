@@ -11,7 +11,6 @@ import photo1 from '../img/homeTwo/photo1.webp';
 import photo2 from '../img/homeTwo/photo2.webp';
 import photo3 from '../img/homeTwo/photo3.webp';
 import quotes from '../img/homeTwo/quotes.webp';
-import background2 from '../img/homeTwo/3.webp';
 import shape1 from '../img/homeTwo/shape1.webp';
 import two from '../img/homeOne/2.webp';
 import four from '../img/homeOne/5.webp';
@@ -30,7 +29,7 @@ export function About() {
 			<HeaderMain />
 			<section className='page-title-area'>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
 				<div className='container'>
 					<div className='row align-items-center'>
@@ -52,10 +51,10 @@ export function About() {
 					<div className='row'>
 						<div className='col-md-6 col-lg-6 aos-init aos-animate' data-aos='fade-right' data-aos-duration='1000'>
 							<div className='thumb'>
-								<img src={kids4} alt='Image' />
+								<img src={kids4} alt='boy with a girl on a pink background' />
 								<div className='shape-group'>
 									<div className='shape-style1'>
-										<img src={four} alt='Image' />
+										<img src={four} alt='toy car' />
 									</div>
 								</div>
 							</div>
@@ -258,21 +257,18 @@ export function About() {
 					</div>
 				</div>
 			</section>
-			<section className='team-area team-default-area' style={{}}>
-				<div className='container' style={{}}>
-					<div className='row' style={{}}>
-						<div className='col-md-8 col-lg-6 m-auto' style={{}}>
+			<section className='team-area team-default-area'>
+				<div className='container'>
+					<div className='row'>
+						<div className='col-md-8 col-lg-6 m-auto'>
 							<div
 								className='section-title text-center aos-init aos-animate'
 								data-aos='fade-up'
 								data-aos-duration='1000'
-								style={{}}
 							>
-								<h2 className='title' style={{}}>
-									Team Member
-								</h2>
-								<div className='desc' style={{}}>
-									<p style={{}}>
+								<h2 className='title'>Team Member</h2>
+								<div className='desc'>
+									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et
 										dolore magna aliqua.{' '}
 									</p>
@@ -280,102 +276,90 @@ export function About() {
 							</div>
 						</div>
 					</div>
-					<div className='row aos-init aos-animate' data-aos='fade-up' data-aos-duration='1300' style={{}}>
-						<div className='col-md-4' style={{}}>
-							<div className='team-member' style={{}}>
-								<div className='thumb' style={{}}>
-									<img src={team1} alt='Image' style={{}} />
-									<div className='member-icons' style={{}}>
-										<a href='#/' style={{}}>
-											<i className='fa fa-facebook' style={{}}></i>
+					<div className='row aos-init aos-animate' data-aos='fade-up' data-aos-duration='1300'>
+						<div className='col-md-4'>
+							<div className='team-member'>
+								<div className='thumb'>
+									<img src={team1} alt='client photo' />
+									<div className='member-icons'>
+										<a href='#/'>
+											<i className='fa fa-facebook'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-dribbble' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-dribbble'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-pinterest-p' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-pinterest-p'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-twitter' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-twitter'></i>
 										</a>
 									</div>
 								</div>
-								<div className='content' style={{}}>
-									<div className='member-info' style={{}}>
-										<h4 className='name' style={{}}>
-											<a href='#/' style={{}}>
-												Alyana Thomson
-											</a>
+								<div className='content'>
+									<div className='member-info'>
+										<h4 className='name'>
+											<a href='#/'>Phoenix Walker</a>
 										</h4>
-										<h6 className='designation' style={{}}>
-											Customer
-										</h6>
+										<h6 className='designation'>Customer</h6>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className='col-md-4' style={{}}>
-							<div className='team-member mt-sm-50' style={{}}>
-								<div className='thumb' style={{}}>
-									<img src={team2} alt='Image' style={{}} />
-									<div className='member-icons' style={{}}>
-										<a href='#/' style={{}}>
-											<i className='fa fa-facebook' style={{}}></i>
+						<div className='col-md-4'>
+							<div className='team-member mt-sm-50'>
+								<div className='thumb'>
+									<img src={team2} alt='client photo' />
+									<div className='member-icons'>
+										<a href='#/'>
+											<i className='fa fa-facebook'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-dribbble' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-dribbble'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-pinterest-p' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-pinterest-p'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-twitter' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-twitter'></i>
 										</a>
 									</div>
 								</div>
-								<div className='content' style={{}}>
-									<div className='member-info' style={{}}>
-										<h4 className='name' style={{}}>
-											<a href='#/' style={{}}>
-												Phoenix Walker
-											</a>
+								<div className='content'>
+									<div className='member-info'>
+										<h4 className='name'>
+											<a href='#/'>Alyana Thomson</a>
 										</h4>
-										<h6 className='designation' style={{}}>
-											Customer
-										</h6>
+										<h6 className='designation'>Customer</h6>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className='col-md-4' style={{}}>
-							<div className='team-member mt-sm-50' style={{}}>
-								<div className='thumb style-two' style={{}}>
-									<img src={team3} alt='Image' style={{}} />
-									<div className='member-icons' style={{}}>
-										<a href='#/' style={{}}>
-											<i className='fa fa-facebook' style={{}}></i>
+						<div className='col-md-4'>
+							<div className='team-member mt-sm-50'>
+								<div className='thumb style-two'>
+									<img src={team3} alt='client photo' />
+									<div className='member-icons'>
+										<a href='#/'>
+											<i className='fa fa-facebook'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-dribbble' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-dribbble'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-pinterest-p' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-pinterest-p'></i>
 										</a>
-										<a href='#/' style={{}}>
-											<i className='fa fa-twitter' style={{}}></i>
+										<a href='#/'>
+											<i className='fa fa-twitter'></i>
 										</a>
 									</div>
 								</div>
-								<div className='content' style={{}}>
-									<div className='member-info' style={{}}>
-										<h4 className='name' style={{}}>
-											<a href='#/' style={{}}>
-												Oscar Thomsen
-											</a>
+								<div className='content'>
+									<div className='member-info'>
+										<h4 className='name'>
+											<a href='#/'>Oscar Thomsen</a>
 										</h4>
-										<h6 className='designation' style={{}}>
-											Customer
-										</h6>
+										<h6 className='designation'>Customer</h6>
 									</div>
 								</div>
 							</div>
@@ -418,7 +402,7 @@ export function About() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														Lorem ipsum dolor sit amet, consect adipisi elit sed do eiusmod temporlo incidid ut labore
@@ -427,18 +411,18 @@ export function About() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo1} alt='Image' />
+													<img src={photo1} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Dasia Lovell</h4>
@@ -456,7 +440,7 @@ export function About() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														There are many variations of passage of Lorem Ipsum available, but the on majority have
@@ -465,18 +449,18 @@ export function About() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo2} alt='Image' />
+													<img src={photo2} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Dasia Lovell</h4>
@@ -494,7 +478,7 @@ export function About() {
 											<div className='client-content'>
 												<div className='inner-content'>
 													<div className='icon'>
-														<img src={quotes} alt='Image' />
+														<img src={quotes} alt='quotes' />
 													</div>
 													<p>
 														Lorem ipsum dolor sit amet, consect adipisi elit sed do eiusmod temporlo incidid ut labore
@@ -503,18 +487,18 @@ export function About() {
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 												<div className='shape-group'>
 													<div className='shape-style1'>
-														<img src={shape1} alt='Image' />
+														<img src={shape1} alt='white rounded corner' />
 													</div>
 												</div>
 											</div>
 											<div className='client-info'>
 												<div className='thumb'>
-													<img src={photo3} alt='Image' />
+													<img src={photo3} alt='client photo' />
 												</div>
 												<div className='desc'>
 													<h4 className='title h4'>Akhil Newman</h4>
@@ -529,7 +513,7 @@ export function About() {
 						</div>
 					</div>
 				</div>
-				<img className='thumb-style bg-img' src={two}></img>
+				<img className='thumb-style bg-img' src={two} alt='white waves' />
 			</section>
 			<section
 				className='divider-area divider-style4-area aos-init aos-animate'

@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react';
 import logo from '../../img/logo.webp';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
@@ -15,8 +13,8 @@ export function ComingSoon() {
 						<div className='col-4 col-xs-3 col-sm-3 col-md-3 col-xl-3'>
 							<div className='header-logo-area d-block'>
 								<Link to={HomeOne}>
-									<img className='logo-main' src={logo} alt='Logo' />
-									<img className='logo-light' src={logo} alt='Logo' />
+									<img className='logo-main' src={logo} alt='site logo: baby in a stroller' />
+									<img className='logo-light' src={logo} alt='site logo: baby in a stroller' />
 								</Link>
 							</div>
 						</div>

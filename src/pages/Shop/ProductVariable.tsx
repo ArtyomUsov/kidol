@@ -7,38 +7,30 @@ import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import { Slider } from '../../Components/Slider';
 import { SingleSlider } from '../../Components/SingleSlider';
 import nav1 from '../../img/shop/nav1.webp';
 import nav2 from '../../img/shop/nav2.webp';
 import nav3 from '../../img/shop/nav3.webp';
+import { Carouse } from '../../Components/Carouse';
 
 export function ProductVariable() {
 	const [count, setCount] = useState(0);
 	return (
 		<>
 			<HeaderMain />
-			<section className='page-title-area' style={{}}>
+			<section className='page-title-area'>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
-				<div className='container' style={{}}>
-					<div className='row align-items-center' style={{}}>
-						<div className='col-lg-12 m-auto' style={{}}>
-							<div className='page-title-content text-center' style={{}}>
-								<h2 className='title h2' style={{}}>
-									Product
-								</h2>
-								<div className='bread-crumbs' style={{}}>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-12 m-auto'>
+							<div className='page-title-content text-center'>
+								<h2 className='title h2'>Product</h2>
+								<div className='bread-crumbs'>
 									<Link to={HomeOne}>Home</Link>
-									<span className='breadcrumb-sep' style={{}}>
-										{' '}
-										//{' '}
-									</span>
-									<span className='active' style={{}}>
-										{' '}
-										Product
-									</span>
+									<span className='breadcrumb-sep'> // </span>
+									<span className='active'> Product</span>
 								</div>
 							</div>
 						</div>
@@ -454,7 +446,7 @@ export function ProductVariable() {
 					</div>
 				</div>
 			</section>
-			<Slider />
+			<Carouse />
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

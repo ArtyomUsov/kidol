@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
@@ -11,30 +9,23 @@ import { Products } from '../../date/Products';
 import Product from '../../Components/Product';
 
 export function Shop4Column() {
+	const [activeTab, setActiveTab] = useState(1);
 	return (
 		<>
 			<HeaderMain />
-			<section className='page-title-area' style={{}}>
+			<section className='page-title-area'>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
-				<div className='container' style={{}}>
-					<div className='row align-items-center' style={{}}>
-						<div className='col-lg-12 m-auto' style={{}}>
-							<div className='page-title-content text-center' style={{}}>
-								<h2 className='title h2' style={{}}>
-									Product
-								</h2>
-								<div className='bread-crumbs' style={{}}>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-12 m-auto'>
+							<div className='page-title-content text-center'>
+								<h2 className='title h2'>Product</h2>
+								<div className='bread-crumbs'>
 									<Link to={HomeOne}>Home</Link>
-									<span className='breadcrumb-sep' style={{}}>
-										{' '}
-										//{' '}
-									</span>
-									<span className='active' style={{}}>
-										{' '}
-										Product
-									</span>
+									<span className='breadcrumb-sep'> // </span>
+									<span className='active'> Product</span>
 								</div>
 							</div>
 						</div>
@@ -55,40 +46,25 @@ export function Shop4Column() {
 									<nav>
 										<div className='nav nav-tabs active' id='nav-tab' role='tablist'>
 											<button
-												className='nav-link active'
-												id='column-three-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#column-three'
+												className={`nav-link ${activeTab === 1 ? 'active' : ''}`}
+												onClick={() => setActiveTab(1)}
 												type='button'
-												role='tab'
-												aria-controls='column-three'
-												aria-selected='true'
 											>
 												<i className='fa fa-th'></i>
 											</button>
 
 											<button
-												className='nav-link'
-												id='nav-list-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#nav-list'
+												className={`nav-link ${activeTab === 2 ? 'active' : ''}`}
+												onClick={() => setActiveTab(2)}
 												type='button'
-												role='tab'
-												aria-controls='nav-list'
-												aria-selected='false'
 											>
 												<i className='fa fa-list'></i>
 											</button>
 
 											<button
-												className='nav-link'
-												id='column-two-tab'
-												data-bs-toggle='tab'
-												data-bs-target='#column-two'
+												className={`nav-link ${activeTab === 3 ? 'active' : ''}`}
+												onClick={() => setActiveTab(3)}
 												type='button'
-												role='tab'
-												aria-controls='column-two'
-												aria-selected='true'
 											>
 												<i className='fa fa-th-large'></i>
 											</button>
@@ -132,20 +108,43 @@ export function Shop4Column() {
 								</div>
 							</div>
 							<div className='tab-content' id='nav-tabContent'>
-								<div
-									className='tab-pane fade show active'
-									id='column-three'
-									role='tabpanel'
-									aria-labelledby='column-three-tab'
-								>
-									<div className='row'>
-										{Products.map(product => (
-											<div className='col-lg-3 col-md-4 col-sm-6'>
-												<Product product={product} key={product.id} className='' />
-											</div>
-										))}
+								{activeTab === 1 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-lg-3 col-md-4 col-sm-6'>
+													<Product product={product} key={product.id} className='' />
+												</div>
+											))}
+										</div>
 									</div>
-								</div>
+								)}
+							</div>
+							<div className='tab-content' id='nav-tabContent'>
+								{activeTab === 2 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-12 product-items-list'>
+													<Product product={product} key={product.id} className='d-block' />
+												</div>
+											))}
+										</div>
+									</div>
+								)}
+							</div>
+							<div className='tab-content' id='nav-tabContent'>
+								{activeTab === 3 && (
+									<div className='tab-pane fade show active'>
+										<div className='row'>
+											{Products.map(product => (
+												<div className='col-sm-6'>
+													<Product product={product} key={product.id} className='' />
+												</div>
+											))}
+										</div>
+									</div>
+								)}
 							</div>
 							<div className='row'>
 								<div className='col-lg-12'>

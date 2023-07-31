@@ -5,11 +5,11 @@ import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
 import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import { Slider } from '../../Components/Slider';
 import { SingleSlider } from '../../Components/SingleSlider';
 import nav1 from '../../img/shop/nav1.webp';
 import nav2 from '../../img/shop/nav2.webp';
 import nav3 from '../../img/shop/nav3.webp';
+import { Carouse } from '../../Components/Carouse';
 
 export function ProductGrouped() {
 	const [count, setCount] = useState(0);
@@ -18,7 +18,7 @@ export function ProductGrouped() {
 			<HeaderMain />
 			<section className='page-title-area' style={{}}>
 				<div className='shape-top'>
-					<img className='bg-img' src={one} />
+					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
 				<div className='container' style={{}}>
 					<div className='row align-items-center' style={{}}>
@@ -491,7 +491,7 @@ export function ProductGrouped() {
 					</div>
 				</div>
 			</section>
-			<Slider />
+			<Carouse />
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

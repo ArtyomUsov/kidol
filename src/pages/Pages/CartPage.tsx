@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import React, { useState } from 'react';
+import React from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
@@ -10,6 +8,7 @@ import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import nav1 from '../../img/shop/nav1.webp';
 import nav2 from '../../img/shop/nav2.webp';
 import nav3 from '../../img/shop/nav3.webp';
+import Cart from '../../Components/Cart';
 
 export function CartPage() {
 	return (
@@ -34,7 +33,7 @@ export function CartPage() {
 					</div>
 				</div>
 			</section>
-			<section className='product-area cart-page-area'>
+			{/* <section className='product-area cart-page-area'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-6 m-auto'>
@@ -305,7 +304,8 @@ export function CartPage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
+			<Cart />
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

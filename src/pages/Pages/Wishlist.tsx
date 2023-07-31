@@ -10,6 +10,17 @@ import nav2 from '../../img/shop/nav2.webp';
 import nav3 from '../../img/shop/nav3.webp';
 
 export function Wishlist() {
+	const handleRemove = (event: React.MouseEvent) => {
+		event.preventDefault();
+
+		const target = event.target;
+		if (target instanceof Element) {
+			const row = target.closest('tr');
+			if (row) {
+				row.remove();
+			}
+		}
+	};
 	return (
 		<>
 			<HeaderMain />
@@ -60,7 +71,9 @@ export function Wishlist() {
 											<tbody>
 												<tr>
 													<td className='product-remove'>
-														<a href='#'>×</a>
+														<a href='#' onClick={handleRemove}>
+															×
+														</a>
 													</td>
 													<td className='product-thumbnail'>
 														<Link to={ProductDetails}>
@@ -86,7 +99,9 @@ export function Wishlist() {
 												</tr>
 												<tr>
 													<td className='product-remove'>
-														<a href='#'>×</a>
+														<a href='#' onClick={handleRemove}>
+															×
+														</a>
 													</td>
 													<td className='product-thumbnail'>
 														<Link to={ProductDetails}>
@@ -112,7 +127,9 @@ export function Wishlist() {
 												</tr>
 												<tr>
 													<td className='product-remove'>
-														<a href='#'>×</a>
+														<a href='#' onClick={handleRemove}>
+															×
+														</a>
 													</td>
 													<td className='product-thumbnail'>
 														<Link to={ProductDetails}>

@@ -27,6 +27,7 @@ import { ProductFilter } from '../../Components/ProductFilter';
 import { Carouse } from '../../Components/Carouse';
 import { CarouseOne } from '../../Components/CarouseOne';
 import { Slider } from '../../Components/Slider';
+import Cart from '../../Components/Cart';
 
 export function HomeOne() {
 	return (
@@ -158,6 +159,7 @@ export function HomeOne() {
 					</div>
 				</div>
 			</section>
+			<Cart />
 			<ProductFilter />
 			<section
 				className='divider-area divider-style1-area bg-img aos-init aos-animate'

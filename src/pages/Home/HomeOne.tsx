@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
 import three from '../../img/homeOne/3.webp';
 import five from '../../img/homeOne/5.webp';
@@ -28,8 +28,20 @@ import { Carouse } from '../../Components/Carouse';
 import { CarouseOne } from '../../Components/CarouseOne';
 import { Slider } from '../../Components/Slider';
 import Cart from '../../Components/Cart';
+import ProductSlide from '../../Components/ProductSlide';
+import { IProduct } from '../../date/models';
+import { Products } from '../../date/Products';
 
 export function HomeOne() {
+	const [cartItems, setCartItems] = useState<IProduct[]>([]);
+
+	const handleAddToCart = (product: IProduct) => {
+		setCartItems(prevItems => [...prevItems, product]);
+	};
+
+	const handleRemoveFromCart = (productId: number) => {
+		setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+	};
 	return (
 		<>
 			<HeaderMain />
@@ -159,7 +171,16 @@ export function HomeOne() {
 					</div>
 				</div>
 			</section>
-			<Cart />
+			{/* <Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} /> */}
+			{Products.map(product => (
+				<ProductSlide
+					key={product.id}
+					product={product}
+					handleAddToCart={handleAddToCart}
+					cartItems={[]}
+					handleRemoveFromCart={handleRemoveFromCart}
+				/>
+			))}
 			<ProductFilter />
 			<section
 				className='divider-area divider-style1-area bg-img aos-init aos-animate'

@@ -4,12 +4,21 @@ import { Products } from '../date/Products';
 import { CartPage, Compare, Wishlist } from '../date/Path';
 import { Link } from 'react-router-dom';
 
-interface ProductProps {
+// interface ProductProps {
+// 	product: IProduct;
+// 	className: string;
+// }
+interface ProductSlideProps {
 	product: IProduct;
-	className: string;
+	handleAddToCart: (product: IProduct) => void;
+	cartItems: IProduct[];
+	handleRemoveFromCart: (productId: number) => void;
 }
 
-export function ProductSlide({ product, className }: ProductProps) {
+export function ProductSlide({ product, handleAddToCart, cartItems, handleRemoveFromCart }: ProductSlideProps) {
+	const addToCart = () => {
+		handleAddToCart(product);
+	};
 	const [ActiveTab, setActiveTab] = useState(false);
 
 	const handleClick = () => {
@@ -17,19 +26,14 @@ export function ProductSlide({ product, className }: ProductProps) {
 	};
 	return (
 		<>
-			<div
-				className='slide'
-			>
-				<div
-					className='product-item '
-					style={{ opacity: '1', minWidth: '250px', maxWidth: '250px', minHeight: '450px', height: '450px' }}
-				>
+			<div className='slide'>
+				<div className='product-item '>
 					<div className='product-thumb'>
 						<img src={product.image} alt='Image' />
 						<div className='product-action'>
-							<Link to={CartPage} className='action-quick-view'>
-								<i className='ion-ios-cart'></i>
-							</Link>
+							<a className='action-quick-view'>
+								<i className='ion-ios-cart' onClick={addToCart}></i>
+							</a>
 							<Link to={''} className='action-quick-view' onClick={handleClick}>
 								<i className='ion-ios-expand'></i>
 							</Link>

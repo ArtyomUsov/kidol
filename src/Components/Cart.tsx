@@ -2,59 +2,65 @@ import React, { useState } from 'react';
 import { Products } from '../date/Products';
 import { IProduct } from '../date/models';
 
-function Cart() {
-	const [cartItems, setCartItems] = useState<IProduct[]>([]);
+interface CartProps {
+	cartItems: IProduct[];
+	handleAddToCart: (product: IProduct) => void;
+	handleRemoveFromCart: (productId: number) => void;
+}
 
-	const handleAddToCart = (product: IProduct) => {
-		setCartItems(prevItems => [...prevItems, product]);
-	};
+function Cart({ cartItems, handleAddToCart, handleRemoveFromCart }: CartProps) {
+	console.log(cartItems);
+	// const handleAddToCart = (product: IProduct) => {
+	// 	const productToAdd = Products.find(product => product.id === product.id);
+	// 	if (productToAdd) {
+	// 		setCartItems(prevItems => [...prevItems, productToAdd]);
+	// 	}
+	// };
 
-	const handleRemoveFromCart = (productId: number) => {
-		setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
-	};
+	// const handleRemoveFromCart = (productId: number) => {
+	// 	setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+	// };
 
 	const renderCartItems = () => {
 		return cartItems.map(item => (
-			<div key={item.id}>
-				<tr>
-					<td className='product-thumbnail'>
-						<a>
-							<img src={item.image} alt='описание изображения' style={{ width: '80px', height: '63px' }} />
-						</a>
-					</td>
-					<td className='product-name'>
-						<h5>
-							<a href='shop-single-product.html'>{item.title}</a>
-						</h5>
-					</td>
-					<td className='product-price'>
-						<span className='amount'>{item.price}</span>
-					</td>
-					<td className='cart-quality'>
-						<div className='product-details-quality'>
-							<input
-								type='number'
-								className='input-text qty text'
-								step='1'
-								min='1'
-								max='100'
-								name='quantity'
-								value='1'
-								title='Qty'
-								placeholder=''
-							/>
-						</div>
-					</td>
-					<td className='product-total'>
-						<span>{item.price}</span>
-					</td>
-					<td className='product-remove'>
-						<a>
-							<i className='ion-ios-trash' onClick={() => handleRemoveFromCart(item.id)}></i>
-						</a>
-					</td>
-				</tr>
-			</div>
+			<tr key={item.id}>
+				<td className='product-thumbnail'>
+					<a>
+						<img src={item.image} alt='описание товара' />
+					</a>
+				</td>
+				<td className='product-name'>
+					<h5>
+						<a href='shop-single-product.html'>{item.title}</a>
+					</h5>
+				</td>
+				<td className='product-price'>
+					<span className='amount'>{item.price}</span>
+				</td>
+				<td className='cart-quality'>
+					<div className='product-details-quality'>
+						<input
+							type='number'
+							className='input-text qty text'
+							step='1'
+							min='1'
+							max='100'
+							name='quantity'
+							value='1'
+							title='Qty'
+							placeholder=''
+						/>
+					</div>
+				</td>
+				<td className='product-total'>
+					<span>{item.price}</span>
+				</td>
+				<td className='product-remove'>
+					<a>
+						<i className='ion-ios-trash' onClick={() => handleRemoveFromCart(item.id)}></i>
+					</a>
+				</td>
+			</tr>
 		));
 	};
 
@@ -89,7 +95,18 @@ function Cart() {
 												<th className='width-remove'></th>
 											</tr>
 										</thead>
-										<tbody>{cartItems.length > 0 ? <>{renderCartItems()}</> : <p>Your cart is empty.</p>}</tbody>
+										<tbody>
+											{cartItems.length > 0 ? (
+												<>{renderCartItems()}</>
+											) : (
+												<tr className='section-title'>
+													<td className='text-center'>
+														<i className='ion-ios-cart'></i>
+													</td>
+													<td> Your cart is empty</td>
+												</tr>
+											)}
+										</tbody>
 									</table>
 								</div>
 							</div>
@@ -207,10 +224,10 @@ function Cart() {
 					</div>
 				</div>
 			</section>
-			<button onClick={() => handleAddToCart(Products[0])}>Add to Cart</button>
+			{/* <button onClick={() => handleAddToCart(Products)}>Add to Cart</button> */}
 			<button onClick={() => handleAddToCart(Products[1])}>Add to Cart</button>
-			<button onClick={() => handleAddToCart(Products[2])}>Add to Cart</button>
-			<button onClick={() => handleAddToCart(Products[3])}>Add to Cart</button>
+			{/* <button onClick={() => handleAddToCart(Products[2])}>Add to Cart</button> */}
+			{/* <button onClick={() => handleAddToCart(Products[3])}>Add to Cart</button> */}
 		</div>
 	);
 }

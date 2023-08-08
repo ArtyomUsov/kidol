@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne, ProductDetails } from '../../date/Path';
+import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import nav1 from '../../img/shop/nav1.webp';
-import nav2 from '../../img/shop/nav2.webp';
-import nav3 from '../../img/shop/nav3.webp';
 import Cart from '../../Components/Cart';
+import { IProduct } from '../../date/models';
 
 export function CartPage() {
+	const [cartItems, setCartItems] = useState<IProduct[]>([]);
+
+	const handleAddToCart = (product: IProduct) => {
+		setCartItems(prevItems => [...prevItems, product]);
+	};
+
+	const handleRemoveFromCart = (productId: number) => {
+		setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+	};
+	
 	return (
 		<>
 			<HeaderMain />
@@ -305,7 +313,7 @@ export function CartPage() {
 					</div>
 				</div>
 			</section> */}
-			<Cart />
+			<Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} />
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

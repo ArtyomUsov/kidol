@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { IProduct } from '../date/models';
+import { IProduct, ProductProps } from '../date/models';
 import { Products } from '../date/Products';
 import { Link } from 'react-router-dom';
-import { CartPage, Compare, Wishlist } from '../date/Path';
+import { Compare, Wishlist } from '../date/Path';
 import { ProductQuickView } from './ProductQuickView';
 
-interface ProductProps {
-	product: IProduct;
-	className: string;
-}
 export const ProductArea: IProduct[] = Products.filter(product => product.id < 9);
 
+// export function Product({ product, className, handleAddToCart, cartItems, handleRemoveFromCart }: ProductProps) {
+// 	const addToCart = () => {
+// 		handleAddToCart(product);
+// 	};
 export function Product({ product, className }: ProductProps) {
 	const [ActiveTab, setActiveTab] = useState(false);
 
@@ -23,9 +23,12 @@ export function Product({ product, className }: ProductProps) {
 				<div className='product-thumb'>
 					<img src={product.image} />
 					<div className='product-action'>
-						<Link to={CartPage} className='action-quick-view'>
-							<i className='ion-ios-cart'></i>
-						</Link>
+						<a className='action-quick-view'>
+							<i
+								className='ion-ios-cart'
+								// onClick={addToCart}
+							></i>
+						</a>
 						<Link to={''} className='action-quick-view' onClick={handleClick}>
 							<i className='ion-ios-expand'></i>
 						</Link>

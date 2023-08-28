@@ -3,9 +3,12 @@ import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import one from '../../img/homeOne/1.webp';
 import { Link } from 'react-router-dom';
-import { HomeOne } from '../../date/Path';
+import { HomeOne, ProductDetails } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
-import Cart from '../../Components/Cart';
+// import Cart from '../../Components/Cart';
+import nav1 from '../../img/shop/nav1.webp';
+import nav2 from '../../img/shop/nav2.webp';
+import nav3 from '../../img/shop/nav3.webp';
 import { IProduct } from '../../date/models';
 
 export function CartPage() {
@@ -18,7 +21,7 @@ export function CartPage() {
 	const handleRemoveFromCart = (productId: number) => {
 		setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
 	};
-	
+
 	return (
 		<>
 			<HeaderMain />
@@ -41,7 +44,7 @@ export function CartPage() {
 					</div>
 				</div>
 			</section>
-			{/* <section className='product-area cart-page-area'>
+			<section className='product-area cart-page-area'>
 				<div className='container'>
 					<div className='row'>
 						<div className='col-lg-6 m-auto'>
@@ -69,7 +72,7 @@ export function CartPage() {
 											<tr>
 												<td className='product-thumbnail'>
 													<Link to={ProductDetails}>
-														<img src={nav1} />
+														<img src={nav1} alt='temporary stub' />
 													</Link>
 												</td>
 												<td className='product-name'>
@@ -107,7 +110,7 @@ export function CartPage() {
 											<tr>
 												<td className='product-thumbnail'>
 													<Link to={ProductDetails}>
-														<img src={nav2} />
+														<img src={nav2} alt='temporary stub' />
 													</Link>
 												</td>
 												<td className='product-name'>
@@ -145,7 +148,7 @@ export function CartPage() {
 											<tr>
 												<td className='product-thumbnail'>
 													<Link to={ProductDetails}>
-														<img src={nav3} />
+														<img src={nav3} alt='temporary stub' />
 													</Link>
 												</td>
 												<td className='product-name'>
@@ -312,8 +315,8 @@ export function CartPage() {
 						</div>
 					</div>
 				</div>
-			</section> */}
-			<Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} />
+			</section>
+			{/* <Cart cartItems={cartItems} handleAddToCart={handleAddToCart} handleRemoveFromCart={handleRemoveFromCart} /> */}
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

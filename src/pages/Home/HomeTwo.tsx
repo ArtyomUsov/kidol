@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderMain from '../../Components/HeaderMain';
 import { FooterMain } from '../../Components/Footer';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
@@ -35,8 +35,19 @@ import { Link } from 'react-router-dom';
 import { BlogLeftSidebar, ShopNoSidebar } from '../../date/Path';
 import { ProductFilter } from '../../Components/ProductFilter';
 import { Carouse } from '../../Components/Carouse';
+import { Products } from '../../date/Products';
+import { IProduct } from '../../date/models';
 
 export function HomeTwo() {
+	const [cartItems, setCartItems] = useState<IProduct[]>([]);
+
+	const handleAddToCart = (product: IProduct) => {
+		setCartItems(prevItems => [...prevItems, product]);
+	};
+
+	const handleRemoveFromCart = (productId: number) => {
+		setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+	};
 	return (
 		<>
 			<HeaderMain />
@@ -324,7 +335,15 @@ export function HomeTwo() {
 					</div>
 				</div>
 			</section>
-			<Carouse />
+			{/* {Products.map(product => ( */}
+			<Carouse
+			// key={product.id}
+			// product={product}
+			// handleAddToCart={handleAddToCart}
+			// cartItems={[]}
+			// handleRemoveFromCart={handleRemoveFromCart}
+			/>
+			{/* ))} */}
 			<section
 				className='divider-area divider-style1-area bg-img aos-init aos-animate'
 				// data-bg-img={bg1}
@@ -429,7 +448,15 @@ export function HomeTwo() {
 					</div>
 				</div>
 			</section>
-			<ProductFilter />
+			{/* {Products.map(product => ( */}
+			<ProductFilter
+			// key={product.id}
+			// product={product}
+			// handleAddToCart={handleAddToCart}
+			// cartItems={[]}
+			// handleRemoveFromCart={handleRemoveFromCart}
+			/>
+			{/* ))} */}
 			<section className='testimonial-area testimonial-default-area'>
 				<div className='container'>
 					<div className='row'>

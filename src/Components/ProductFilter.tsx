@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Product } from '../Components/Product';
 import { Products } from '../date/Products';
+import { IProduct} from '../date/models';
 
 export function ProductFilter() {
 	const filteredDress = Products.filter(product => product.category === 'Baby Dress');
 	const filteredToys = Products.filter(product => product.category === 'Baby Toys');
+
+	// const addToCart = () => {
+	// 	handleAddToCart(product);
+	// };
 	return (
 		<>
 			<section className='product-area product-style1-area'>
@@ -98,7 +103,14 @@ export function ProductFilter() {
 													<div className='row'>
 														{Products.slice(0, 4).map(product => (
 															<div className='col-lg-3 col-md-4 col-sm-6'>
-																<Product product={product} key={product.id} className='' />
+																<Product
+																	key={product.id}
+																	product={product}
+																	// handleAddToCart={handleAddToCart}
+																	// cartItems={[]}
+																	// handleRemoveFromCart={handleRemoveFromCart}
+																	className=''
+																/>
 															</div>
 														))}
 													</div>
@@ -112,7 +124,14 @@ export function ProductFilter() {
 												<div className='row'>
 													{filteredDress.slice(0, 4).map(product => (
 														<div className='col-lg-3 col-md-4 col-sm-6'>
-															<Product product={product} key={product.id} className='' />
+															<Product
+																key={product.id}
+																product={product}
+																// handleAddToCart={handleAddToCart}
+																// cartItems={[]}
+																// handleRemoveFromCart={handleRemoveFromCart}
+																className=''
+															/>
 														</div>
 													))}
 												</div>
@@ -125,7 +144,14 @@ export function ProductFilter() {
 												<div className='row'>
 													{filteredToys.slice(0, 4).map(product => (
 														<div className='col-lg-3 col-md-4 col-sm-6'>
-															<Product product={product} key={product.id} className='' />
+															<Product
+																key={product.id}
+																product={product}
+																// handleAddToCart={handleAddToCart}
+																// cartItems={[]}
+																// handleRemoveFromCart={handleRemoveFromCart}
+																className=''
+															/>
 														</div>
 													))}
 												</div>

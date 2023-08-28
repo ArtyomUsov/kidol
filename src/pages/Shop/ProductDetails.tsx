@@ -7,9 +7,20 @@ import { HomeOne } from '../../date/Path';
 import ButtonScrollTop from '../../Components/ButtonScrollTop';
 import { SingleSlider } from '../../Components/SingleSlider';
 import { Carouse } from '../../Components/Carouse';
+import { Products } from '../../date/Products';
+import { IProduct } from '../../date/models';
 
 export function ProductDetails() {
 	const [count, setCount] = useState(0);
+	const [cartItems, setCartItems] = useState<IProduct[]>([]);
+
+	// const handleAddToCart = (product: IProduct) => {
+	// 	setCartItems(prevItems => [...prevItems, product]);
+	// };
+
+	// const handleRemoveFromCart = (productId: number) => {
+	// 	setCartItems(prevItems => prevItems.filter(item => item.id !== productId));
+	// };
 	return (
 		<>
 			<HeaderMain />
@@ -511,7 +522,15 @@ export function ProductDetails() {
 					<div className='fancybox-progress'></div>
 				</div>
 			</div> */}
-			<Carouse />
+			{/* {Products.map(product => ( */}
+			<Carouse
+			// key={product.id}
+			// product={product}
+			// handleAddToCart={handleAddToCart}
+			// cartItems={[]}
+			// handleRemoveFromCart={handleRemoveFromCart}
+			/>
+			{/* ))} */}
 			<FooterMain />
 			<ButtonScrollTop />
 		</>

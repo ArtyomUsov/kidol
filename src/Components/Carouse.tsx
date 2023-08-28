@@ -2,13 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { Products } from '../date/Products';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { CartPage, Compare, Wishlist } from '../date/Path';
+import { Compare, Wishlist } from '../date/Path';
 import { ProductQuickView } from './ProductQuickView';
+import { IProduct } from '../date/models';
 
+// export function Carouse({ product, handleRemoveFromCart }: CarouseProps) {
 export function Carouse() {
+	const [cartItems, setCartItems] = useState<IProduct[]>([]);
 	const [ActiveTab, setActiveTab] = useState(false);
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [display, setDisplay] = useState('');
+
+	// const addToCart = () => {
+	// 	handleAddToCart(product);
+	// };
+	const handleAddToCart = (product: IProduct) => {
+		setCartItems(prevItems => [...prevItems, product]);
+	};
 
 	const handleClick = () => {
 		setActiveTab(prev => !prev);
@@ -65,15 +75,18 @@ export function Carouse() {
 								</button>
 							}
 						>
-							{Products.map((product, _id) => (
+							{Products.map(product => (
 								<Carousel.Item key={product.id}>
 									<div className='product-item col-12 slide-item'>
 										<div className='product-thumb'>
 											<img src={product.image} alt='Image' />
 											<div className='product-action'>
-												<Link to={CartPage} className='action-quick-view'>
-													<i className='ion-ios-cart'></i>
-												</Link>
+												<a className='action-quick-view'>
+													<i
+														className='ion-ios-cart'
+														// onClick={addToCart}
+													></i>
+												</a>
 												<Link to={''} className='action-quick-view' onClick={handleClick}>
 													<i className='ion-ios-expand'></i>
 												</Link>
@@ -109,15 +122,18 @@ export function Carouse() {
 						</Carousel>
 						{window.innerWidth >= 575 && (
 							<Carousel activeIndex={activeIndex + 1} onSelect={handleSelect} className={display}>
-								{Products.map((product, _id) => (
+								{Products.map(product => (
 									<Carousel.Item key={product.id}>
 										<div className='product-item col-12 slide-item'>
 											<div className='product-thumb'>
 												<img src={product.image} alt='Image' />
 												<div className='product-action'>
-													<Link to={CartPage} className='action-quick-view'>
-														<i className='ion-ios-cart'></i>
-													</Link>
+													<a className='action-quick-view'>
+														<i
+															className='ion-ios-cart'
+															// onClick={addToCart}
+														></i>
+													</a>
 													<Link to={''} className='action-quick-view' onClick={handleClick}>
 														<i className='ion-ios-expand'></i>
 													</Link>
@@ -154,15 +170,18 @@ export function Carouse() {
 						)}
 						{window.innerWidth >= 768 && (
 							<Carousel activeIndex={activeIndex + 2} onSelect={handleSelect}>
-								{Products.map((product, _id) => (
+								{Products.map(product => (
 									<Carousel.Item key={product.id}>
 										<div className='product-item col-12 slide-item'>
 											<div className='product-thumb'>
 												<img src={product.image} alt='Image' />
 												<div className='product-action'>
-													<Link to={CartPage} className='action-quick-view'>
-														<i className='ion-ios-cart'></i>
-													</Link>
+													<a className='action-quick-view'>
+														<i
+															className='ion-ios-cart'
+															// onClick={addToCart}
+														></i>
+													</a>
 													<Link to={''} className='action-quick-view' onClick={handleClick}>
 														<i className='ion-ios-expand'></i>
 													</Link>
@@ -207,15 +226,18 @@ export function Carouse() {
 									</button>
 								}
 							>
-								{Products.map((product, _id) => (
+								{Products.map(product => (
 									<Carousel.Item key={product.id}>
 										<div className='product-item col-12 slide-item'>
 											<div className='product-thumb'>
 												<img src={product.image} alt='Image' />
 												<div className='product-action'>
-													<Link to={CartPage} className='action-quick-view'>
-														<i className='ion-ios-cart'></i>
-													</Link>
+													<a className='action-quick-view'>
+														<i
+															className='ion-ios-cart'
+															// onClick={addToCart}
+														></i>
+													</a>
 													<Link to={''} className='action-quick-view' onClick={handleClick}>
 														<i className='ion-ios-expand'></i>
 													</Link>

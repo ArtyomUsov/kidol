@@ -16,27 +16,19 @@ export function ProductGrouped() {
 	return (
 		<>
 			<HeaderMain />
-			<section className='page-title-area' style={{}}>
+			<section className='page-title-area'>
 				<div className='shape-top'>
 					<img className='bg-img' src={one} alt='White semicircles in a row' />
 				</div>
-				<div className='container' style={{}}>
-					<div className='row align-items-center' style={{}}>
-						<div className='col-lg-12 m-auto' style={{}}>
-							<div className='page-title-content text-center' style={{}}>
-								<h2 className='title h2' style={{}}>
-									Product
-								</h2>
-								<div className='bread-crumbs' style={{}}>
+				<div className='container'>
+					<div className='row align-items-center'>
+						<div className='col-lg-12 m-auto'>
+							<div className='page-title-content text-center'>
+								<h2 className='title h2'>Product</h2>
+								<div className='bread-crumbs'>
 									<Link to={HomeOne}>Home</Link>
-									<span className='breadcrumb-sep' style={{}}>
-										{' '}
-										//{' '}
-									</span>
-									<span className='active' style={{}}>
-										{' '}
-										Product
-									</span>
+									<span className='breadcrumb-sep'> // </span>
+									<span className='active'> Product</span>
 								</div>
 							</div>
 						</div>
@@ -90,7 +82,7 @@ export function ProductGrouped() {
 												</td>
 												<td className='quantity'></td>
 												<td className='thumb'>
-													<img src={nav1} />
+													<img src={nav1} alt='temporary stub' />
 												</td>
 												<td className='title'>
 													This item: <span>Aluminum Equestrian</span>
@@ -107,7 +99,7 @@ export function ProductGrouped() {
 												</td>
 												<td className='quantity'>1</td>
 												<td className='thumb'>
-													<img src={nav2} />
+													<img src={nav2} alt='temporary stub' />
 												</td>
 												<td className='title'>
 													<a href='#/'>Porcelain Small Bowls</a>
@@ -125,7 +117,7 @@ export function ProductGrouped() {
 												</td>
 												<td className='quantity'>1</td>
 												<td className='thumb'>
-													<img src={nav3} />
+													<img src={nav3} alt='temporary stub' />
 												</td>
 												<td className='title'>
 													<a href='#/'>Walnut Cutting Board</a>

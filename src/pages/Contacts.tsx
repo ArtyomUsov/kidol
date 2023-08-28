@@ -59,7 +59,7 @@ export function Contact() {
 												</div>
 												<h2>Phone No</h2>
 												<div className='content'>
-													<a href='tel://+00123456789'>+ 00 123 456 789</a>
+													<a href='tel:+00123456789'>+ 00 123 456 789</a>
 												</div>
 											</div>
 										</div>
@@ -70,7 +70,7 @@ export function Contact() {
 												</div>
 												<h2>Email / Web</h2>
 												<div className='content'>
-													<a href='mailto://demo@example.com'>demo@example.com</a>
+													<a href='mailto:demo@example.com'>demo@example.com</a>
 												</div>
 											</div>
 										</div>
